@@ -141,6 +141,8 @@ import java.util.List;
 public class DefaultHandlerExceptionResolver extends AbstractHandlerExceptionResolver {
 
 	/**
+	 * 只是日志的 EVENT_NAME（事件名称）
+	 *
 	 * Log category to use when no mapped handler is found for a request.
 	 * @see #pageNotFoundLogger
 	 */

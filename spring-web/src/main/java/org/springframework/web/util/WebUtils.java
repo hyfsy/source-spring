@@ -186,6 +186,7 @@ public abstract class WebUtils {
 	public static final String DEFAULT_CHARACTER_ENCODING = "ISO-8859-1";
 
 	/**
+	 * 临时文件存放路径
 	 * Standard Servlet spec context attribute that specifies a temporary
 	 * directory for the current web application, of type {@code java.io.File}.
 	 */

@@ -88,6 +88,7 @@ public class StandardMultipartHttpServletRequest extends AbstractMultipartHttpSe
 			// 遍历 parts 数组
 			for (Part part : parts) {
 			    // 获得 CONTENT_DISPOSITION 头的值
+				// 例如：form-data; name="mulitpartFile"; filename="test.txt"
 				String headerValue = part.getHeader(HttpHeaders.CONTENT_DISPOSITION);
 				// 获得 ContentDisposition 对象
 				ContentDisposition disposition = ContentDisposition.parse(headerValue);
@@ -249,6 +250,7 @@ public class StandardMultipartHttpServletRequest extends AbstractMultipartHttpSe
 		@Override
 		public void transferTo(File dest) throws IOException, IllegalStateException {
 			this.part.write(dest.getPath());
+			// 必须为绝对路径，并且没有该绝对路径对应的文件存在
 			if (dest.isAbsolute() && !dest.exists()) {
 				// Servlet 3.0 Part.write is not guaranteed to support absolute file paths:
 				// may translate the given path to a relative location within a temp dir

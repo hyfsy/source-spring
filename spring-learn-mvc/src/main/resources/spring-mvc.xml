@@ -33,4 +33,9 @@
 
 	<bean id="stringToNumber" class="com.hyf.mvc.converter.StringToNumber" />
 
+
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="maxUploadSize" value="1024000" />
+	</bean>
+
 </beans>

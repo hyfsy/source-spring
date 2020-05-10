@@ -239,7 +239,7 @@ public abstract class AbstractUrlHandlerMapping extends AbstractHandlerMapping i
 			}
             // 空方法，校验处理器。目前暂无子类实现该方法
             validateHandler(handler, request);
-			// 获得匹配的路径
+			// 获得匹配的路径 /pages/** & /pages/file.html  ->  file.html
 			String pathWithinMapping = getPathMatcher().extractPathWithinPattern(bestMatch, urlPath);
 
 			// There might be multiple 'best patterns', let's make sure we have the correct URI template variables

@@ -81,6 +81,8 @@ public abstract class MultipartResolutionDelegate {
 
 		// MultipartFile
 		if (MultipartFile.class == parameter.getNestedParameterType()) {
+			// 没有 MultipartResolver ,则设置为一个标准的多部分请求
+			// 相当于定义了一个 StandardMultipartHttpServletRequest 对象
 			if (multipartRequest == null && isMultipart) {
 				multipartRequest = new StandardMultipartHttpServletRequest(request);
 			}

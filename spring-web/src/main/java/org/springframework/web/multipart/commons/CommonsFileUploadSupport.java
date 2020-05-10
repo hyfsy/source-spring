@@ -62,8 +62,15 @@ public abstract class CommonsFileUploadSupport {
 
 	private final FileUpload fileUpload;
 
+	/**
+	 * 是否将临时文件目录设置到 DiskFileItemFactory 中
+	 * @see WebUtils#TEMP_DIR_CONTEXT_ATTRIBUTE
+	 */
 	private boolean uploadTempDirSpecified = false;
 
+	/**
+	 * 只截取出文件名，不保留路径
+	 */
 	private boolean preserveFilename = false;
 
 
@@ -77,7 +84,6 @@ public abstract class CommonsFileUploadSupport {
 		this.fileItemFactory = newFileItemFactory();
 		this.fileUpload = newFileUpload(getFileItemFactory());
 	}
-
 
 	/**
 	 * Return the underlying {@code org.apache.commons.fileupload.disk.DiskFileItemFactory}
@@ -241,7 +247,7 @@ public abstract class CommonsFileUploadSupport {
 	/**
 	 * Parse the given List of Commons FileItems into a Spring MultipartParsingResult,
 	 * containing Spring MultipartFile instances and a Map of multipart parameter.
-	 * @param fileItems the Commons FileIterms to parse
+	 * @param fileItems the Commons FileItems to parse
 	 * @param encoding the encoding to use for form fields
 	 * @return the Spring MultipartParsingResult
 	 * @see CommonsMultipartFile#CommonsMultipartFile(org.apache.commons.fileupload.FileItem)
@@ -253,10 +259,13 @@ public abstract class CommonsFileUploadSupport {
 
 		// Extract multipart files and multipart parameters.
 		for (FileItem fileItem : fileItems) {
+			// 普通表单输入项  ->  name/value 也会解析，作为请求属性
 			if (fileItem.isFormField()) {
 				String value;
+				// 获取文件编码 或 默认指定的编码
 				String partEncoding = determineEncoding(fileItem.getContentType(), encoding);
 				try {
+					// 表单项的 value 属性
 					value = fileItem.getString(partEncoding);
 				}
 				catch (UnsupportedEncodingException ex) {
@@ -266,6 +275,7 @@ public abstract class CommonsFileUploadSupport {
 					}
 					value = fileItem.getString();
 				}
+				// 一个 name 对应多个值的情况
 				String[] curParam = multipartParameters.get(fileItem.getFieldName());
 				if (curParam == null) {
 					// simple form field
@@ -276,8 +286,10 @@ public abstract class CommonsFileUploadSupport {
 					String[] newParam = StringUtils.addStringToArray(curParam, value);
 					multipartParameters.put(fileItem.getFieldName(), newParam);
 				}
+				// 设置前端页面 file 标签的 name 属性 与文件内容类型的映射
 				multipartParameterContentTypes.put(fileItem.getFieldName(), fileItem.getContentType());
 			}
+			// 文件上传项
 			else {
 				// multipart file field
 				CommonsMultipartFile file = createMultipartFile(fileItem);
@@ -316,6 +328,7 @@ public abstract class CommonsFileUploadSupport {
 	protected void cleanupFileItems(MultiValueMap<String, MultipartFile> multipartFiles) {
 		for (List<MultipartFile> files : multipartFiles.values()) {
 			for (MultipartFile file : files) {
+				// CommonsMultipartFile 才会调用 delete() 方法
 				if (file instanceof CommonsMultipartFile) {
 					CommonsMultipartFile cmf = (CommonsMultipartFile) file;
 					cmf.getFileItem().delete();

@@ -1100,6 +1100,7 @@ public class DispatcherServlet extends FrameworkServlet {
 			} else {
 				// Clean up any resources used by a multipart request.
 				if (multipartRequestParsed) {
+					// Part/FileItem -> delete()
 					cleanupMultipart(processedRequest);
 				}
 			}

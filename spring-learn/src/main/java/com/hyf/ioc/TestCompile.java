@@ -30,7 +30,7 @@ public class TestCompile {
 	}
 
 	@Test
-	public void testAnnotationHello () throws Exception {
+	public void testAnnotationHello() throws Exception {
 		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(SpringConfig.class);
 		SpringConfig bean = context.getBean(SpringConfig.class);
 		System.out.println(bean);

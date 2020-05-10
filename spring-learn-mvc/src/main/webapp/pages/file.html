@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<title>File</title>
+</head>
+<body>
+	<form action="/cp/helloC/file" method="post" enctype="multipart/form-data">
+		<input type="text" value="asdf" name="testText" />
+		<input type="file" name="multipartFile" />
+<!--		这个不算普通表单域或文件上传域-->
+		<input type="button" value="提交" onclick="submit();" name="testButton">
+	</form>
+</body>
+</html>

@@ -104,6 +104,8 @@ public class CommonsMultipartFile implements MultipartFile, Serializable {
 			return filename;
 		}
 
+		// 只截取出文件名，不保留路径
+
 		// Check for Unix-style path
 		int unixSep = filename.lastIndexOf('/');
 		// Check for Windows-style path
@@ -155,16 +157,19 @@ public class CommonsMultipartFile implements MultipartFile, Serializable {
 
 	@Override
 	public void transferTo(File dest) throws IOException, IllegalStateException {
+		// 确定上传的文件是否【真正】存在
 		if (!isAvailable()) {
 			throw new IllegalStateException("File has already been moved - cannot be transferred again");
 		}
 
+		// 当前路径存在文件，但无法被删除
 		if (dest.exists() && !dest.delete()) {
 			throw new IOException(
 					"Destination file [" + dest.getAbsolutePath() + "] already exists and could not be deleted");
 		}
 
 		try {
+			// 最终的文件写入操作，交由 FileItem 执行
 			this.fileItem.write(dest);
 			LogFormatUtils.traceDebug(logger, traceOn -> {
 				String action = "transferred";

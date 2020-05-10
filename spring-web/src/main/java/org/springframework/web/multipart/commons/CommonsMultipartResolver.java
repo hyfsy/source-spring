@@ -101,6 +101,8 @@ public class CommonsMultipartResolver extends CommonsFileUploadSupport
 	}
 
 	/**
+	 * 子类可重写，用来自定义 FileItemFactory 的一些配置
+	 *
 	 * Initialize the underlying {@code org.apache.commons.fileupload.servlet.ServletFileUpload}
 	 * instance. Can be overridden to use a custom subclass, e.g. for testing purposes.
 	 * @param fileItemFactory the Commons FileItemFactory to use
@@ -113,6 +115,7 @@ public class CommonsMultipartResolver extends CommonsFileUploadSupport
 
 	@Override
 	public void setServletContext(ServletContext servletContext) {
+		// 为工厂设置自定义的临时文件存放路径
 		if (!isUploadTempDirSpecified()) {
 			getFileItemFactory().setRepository(WebUtils.getTempDir(servletContext));
 		}
@@ -128,6 +131,7 @@ public class CommonsMultipartResolver extends CommonsFileUploadSupport
 	public MultipartHttpServletRequest resolveMultipart(final HttpServletRequest request) throws MultipartException {
 		Assert.notNull(request, "Request must not be null");
 		if (this.resolveLazily) {
+			// 该请求只有在调用 getMultipartFiles() 的时候才会调用该重写的初始化方法
 			return new DefaultMultipartHttpServletRequest(request) {
 				@Override
 				protected void initializeMultipart() {
@@ -139,6 +143,7 @@ public class CommonsMultipartResolver extends CommonsFileUploadSupport
 			};
 		}
 		else {
+			// 直接解析文件，并返回多部分请求
 			MultipartParsingResult parsingResult = parseRequest(request);
 			return new DefaultMultipartHttpServletRequest(request, parsingResult.getMultipartFiles(),
 					parsingResult.getMultipartParameters(), parsingResult.getMultipartParameterContentTypes());
@@ -152,9 +157,12 @@ public class CommonsMultipartResolver extends CommonsFileUploadSupport
 	 * @throws MultipartException if multipart resolution failed.
 	 */
 	protected MultipartParsingResult parseRequest(HttpServletRequest request) throws MultipartException {
+		// 准备编码格式
 		String encoding = determineEncoding(request);
+		// 准备 FileUpload
 		FileUpload fileUpload = prepareFileUpload(encoding);
 		try {
+			// 解析请求，获取文件项
 			List<FileItem> fileItems = ((ServletFileUpload) fileUpload).parseRequest(request);
 			return parseFileItems(fileItems, encoding);
 		}
@@ -189,6 +197,7 @@ public class CommonsMultipartResolver extends CommonsFileUploadSupport
 
 	@Override
 	public void cleanupMultipart(MultipartHttpServletRequest request) {
+		// 判断文件存在，即多部分请求已经解析过了
 		if (!(request instanceof AbstractMultipartHttpServletRequest) ||
 				((AbstractMultipartHttpServletRequest) request).isResolved()) {
 			try {

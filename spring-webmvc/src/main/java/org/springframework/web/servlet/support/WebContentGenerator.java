@@ -371,6 +371,8 @@ public abstract class WebContentGenerator extends WebApplicationObjectSupport {
 	protected final void checkRequest(HttpServletRequest request) throws ServletException {
 		// Check whether we should support the request method.
 		String method = request.getMethod();
+		// 文件上传后请求转发结果405的罪魁祸首！！！  post -> get/head
+		// 针对上述问题，需要返回 redirect:xxx  使用重定向
 		if (this.supportedMethods != null && !this.supportedMethods.contains(method)) {
 			throw new HttpRequestMethodNotSupportedException(method, this.supportedMethods);
 		}
