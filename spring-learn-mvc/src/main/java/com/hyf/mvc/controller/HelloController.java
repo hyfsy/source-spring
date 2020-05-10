@@ -1,4 +1,4 @@
-package com.hyf.mvc_xml.controller;
+package com.hyf.mvc.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;

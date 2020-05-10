@@ -1,4 +1,4 @@
-package com.hyf.mvc_xml.converter;
+package com.hyf.mvc.converter;
 
 import org.springframework.core.convert.converter.Converter;
 

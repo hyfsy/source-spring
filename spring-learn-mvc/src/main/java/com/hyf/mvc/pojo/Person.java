@@ -1,4 +1,4 @@
-package com.hyf.mvc_xml.pojo;
+package com.hyf.mvc.pojo;
 
 /**
  * @author baB_hyf

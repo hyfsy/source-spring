@@ -10,7 +10,7 @@
         http://www.springframework.org/schema/mvc
         http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
-    <context:component-scan  base-package="com.hyf.mvc_xml.controller" />
+    <context:component-scan base-package="com.hyf.mvc.controller" />
 
 	<mvc:annotation-driven enable-matrix-variables="true" conversion-service="conversionService" />
 
@@ -31,6 +31,6 @@
 		</property>
 	</bean>
 
-	<bean id="stringToNumber" class="com.hyf.mvc_xml.converter.StringToNumber" />
+	<bean id="stringToNumber" class="com.hyf.mvc.converter.StringToNumber" />
 
 </beans>
