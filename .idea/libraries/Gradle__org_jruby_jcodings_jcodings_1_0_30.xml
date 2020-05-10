@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.jruby.jcodings:jcodings:1.0.30">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../.gradle2/caches/modules-2/files-2.1/org.jruby.jcodings/jcodings/1.0.30/1238908f91735a4201a2adabfc1026c84dc16598/jcodings-1.0.30.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../.gradle2/caches/modules-2/files-2.1/org.jruby.jcodings/jcodings/1.0.30/21c4b05215a0ee50d8791d3d01269b880f09852d/jcodings-1.0.30-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":spring-orm:main" external.linked.project.path="$MODULE_DIR$/../../../spring-orm" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="org.springframework" external.system.module.type="sourceSet" external.system.module.version="5.1.1.BUILD-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="3" platform="JVM 1.8" allPlatforms="JVM [1.8]" useProjectSettings="false">
+        <compilerSettings>
+          <option name="additionalArguments" value="-Xjsr305=strict" />
+        </compilerSettings>
+        <compilerArguments>
+          <option name="destination" value="$MODULE_DIR$/../../../spring-orm/build/classes/kotlin/main" />
+          <option name="classpath" value="$MODULE_DIR$/../../../spring-core/build/libs/spring-cglib-repack-3.2.8.jar;E:/study/idea2/source-spring/spring-core/build/libs/spring-objenesis-repack-2.6.jar;E:/study/.gradle2/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar;E:/study/idea2/source-spring/spring-jcl/build/libs/spring-jcl-5.1.1.BUILD-SNAPSHOT.jar;E:/study/.gradle2/caches/modules-2/files-2.1/org.eclipse.persistence/org.eclipse.persistence.jpa/2.7.3/8880b6a624fe3997c7500ec870e364fea0d8c6b4/org.eclipse.persistence.jpa-2.7.3.jar;E:/study/.gradle2/caches/modules-2/files-2.1/org.hibernate/hibernate-core/5.3.6.Final/42c7130757c3f67dda008d8edb28b381a09a7ce6/hibernate-core-5.3.6.Final.jar;E:/study/.gradle2/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/4.0.1/a27082684a2ff0bf397666c3943496c44541d1ca/javax.servlet-api-4.0.1.jar;E:/study/.gradle2/caches/modules-2/files-2.1/org.eclipse.persistence/javax.persistence/2.2.1/7ea990b062655a52ca5010cf8716fb3fbde46d2e/javax.persistence-2.2.1.jar;E:/study/.gradle2/caches/modules-2/files-2.1/org.eclipse.persistence/org.eclipse.persistence.core/2.7.3/1b315bfe61c5f3b164f6d245958630285166a05e/org.eclipse.persistence.core-2.7.3.jar;E:/study/.gradle2/caches/modules-2/files-2.1/org.eclipse.persistence/org.eclipse.persistence.asm/2.7.3/bf68bef31a2c838390af926de0171baa8e8a8e3a/org.eclipse.persistence.asm-2.7.3.jar;E:/study/.gradle2/caches/modules-2/files-2.1/org.eclipse.persistence/org.eclipse.persistence.antlr/2.7.3/b3b03751309f3f225b50402a502ce2b05555d7a4/org.eclipse.persistence.antlr-2.7.3.jar;E:/study/.gradle2/caches/modules-2/files-2.1/javax.json/javax.json-api/1.1.2/b38c52a6e180359108bd5e35dbeec7d1be45c535/javax.json-api-1.1.2.jar;E:/study/.gradle2/caches/modules-2/files-2.1/org.eclipse.persistence/org.eclipse.persistence.jpa.jpql/2.7.3/c7254bcdafd86a61c69e3d29e18d2b5cdb6ac13e/org.eclipse.persistence.jpa.jpql-2.7.3.jar;E:/study/.gradle2/caches/modules-2/files-2.1/org.hibernate.common/hibernate-commons-annotations/5.0.4.Final/965a18fdf939ee75e41f7918532d37b3a8350535/hibernate-commons-annotations-5.0.4.Final.jar;E:/study/.gradle2/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.3.2.Final/3789d00e859632e6c6206adc0c71625559e6e3b0/jboss-logging-3.3.2.Final.jar;E:/study/.gradle2/caches/modules-2/files-2.1/javax.persistence/javax.persistence-api/2.2/25665ac8c0b62f50e6488173233239120fc52c96/javax.persistence-api-2.2.jar;E:/study/.gradle2/caches/modules-2/files-2.1/org.javassist/javassist/3.23.1-GA/c072c13dcb7f705471c40bafb1536171df850ab2/javassist-3.23.1-GA.jar;E:/study/.gradle2/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy/1.8.17/9a36bc0f6eb9f941da0526ad89c4fb4b8ab580f0/byte-buddy-1.8.17.jar;E:/study/.gradle2/caches/modules-2/files-2.1/antlr/antlr/2.7.7/83cd2cd674a217ade95a4bb83a8a14f351f48bd0/antlr-2.7.7.jar;E:/study/.gradle2/caches/modules-2/files-2.1/org.jboss.spec.javax.transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/a8485cab9484dda36e9a8c319e76b5cc18797b58/jboss-transaction-api_1.2_spec-1.1.1.Final.jar;E:/study/.gradle2/caches/modules-2/files-2.1/org.jboss/jandex/2.0.5.Final/7060f67764565b9ee9d467e3ed0cb8a9c601b23a/jandex-2.0.5.Final.jar;E:/study/.gradle2/caches/modules-2/files-2.1/com.fasterxml/classmate/1.3.4/3d5f48f10bbe4eb7bd862f10c0583be2e0053c6/classmate-1.3.4.jar;E:/study/.gradle2/caches/modules-2/files-2.1/javax.activation/javax.activation-api/1.2.0/85262acf3ca9816f9537ca47d5adeabaead7cb16/javax.activation-api-1.2.0.jar;E:/study/.gradle2/caches/modules-2/files-2.1/dom4j/dom4j/1.6.1/5d3ccc056b6f056dbf0dddfdf43894b9065a8f94/dom4j-1.6.1.jar" />
+          <option name="noStdlib" value="true" />
+          <option name="noReflect" value="true" />
+          <option name="moduleName" value="spring-orm" />
+          <option name="jvmTarget" value="1.8" />
+          <option name="languageVersion" value="1.1" />
+          <option name="apiVersion" value="1.1" />
+          <option name="pluginOptions">
+            <array />
+          </option>
+          <option name="pluginClasspaths">
+            <array />
+          </option>
+          <option name="coroutinesState" value="warn" />
+          <option name="errors">
+            <ArgumentParseErrors />
+          </option>
+        </compilerArguments>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../spring-orm/out/production/classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../spring-orm/src/main">
+      <sourceFolder url="file://$MODULE_DIR$/../../../spring-orm/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../spring-orm/src/main/kotlin" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../spring-orm/src/main/resources" type="java-resource" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../spring-core/build/libs/spring-cglib-repack-3.2.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../spring-core/build/libs/spring-objenesis-repack-2.6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="spring.spring-jdbc.main" />
+    <orderEntry type="module" module-name="spring.spring-tx.main" />
+    <orderEntry type="module" module-name="spring.spring-beans.main" />
+    <orderEntry type="module" module-name="spring.spring-core.main" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.google.code.findbugs:jsr305:3.0.2" level="project" />
+    <orderEntry type="module" module-name="spring.spring-jcl.main" />
+    <orderEntry type="module" module-name="spring.spring-context.main" />
+    <orderEntry type="module" module-name="spring.spring-aop.main" />
+    <orderEntry type="module" module-name="spring.spring-web.main" />
+    <orderEntry type="library" name="Gradle: org.eclipse.persistence:org.eclipse.persistence.jpa:2.7.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.hibernate:hibernate-core:5.3.6.Final" level="project" />
+    <orderEntry type="library" name="Gradle: javax.servlet:javax.servlet-api:4.0.1" level="project" />
+    <orderEntry type="module" module-name="spring.spring-expression.main" />
+    <orderEntry type="library" name="Gradle: org.eclipse.persistence:javax.persistence:2.2.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.persistence:org.eclipse.persistence.core:2.7.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.persistence:org.eclipse.persistence.asm:2.7.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.persistence:org.eclipse.persistence.antlr:2.7.3" level="project" />
+    <orderEntry type="library" name="Gradle: javax.json:javax.json-api:1.1.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.persistence:org.eclipse.persistence.jpa.jpql:2.7.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.hibernate.common:hibernate-commons-annotations:5.0.4.Final" level="project" />
+    <orderEntry type="library" name="Gradle: org.jboss.logging:jboss-logging:3.3.2.Final" level="project" />
+    <orderEntry type="library" name="Gradle: javax.persistence:javax.persistence-api:2.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.javassist:javassist:3.23.1-GA" level="project" />
+    <orderEntry type="library" name="Gradle: net.bytebuddy:byte-buddy:1.8.17" level="project" />
+    <orderEntry type="library" name="Gradle: antlr:antlr:2.7.7" level="project" />
+    <orderEntry type="library" name="Gradle: org.jboss.spec.javax.transaction:jboss-transaction-api_1.2_spec:1.1.1.Final" level="project" />
+    <orderEntry type="library" name="Gradle: org.jboss:jandex:2.0.5.Final" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml:classmate:1.3.4" level="project" />
+    <orderEntry type="library" name="Gradle: javax.activation:javax.activation-api:1.2.0" level="project" />
+    <orderEntry type="library" name="Gradle: dom4j:dom4j:1.6.1" level="project" />
+  </component>
+</module>

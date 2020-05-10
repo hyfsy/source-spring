@@ -1,0 +1,84 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Gradle : org.springframework : spring-learn-mvc-5.1.1.BUILD-SNAPSHOT.war (exploded)">
+    <output-path>$PROJECT_DIR$/spring-learn-mvc/build/libs/exploded/spring-learn-mvc-5.1.1.BUILD-SNAPSHOT.war</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$">
+        <manifest>TWFuaWZlc3QtVmVyc2lvbjogMS4wDQoNCg==</manifest>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/spring-learn-mvc/build/libs/exploded/spring-learn-mvc-5.1.1.BUILD-SNAPSHOT.war/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="spring.spring-learn-mvc.main/web/Web Gradle : spring-learn-mvc-5.1.1.BUILD-SNAPSHOT.war" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="spring.spring-learn-mvc.main" />
+          <element id="dir-copy" path="$PROJECT_DIR$/spring-learn-mvc/out/production/resources" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Gradle: junit:junit:4.12" />
+          <element id="library" level="project" name="Gradle: cglib:cglib:3.2.8" />
+          <element id="library" level="project" name="Gradle: org.hamcrest:hamcrest-core:1.3" />
+          <element id="library" level="project" name="Gradle: org.ow2.asm:asm:6.2.1" />
+          <element id="library" level="project" name="Gradle: org.apache.ant:ant:1.10.3" />
+          <element id="library" level="project" name="Gradle: org.apache.ant:ant-launcher:1.10.3" />
+          <element id="file-copy" path="$PROJECT_DIR$/spring-core/build/libs/spring-cglib-repack-3.2.8.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/spring-core/build/libs/spring-objenesis-repack-2.6.jar" />
+          <element id="archive" name="org.springframework-spring-webmvc-5.1.1.BUILD-SNAPSHOT.jar">
+            <element id="module-output" name="spring.spring-webmvc.main" />
+            <element id="dir-copy" path="$PROJECT_DIR$/spring-webmvc/out/production/resources" />
+          </element>
+          <element id="archive" name="org.springframework-spring-context-5.1.1.BUILD-SNAPSHOT.jar">
+            <element id="module-output" name="spring.spring-context.main" />
+            <element id="dir-copy" path="$PROJECT_DIR$/spring-context/out/production/resources" />
+          </element>
+          <element id="archive" name="org.springframework-spring-aop-5.1.1.BUILD-SNAPSHOT.jar">
+            <element id="module-output" name="spring.spring-aop.main" />
+            <element id="dir-copy" path="$PROJECT_DIR$/spring-aop/out/production/resources" />
+          </element>
+          <element id="archive" name="org.springframework-spring-beans-5.1.1.BUILD-SNAPSHOT.jar">
+            <element id="module-output" name="spring.spring-beans.main" />
+            <element id="dir-copy" path="$PROJECT_DIR$/spring-beans/out/production/resources" />
+          </element>
+          <element id="archive" name="org.springframework-spring-core-5.1.1.BUILD-SNAPSHOT.jar">
+            <element id="module-output" name="spring.spring-core.main" />
+            <element id="dir-copy" path="$PROJECT_DIR$/spring-core/out/production/resources" />
+          </element>
+          <element id="archive" name="org.springframework-spring-jcl-5.1.1.BUILD-SNAPSHOT.jar">
+            <element id="module-output" name="spring.spring-jcl.main" />
+            <element id="dir-copy" path="$PROJECT_DIR$/spring-jcl/out/production/resources" />
+          </element>
+          <element id="archive" name="org.springframework-spring-expression-5.1.1.BUILD-SNAPSHOT.jar">
+            <element id="module-output" name="spring.spring-expression.main" />
+            <element id="dir-copy" path="$PROJECT_DIR$/spring-expression/out/production/resources" />
+          </element>
+          <element id="archive" name="org.springframework-spring-instrument-5.1.1.BUILD-SNAPSHOT.jar">
+            <element id="module-output" name="spring.spring-instrument.main" />
+            <element id="dir-copy" path="$PROJECT_DIR$/spring-instrument/out/production/resources" />
+          </element>
+          <element id="archive" name="org.springframework-spring-web-5.1.1.BUILD-SNAPSHOT.jar">
+            <element id="module-output" name="spring.spring-web.main" />
+            <element id="dir-copy" path="$PROJECT_DIR$/spring-web/out/production/resources" />
+          </element>
+          <element id="archive" name="org.springframework-spring-oxm-5.1.1.BUILD-SNAPSHOT.jar">
+            <element id="module-output" name="spring.spring-oxm.main" />
+            <element id="dir-copy" path="$PROJECT_DIR$/spring-oxm/out/production/resources" />
+          </element>
+          <element id="archive" name="org.springframework-spring-context-support-5.1.1.BUILD-SNAPSHOT.jar">
+            <element id="module-output" name="spring.spring-context-support.main" />
+            <element id="dir-copy" path="$PROJECT_DIR$/spring-context-support/out/production/resources" />
+          </element>
+          <element id="archive" name="org.springframework-spring-jdbc-5.1.1.BUILD-SNAPSHOT.jar">
+            <element id="module-output" name="spring.spring-jdbc.main" />
+            <element id="dir-copy" path="$PROJECT_DIR$/spring-jdbc/out/production/resources" />
+          </element>
+          <element id="archive" name="org.springframework-spring-tx-5.1.1.BUILD-SNAPSHOT.jar">
+            <element id="module-output" name="spring.spring-tx.main" />
+            <element id="dir-copy" path="$PROJECT_DIR$/spring-tx/out/production/resources" />
+          </element>
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:aop="http://www.springframework.org/schema/aop"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+	<bean id="transferService" class="com.hyf.aop.other.service.impl.TransferServiceImpl"/>
+
+
+	<bean id="aopLogger" class="com.hyf.aop.other.log.AopLogger"/>
+
+
+	<!--<aop:aspectj-autoproxy proxy-target-class="true" expose-proxy="true"/>-->
+
+	<aop:config expose-proxy="true">
+		<aop:pointcut id="pc1" expression="execution(* com.hyf.aop.other.service..*(..))"/>
+		<aop:pointcut id="pc2(str)" expression="execution(* com.hyf.aop.other.service..*(..)) and args(str)"/>
+		<aop:aspect id="aspect1" ref="aopLogger" order="5">
+			<aop:before method="before" pointcut-ref="pc1"/>
+			<aop:after-returning method="afterReturning" pointcut-ref="pc1" returning="rtn"/>
+			<aop:after-throwing method="afterThrowing" pointcut-ref="pc1" throwing="ex"/>
+			<aop:after method="after" pointcut-ref="pc1"/>
+			<aop:around method="around" pointcut-ref="pc1" />
+		</aop:aspect>
+	</aop:config>
+
+	<!-- test declareParents xml mode -->
+	<!--<bean id="parenService" class="com.hyf.aop.other.service.impl.ParentServiceImpl"/>-->
+	<!--<aop:config>-->
+		<!--<aop:aspect id="aspectParent" ref="aopLogger">-->
+			<!--<aop:declare-parents types-matching="com.hyf.aop.other.service.TransferServiceI+"-->
+								 <!--implement-interface="com.hyf.aop.other.service.ParentServiceI"-->
+								 <!--delegate-ref="parenService" />-->
+			<!--&lt;!&ndash;default-impl="com.hyf.aop.other.service.impl.ParentServiceImpl"/>&ndash;&gt;-->
+		<!--</aop:aspect>-->
+	<!--</aop:config>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</beans>

@@ -1,0 +1,59 @@
+plugins {
+    id 'war'
+}
+
+group 'org.springframework'
+version '5.1.1.BUILD-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+/**
+ * javax.servlet-api:3.1.0 -> 4.0.1
+ * > spring-web
+ * > spring-webmvc
+ * > spring-orm
+ * > spring
+ */
+
+dependencies {
+    compile group: 'junit', name: 'junit', version: '4.12'
+    optional(project(":spring-context"))
+    optional(project(":spring-jdbc"))
+    optional(project(":spring-web"))
+    optional(project(":spring-webmvc"))
+//    optional(project(":spring-webflux"))
+//    compile group: 'io.projectreactor', name: 'reactor-core', version: '3.2.0.RELEASE'
+//    optional("org.aspectj:aspectjweaver:${aspectjVersion}")
+    testCompile group: 'org.objenesis', name: 'objenesis', version: '2.6'
+    compile group: 'cglib', name: 'cglib', version: '3.2.8'
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//    测试tx时使用
+//    compile group: 'mysql', name: 'mysql-connector-java', version: '6.0.6'
+//    compile group: 'com.alibaba', name: 'druid', version: '1.1.10'
+}

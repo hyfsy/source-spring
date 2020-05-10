@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":spring-tx:main" external.linked.project.path="$MODULE_DIR$/../../../spring-tx" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="org.springframework" external.system.module.type="sourceSet" external.system.module.version="5.1.1.BUILD-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="3" platform="JVM 1.8" allPlatforms="JVM [1.8]" useProjectSettings="false">
+        <compilerSettings>
+          <option name="additionalArguments" value="-Xjsr305=strict" />
+        </compilerSettings>
+        <compilerArguments>
+          <option name="destination" value="$MODULE_DIR$/../../../spring-tx/build/classes/kotlin/main" />
+          <option name="classpath" value="$MODULE_DIR$/../../../spring-core/build/libs/spring-cglib-repack-3.2.8.jar;E:/study/idea2/source-spring/spring-core/build/libs/spring-objenesis-repack-2.6.jar;E:/study/.gradle2/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar;E:/study/idea2/source-spring/spring-jcl/build/libs/spring-jcl-5.1.1.BUILD-SNAPSHOT.jar;E:/study/.gradle2/caches/modules-2/files-2.1/javax.ejb/javax.ejb-api/3.2/6da48d715f67cd6ad55e96cc55030532d35062f1/javax.ejb-api-3.2.jar;E:/study/.gradle2/caches/modules-2/files-2.1/javax.interceptor/javax.interceptor-api/1.2.2/b076d5887ff19f7311fd70cbe03fa3d3d8628a8e/javax.interceptor-api-1.2.2.jar;E:/study/.gradle2/caches/modules-2/files-2.1/javax.resource/javax.resource-api/1.7.1/f86b4d697ecd992ec6c4c6053736db16d41dc57f/javax.resource-api-1.7.1.jar;E:/study/.gradle2/caches/modules-2/files-2.1/javax.transaction/javax.transaction-api/1.3/e006adf5cf3cca2181d16bd640ecb80148ec0fce/javax.transaction-api-1.3.jar;E:/study/.gradle2/caches/modules-2/files-2.1/com.ibm.websphere/uow/6.0.2.17/df754f8fe0c9c6f837d00ddcc12632fef16ec239/uow-6.0.2.17.jar" />
+          <option name="noStdlib" value="true" />
+          <option name="noReflect" value="true" />
+          <option name="moduleName" value="spring-tx" />
+          <option name="jvmTarget" value="1.8" />
+          <option name="languageVersion" value="1.1" />
+          <option name="apiVersion" value="1.1" />
+          <option name="pluginOptions">
+            <array />
+          </option>
+          <option name="pluginClasspaths">
+            <array />
+          </option>
+          <option name="coroutinesState" value="warn" />
+          <option name="errors">
+            <ArgumentParseErrors />
+          </option>
+        </compilerArguments>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../spring-tx/out/production/classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../spring-tx/src/main">
+      <sourceFolder url="file://$MODULE_DIR$/../../../spring-tx/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../spring-tx/src/main/kotlin" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../spring-tx/src/main/resources" type="java-resource" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../spring-core/build/libs/spring-cglib-repack-3.2.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../spring-core/build/libs/spring-objenesis-repack-2.6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="spring.spring-beans.main" />
+    <orderEntry type="module" module-name="spring.spring-core.main" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.google.code.findbugs:jsr305:3.0.2" level="project" />
+    <orderEntry type="module" module-name="spring.spring-jcl.main" />
+    <orderEntry type="module" module-name="spring.spring-context.main" />
+    <orderEntry type="module" module-name="spring.spring-aop.main" />
+    <orderEntry type="library" name="Gradle: javax.ejb:javax.ejb-api:3.2" level="project" />
+    <orderEntry type="library" name="Gradle: javax.interceptor:javax.interceptor-api:1.2.2" level="project" />
+    <orderEntry type="library" name="Gradle: javax.resource:javax.resource-api:1.7.1" level="project" />
+    <orderEntry type="library" name="Gradle: javax.transaction:javax.transaction-api:1.3" level="project" />
+    <orderEntry type="library" name="Gradle: com.ibm.websphere:uow:6.0.2.17" level="project" />
+    <orderEntry type="module" module-name="spring.spring-expression.main" />
+  </component>
+</module>

@@ -1,0 +1,89 @@
+plugins {
+    id 'java'
+}
+
+group 'org.springframework'
+version '4.10.BUILD-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'junit', name: 'junit', version: '4.12'
+    optional(project(":spring-context"))
+    optional(project(":spring-aop"))
+    optional(project(":spring-jdbc"))
+    optional("org.aspectj:aspectjweaver:${aspectjVersion}")
+    testCompile group: 'org.objenesis', name: 'objenesis', version: '2.6'
+    compile group: 'cglib', name: 'cglib', version: '3.2.8'
+//    测试tx时使用
+    compile group: 'mysql', name: 'mysql-connector-java', version: '6.0.6'
+    compile group: 'com.alibaba', name: 'druid', version: '1.1.10'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//    optional("org.objenesis.objenesis:2.6")
+//    optional("net.sf.cglib:3.2.8")
+
+//    // 不是这个
+//    testCompile group: 'cglib', name: 'cglib-nodep', version: '3.2.8'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//    optional("javax.annotation:javax.annotation-api:1.3.2")
+//    optional("javax.ejb:javax.ejb-api:3.2")
+//    optional("javax.enterprise.concurrent:javax.enterprise.concurrent-api:1.0")
+//    optional("javax.inject:javax.inject:1")
+//    optional("javax.interceptor:javax.interceptor-api:1.2.2")
+//    optional("javax.money:money-api:1.0.3")
+//    optional("javax.validation:validation-api:1.1.0.Final")
+//    optional("javax.xml.ws:jaxws-api:2.3.0")
+//    optional("org.codehaus.groovy:groovy:${groovyVersion}")
+//    optional("org.beanshell:bsh:2.0b5")
+//    optional("joda-time:joda-time:2.10")
+//    optional("org.hibernate:hibernate-validator:5.4.2.Final")
+//    optional("org.jetbrains.kotlin:kotlin-reflect:${kotlinVersion}")
+//    optional("org.jetbrains.kotlin:kotlin-stdlib:${kotlinVersion}")
+//    testCompile("org.codehaus.groovy:groovy-xml:${groovyVersion}")
+//    testCompile("org.codehaus.groovy:groovy-jsr223:${groovyVersion}")
+//    testCompile("org.codehaus.groovy:groovy-test:${groovyVersion}")
+//    testCompile("org.apache.commons:commons-pool2:2.6.0")
+//    testCompile("javax.inject:javax.inject-tck:1")
+//    testRuntime("javax.xml.bind:jaxb-api:2.3.0")
+//    testRuntime("org.glassfish:javax.el:3.0.1-b08")
+//    testRuntime("org.javamoney:moneta:1.3")
+}

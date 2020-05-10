@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="myParent" class="com.hyf.ioc.other.parent.MyParent" abstract="true">
+		<property name="id" value="1" />
+		<property name="name" value="张三" />
+	</bean>
+
+	<bean id="myChild" name="1,2,3;4 5" class="com.hyf.ioc.other.parent.MyChild" autowire="byType" parent="myParent">
+		<!-- 相当于 @Qualifier 注解 type为 Qualifier 全类名或注释了 @Qualifier 的注解全类名 -->
+		<qualifier value="7" type="org.springframework.beans.factory.annotation.Qualifier" />
+	</bean>
+
+	<alias name="3" alias="6" />
+
+
+
+
+	<!-- test circular references : depends-on error -->
+	<!--<bean id="depFirst" class="com.hyf.ioc.other.dependency.DepFirst" depends-on="depSecond" />-->
+	<!--<bean id="depSecond" class="com.hyf.ioc.other.dependency.DepSecond" depends-on="depFirst" />-->
+
+
+
+
+
+	<!-- test init/destroy lifecycle method -->
+	<!--<bean id="initPerson" class="com.hyf.ioc.other.init.InitPerson" init-method="init" destroy-method="destroyMethod" />-->
+
+
+
+
+
+	<!-- test nested property -->
+	<!--<bean id="nestI" class="com.hyf.ioc.other.nest.NestI">-->
+		<!--<property name="id" value="1" />-->
+	<!--</bean>-->
+	<!--<bean id="nestII" class="com.hyf.ioc.other.nest.NestII">-->
+		<!--<property name="nestI" ref="nestI" />-->
+		<!--<property name="name" value="张三" />-->
+	<!--</bean>-->
+	<!--<bean id="nestIII" class="com.hyf.ioc.other.nest.NestIII">-->
+		<!--<property name="nestII" ref="nestII" />-->
+		<!--<property name="nestII.nestI.id" value="10" />-->
+	<!--</bean>-->
+	<!--<bean id="nestCollection" class="com.hyf.ioc.other.nest.NestCollection">-->
+		<!--&lt;!&ndash; name 报红可以正常执行 &ndash;&gt;-->
+		<!--<property name="nestList[1]" value="1" />-->
+		<!--<property name="nestList[3]" value="3" />-->
+		<!--<property name="nestMap['a']" value="1" />-->
+	<!--</bean>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ===============================创建对象============================== -->
+
+    <bean id="account" class="com.spring.ioc.xml.ioc.Account" />
+
+    <bean id="instanceFactory" class="com.spring.ioc.xml.ioc.InstanceFactory" />
+    <bean id="accountInstance" factory-bean="instanceFactory" factory-method="getAccount" />
+
+    <bean id="accountStatic" class="com.spring.ioc.xml.ioc.StaticFactory" factory-method="getAccount" />
+
+    <!-- ===============================作用范围============================== -->
+
+    <bean id="accountScope" scope="prototype" class="com.spring.ioc.xml.ioc.Account" />
+
+    <!-- ===============================生命周期============================== -->
+
+    <bean id="accountLife" init-method="init" destroy-method="destroy" class="com.spring.ioc.xml.ioc.Account" />
+
+
+    <!-- 注入属性方式 -->
+    <bean id="now" class="java.util.Date" />
+    <bean id="userByConstructor" class="com.spring.ioc.xml.di.User" >
+        <!-- type和index要配对使用 -->
+        <constructor-arg type="java.lang.Integer" index="0" value="123" />
+        <constructor-arg name="userName" value="张三" />
+        <constructor-arg name="birthday" ref="now" />
+    </bean>
+
+    <bean id="userBySetMethod" class="com.spring.ioc.xml.di.User">
+        <property name="userId" value="123" />
+        <property name="userName" value="张三" />
+        <property name="birthday" ref="now" />
+    </bean>
+
+    <bean id="userWithCollection" class="com.spring.ioc.xml.di.User">
+        <!-- 注入list结构数据 -->
+        <property name="strList">
+            <set>
+                <value>asdf</value>
+                <value>asdf</value>
+            </set>
+        </property>
+        <!-- 注入map结构数据 -->
+        <property name="prop">
+            <map>
+                <entry key="a" value="a" />
+                <entry key="b">
+                    <value>b</value>
+                </entry>
+            </map>
+        </property>
+    </bean>
+</beans>

@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:aop="http://www.springframework.org/schema/aop"
+	   xmlns:tx="http://www.springframework.org/schema/tx"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        https://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/tx
+        https://www.springframework.org/schema/tx/spring-tx.xsd">
+
+
+	<tx:advice id="txAdvice" transaction-manager="txManager">
+		<tx:attributes>
+			<tx:method name="tra*" propagation="REQUIRED" isolation="READ_COMMITTED"
+					   read-only="true" timeout="20"
+					   rollback-for="NullPointException" no-rollback-for="Exception"/>
+		</tx:attributes>
+	</tx:advice>
+
+
+	<tx:annotation-driven transaction-manager="txManager" />
+
+
+	<aop:config expose-proxy="true">
+		<aop:pointcut id="pc1" expression="execution(* com.hyf.tx.other.service.MoneyServiceI.*(..))"/>
+		<aop:advisor advice-ref="txAdvice" pointcut-ref="pc1" />
+	</aop:config>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<bean id="moneyService" class="com.hyf.tx.other.service.impl.MoneyServiceImpl">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+	<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
+		<property name="driverClassName" value="com.mysql.cj.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://localhost:3306/learn?serverTimezone=UTC" />
+		<property name="username" value="root" />
+		<property name="password" value="hyflearn" />
+	</bean>
+
+	<bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+
+
+
+
+
+
+
+
+
+
+</beans>
