@@ -1,12 +1,23 @@
 package com.hyf.mvc.pojo;
 
+import org.hibernate.validator.constraints.Range;
+
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotEmpty;
+
 /**
  * @author baB_hyf
  * @date 2020/04/21
  */
 public class Person {
+
+	@Min(5)
 	private int id;
+
+	@NotEmpty
 	private String name;
+
+	@Range(min = 5, max = 10)
 	private Integer age;
 
 	public Person() {

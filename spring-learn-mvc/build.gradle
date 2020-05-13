@@ -32,6 +32,8 @@ dependencies {
     // 测试文件上传使用
     compile group: 'commons-fileupload', name: 'commons-fileupload', version: '1.3.1'
 
+    // 测试数据校验
+    optional("org.hibernate:hibernate-validator:6.0.16.Final")
 
 
 

@@ -201,6 +201,7 @@ public class ReloadableResourceBundleMessageSource extends AbstractResourceBased
 	@Override
 	@Nullable
 	protected MessageFormat resolveCode(String code, Locale locale) {
+		// 会先通过缓存的 properties 中查找 PropertiesHolder
 		if (getCacheMillis() < 0) {
 			PropertiesHolder propHolder = getMergedProperties(locale);
 			MessageFormat result = propHolder.getMessageFormat(code, locale);
@@ -208,6 +209,7 @@ public class ReloadableResourceBundleMessageSource extends AbstractResourceBased
 				return result;
 			}
 		}
+		// 直接遍历文件查找 PropertiesHolder
 		else {
 			for (String basename : getBasenameSet()) {
 				List<String> filenames = calculateAllFilenames(basename, locale);
@@ -244,6 +246,7 @@ public class ReloadableResourceBundleMessageSource extends AbstractResourceBased
 			List<String> filenames = calculateAllFilenames(basenames[i], locale);
 			for (int j = filenames.size() - 1; j >= 0; j--) {
 				String filename = filenames.get(j);
+				// 通过文件名获取 PropertiesHolder，额外包含文件的相关信息和用于文件刷新的功能
 				PropertiesHolder propHolder = getProperties(filename);
 				if (propHolder.getProperties() != null) {
 					mergedProps.putAll(propHolder.getProperties());
@@ -253,6 +256,7 @@ public class ReloadableResourceBundleMessageSource extends AbstractResourceBased
 				}
 			}
 		}
+		// cachedMergedProperties 中不存在才将新的 mergedHolder 存放进去
 		mergedHolder = new PropertiesHolder(mergedProps, latestTimestamp);
 		PropertiesHolder existing = this.cachedMergedProperties.putIfAbsent(locale, mergedHolder);
 		if (existing != null) {
@@ -272,6 +276,7 @@ public class ReloadableResourceBundleMessageSource extends AbstractResourceBased
 	 * @see #calculateFilenamesForLocale
 	 */
 	protected List<String> calculateAllFilenames(String basename, Locale locale) {
+		// 缓存中获取基础文件名对应的文件名列表
 		Map<Locale, List<String>> localeMap = this.cachedFilenames.get(basename);
 		if (localeMap != null) {
 			List<String> filenames = localeMap.get(locale);
@@ -281,6 +286,7 @@ public class ReloadableResourceBundleMessageSource extends AbstractResourceBased
 		}
 		List<String> filenames = new ArrayList<>(7);
 		filenames.addAll(calculateFilenamesForLocale(basename, locale));
+		// 使用系统默认语言提取出文件名称
 		if (isFallbackToSystemLocale() && !locale.equals(Locale.getDefault())) {
 			List<String> fallbackFilenames = calculateFilenamesForLocale(basename, Locale.getDefault());
 			for (String fallbackFilename : fallbackFilenames) {
@@ -319,6 +325,8 @@ public class ReloadableResourceBundleMessageSource extends AbstractResourceBased
 		String variant = locale.getVariant();
 		StringBuilder temp = new StringBuilder(basename);
 
+		// 添加三种文件名称
+
 		temp.append('_');
 		if (language.length() > 0) {
 			temp.append(language);
@@ -350,6 +358,7 @@ public class ReloadableResourceBundleMessageSource extends AbstractResourceBased
 		PropertiesHolder propHolder = this.cachedProperties.get(filename);
 		long originalTimestamp = -2;
 
+		// 不需要刷新，直接返回
 		if (propHolder != null) {
 			originalTimestamp = propHolder.getRefreshTimestamp();
 			if (originalTimestamp == -1 || originalTimestamp > System.currentTimeMillis() - getCacheMillis()) {
@@ -368,6 +377,7 @@ public class ReloadableResourceBundleMessageSource extends AbstractResourceBased
 		// At this point, we need to refresh...
 		if (this.concurrentRefresh && propHolder.getRefreshTimestamp() >= 0) {
 			// A populated but stale holder -> could keep using it.
+			// 另一个线程正在使用，此处直接返回
 			if (!propHolder.refreshLock.tryLock()) {
 				// Getting refreshed by another thread already ->
 				// let's return the existing properties for the time being.
@@ -382,6 +392,7 @@ public class ReloadableResourceBundleMessageSource extends AbstractResourceBased
 			if (existingHolder != null && existingHolder.getRefreshTimestamp() > originalTimestamp) {
 				return existingHolder;
 			}
+			// 刷新文件内容
 			return refreshProperties(filename, propHolder);
 		}
 		finally {
@@ -410,6 +421,7 @@ public class ReloadableResourceBundleMessageSource extends AbstractResourceBased
 				// Last-modified timestamp of file will just be read if caching with timeout.
 				try {
 					fileTimestamp = resource.lastModified();
+					// 文件没有进行任何修改，直接返回
 					if (propHolder != null && propHolder.getFileTimestamp() == fileTimestamp) {
 						if (logger.isDebugEnabled()) {
 							logger.debug("Re-caching properties for filename [" + filename + "] - file hasn't been modified");
@@ -427,6 +439,7 @@ public class ReloadableResourceBundleMessageSource extends AbstractResourceBased
 				}
 			}
 			try {
+				// 重新加载 properties 文件
 				Properties props = loadProperties(resource, filename);
 				propHolder = new PropertiesHolder(props, fileTimestamp);
 			}
@@ -464,13 +477,16 @@ public class ReloadableResourceBundleMessageSource extends AbstractResourceBased
 		Properties props = newProperties();
 		try (InputStream is = resource.getInputStream()) {
 			String resourceFilename = resource.getFilename();
+			// 加载 xml 文件
 			if (resourceFilename != null && resourceFilename.endsWith(XML_SUFFIX)) {
 				if (logger.isDebugEnabled()) {
 					logger.debug("Loading properties [" + resource.getFilename() + "]");
 				}
 				this.propertiesPersister.loadFromXml(props, is);
 			}
+			// 加载 properties 文件
 			else {
+				// 设置文件编码（指定文件的编码/默认编码）
 				String encoding = null;
 				if (this.fileEncodings != null) {
 					encoding = this.fileEncodings.getProperty(filename);
@@ -598,6 +614,7 @@ public class ReloadableResourceBundleMessageSource extends AbstractResourceBased
 			if (this.properties == null) {
 				return null;
 			}
+			// 1.从缓存过的 MessageFormat 中查找
 			Map<Locale, MessageFormat> localeMap = this.cachedMessageFormats.get(code);
 			if (localeMap != null) {
 				MessageFormat result = localeMap.get(locale);
@@ -605,6 +622,7 @@ public class ReloadableResourceBundleMessageSource extends AbstractResourceBased
 					return result;
 				}
 			}
+			// 2. 从当前 properties 中查找
 			String msg = this.properties.getProperty(code);
 			if (msg != null) {
 				if (localeMap == null) {

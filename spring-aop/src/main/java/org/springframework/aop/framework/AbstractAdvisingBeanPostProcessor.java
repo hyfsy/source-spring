@@ -37,6 +37,9 @@ public abstract class AbstractAdvisingBeanPostProcessor extends ProxyProcessorSu
 	@Nullable
 	protected Advisor advisor;
 
+	/**
+	 * 设置新的通知在 存在的顾问之前（顾问拦截器链）
+	 */
 	protected boolean beforeExistingAdvisors = false;
 
 	private final Map<Class<?>, Boolean> eligibleBeans = new ConcurrentHashMap<>(256);
@@ -82,12 +85,16 @@ public abstract class AbstractAdvisingBeanPostProcessor extends ProxyProcessorSu
 			}
 		}
 
+		// 该类能应用切入点表达式 (& 非原始bean对象)
 		if (isEligible(bean, beanName)) {
 			ProxyFactory proxyFactory = prepareProxyFactory(bean, beanName);
+			// 非 CGLIB 代理需要暴露目标接口(增强)
 			if (!proxyFactory.isProxyTargetClass()) {
 				evaluateProxyInterfaces(bean.getClass(), proxyFactory);
 			}
+			// 代理对象添加顾问
 			proxyFactory.addAdvisor(this.advisor);
+			// 生成代理对象前 可自定义代理工厂
 			customizeProxyFactory(proxyFactory);
 			return proxyFactory.getProxy(getProxyClassLoader());
 		}
@@ -123,6 +130,7 @@ public abstract class AbstractAdvisingBeanPostProcessor extends ProxyProcessorSu
 	 * @see AopUtils#canApply(Advisor, Class)
 	 */
 	protected boolean isEligible(Class<?> targetClass) {
+		// 先尝试从缓存中获取 该类是否有资格（能应用该切入点表达式(并且为非原始bean)）
 		Boolean eligible = this.eligibleBeans.get(targetClass);
 		if (eligible != null) {
 			return eligible;
@@ -130,6 +138,7 @@ public abstract class AbstractAdvisingBeanPostProcessor extends ProxyProcessorSu
 		if (this.advisor == null) {
 			return false;
 		}
+		// 该类可以应用该通知
 		eligible = AopUtils.canApply(this.advisor, targetClass);
 		this.eligibleBeans.put(targetClass, eligible);
 		return eligible;

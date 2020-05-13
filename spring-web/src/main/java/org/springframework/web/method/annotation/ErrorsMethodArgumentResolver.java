@@ -58,14 +58,15 @@ public class ErrorsMethodArgumentResolver implements HandlerMethodArgumentResolv
 				"Errors/BindingResult argument only supported on regular handler methods");
 
 		ModelMap model = mavContainer.getModel();
-		// 获取当前 MAV 中的最后一个属性
+		// 获取当前 MAV 中的最后一个BindingResult属性
 		String lastKey = CollectionUtils.lastElement(model.keySet());
 		// 该 Errors 之前的参数值校验完毕后，肯定会放一个 BindingResult 对象到 MAV 中
+		// 由于使用 DataBinder 校验，所以可能不支持 基本类型参数的校验
 		if (lastKey != null && lastKey.startsWith(BindingResult.MODEL_KEY_PREFIX)) {
 			return model.get(lastKey);
 		}
 
-		// 声明了 Erros 对象，但是没有执行校验处理，导致上面无法获取到 lastKey
+		// 声明了 Errors 对象，但是没有执行校验处理，导致上面无法获取到 lastKey
 		throw new IllegalStateException(
 				"An Errors/BindingResult argument is expected to be declared immediately after " +
 				"the model attribute, the @RequestBody or the @RequestPart arguments " +

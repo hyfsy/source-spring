@@ -1,6 +1,6 @@
 package com.hyf.test;
 
-import com.hyf.mvc_xml.pojo.Person;
+import com.hyf.mvc.pojo.Person;
 import org.junit.Test;
 import org.springframework.beans.*;
 import org.springframework.validation.DataBinder;

@@ -1,10 +1,13 @@
 package com.hyf.mvc.controller;
 
+import com.hyf.mvc.pojo.Person;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+
+import javax.validation.Valid;
 
 /**
  * @author baB_hyf
@@ -50,9 +53,15 @@ public class HelloController {
 	}
 
 	@RequestMapping("error")
-	public String hello3(@Validated String str, BindingResult result) {
-		System.out.println("validated: " + str);
+	public String hello3(@Valid Person person, BindingResult result) {
+		System.out.println("validated: " + person);
+		System.out.println("错误数量：" + result.getErrorCount());
 		System.out.println("bindingResult: " + result);
 		return "success";
+	}
+
+	@ModelAttribute
+	public void initPojo(Model model) {
+		model.addAttribute("person", new Person(1, "zs", 20));
 	}
 }

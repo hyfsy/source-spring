@@ -155,21 +155,28 @@ public class SpringValidatorAdapter implements SmartValidator, javax.validation.
 			if (fieldError == null || !fieldError.isBindingFailure()) {
 				try {
 					ConstraintDescriptor<?> cd = violation.getConstraintDescriptor();
+					// 字段上的注解名称
 					String errorCode = determineErrorCode(cd);
+					// 包含错误消息和校验注解上的数据
 					Object[] errorArgs = getArgumentsForConstraint(errors.getObjectName(), field, cd);
 					if (errors instanceof BindingResult) {
 						// Can do custom FieldError registration with invalid value from ConstraintViolation,
 						// as necessary for Hibernate Validator compatibility (non-indexed set path in field)
 						BindingResult bindingResult = (BindingResult) errors;
+						// 获取字段在对象中的路径，如：objName.fieldName
 						String nestedField = bindingResult.getNestedPath() + field;
+						// 对象绑定错误
 						if (nestedField.isEmpty()) {
 							String[] errorCodes = bindingResult.resolveMessageCodes(errorCode);
 							ObjectError error = new ObjectError(
 									errors.getObjectName(), errorCodes, errorArgs, violation.getMessage());
+							// 只是保存一下
 							error.wrap(violation);
 							bindingResult.addError(error);
 						}
+						// 字段绑定错误
 						else {
+							// 获取拒绝的字段值
 							Object rejectedValue = getRejectedValue(field, violation, bindingResult);
 							String[] errorCodes = bindingResult.resolveMessageCodes(errorCode, field);
 							FieldError error = new FieldError(errors.getObjectName(), nestedField,
@@ -264,10 +271,12 @@ public class SpringValidatorAdapter implements SmartValidator, javax.validation.
 	 */
 	protected Object[] getArgumentsForConstraint(String objectName, String field, ConstraintDescriptor<?> descriptor) {
 		List<Object> arguments = new ArrayList<>();
+		// 1.添加 MessageSourceResolvable ，包含字段描述信息
 		arguments.add(getResolvableField(objectName, field));
 		// Using a TreeMap for alphabetical ordering of attribute names
 		Map<String, Object> attributesToExpose = new TreeMap<>();
 		descriptor.getAttributes().forEach((attributeName, attributeValue) -> {
+			// 注解属性不是默认的属性，为用户自定义属性
 			if (!internalAnnotationAttributes.contains(attributeName)) {
 				if (attributeValue instanceof String) {
 					attributeValue = new ResolvableAttribute(attributeValue.toString());
@@ -275,6 +284,7 @@ public class SpringValidatorAdapter implements SmartValidator, javax.validation.
 				attributesToExpose.put(attributeName, attributeValue);
 			}
 		});
+		// 2.添加注解上的信息
 		arguments.addAll(attributesToExpose.values());
 		return arguments.toArray();
 	}
@@ -310,10 +320,12 @@ public class SpringValidatorAdapter implements SmartValidator, javax.validation.
 	@Nullable
 	protected Object getRejectedValue(String field, ConstraintViolation<Object> violation, BindingResult bindingResult) {
 		Object invalidValue = violation.getInvalidValue();
+		// TODO 判断进入？
 		if (!"".equals(field) && !field.contains("[]") &&
 				(invalidValue == violation.getLeafBean() || field.contains("[") || field.contains("."))) {
 			// Possibly a bean constraint with property path: retrieve the actual property value.
 			// However, explicitly avoid this for "address[]" style paths that we can't handle.
+			// 获取 bindingResult 中包装的对象的实际属性值
 			invalidValue = bindingResult.getRawFieldValue(field);
 		}
 		return invalidValue;
@@ -374,6 +386,8 @@ public class SpringValidatorAdapter implements SmartValidator, javax.validation.
 
 
 	/**
+	 * 适配自定义的注解的属性
+	 *
 	 * Wrapper for a String attribute which can be resolved via a {@code MessageSource},
 	 * falling back to the original attribute as a default value otherwise.
 	 */

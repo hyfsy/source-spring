@@ -218,7 +218,7 @@ public abstract class AopUtils {
 	public static boolean canApply(Pointcut pc, Class<?> targetClass, boolean hasIntroductions) {
 		Assert.notNull(pc, "Pointcut must not be null");
 		// 先判断 Pointcut 是否可以匹配目标类。如果不可以，则返回 false
-		// 类过滤，一般都为 !true...
+		// 类过滤，一般都为 !true...  注解情况会额外判断类上是否有指定注解
         if (!pc.getClassFilter().matches(targetClass)) {
 			return false;
 		}

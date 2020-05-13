@@ -52,11 +52,14 @@ public abstract class AbstractBeanFactoryAwareAdvisingPostProcessor extends Abst
 
 	@Override
 	protected ProxyFactory prepareProxyFactory(Object bean, String beanName) {
+		// beanFactory 中设置bean的原生类型属性
 		if (this.beanFactory != null) {
 			AutoProxyUtils.exposeTargetClass(this.beanFactory, beanName, bean.getClass());
 		}
 
 		ProxyFactory proxyFactory = super.prepareProxyFactory(bean, beanName);
+
+		// 设置 CGLIB 代理
 		if (!proxyFactory.isProxyTargetClass() && this.beanFactory != null &&
 				AutoProxyUtils.shouldProxyTargetClass(this.beanFactory, beanName)) {
 			proxyFactory.setProxyTargetClass(true);

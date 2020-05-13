@@ -109,7 +109,7 @@ public final class ModelFactory {
 	public void initModel(NativeWebRequest request, ModelAndViewContainer container, HandlerMethod handlerMethod)
 			throws Exception {
 
-		// 获取 @SessionAttributes 存储在 request 中的值
+		// 获取 @SessionAttributes 中指定的存储在 request 中的值
 		Map<String, ?> sessionAttributes = this.sessionAttributesHandler.retrieveAttributes(request);
 		container.mergeAttributes(sessionAttributes);
 		// 通过 request 中的参数调用 @ModelAttribute 方法，返回值存入 container
@@ -166,7 +166,7 @@ public final class ModelFactory {
 
 	private ModelMethod getNextModelMethod(ModelAndViewContainer container) {
 		for (ModelMethod modelMethod : this.modelMethods) {
-			// ModelAndViewContainer 存在该方法所有的依赖属性，则直接返回即可
+			// ModelAndViewContainer 存在该方法所有的依赖参数属性，则直接返回即可
 			if (modelMethod.checkDependencies(container)) {
 				this.modelMethods.remove(modelMethod);
 				return modelMethod;

@@ -422,7 +422,7 @@ public class ExceptionHandlerExceptionResolver extends AbstractHandlerMethodExce
 			return null;
 		}
 
-		// 如果 mavContainer 已处理，则返回“空”的 ModelAndView 对象。
+		// 如果 mavContainer 已处理，则返回"空"的 ModelAndView 对象
 		if (mavContainer.isRequestHandled()) {
 			return new ModelAndView();
         // 如果 mavContainer 未处，则基于 `mavContainer` 生成 ModelAndView 对象
@@ -431,6 +431,7 @@ public class ExceptionHandlerExceptionResolver extends AbstractHandlerMethodExce
 			HttpStatus status = mavContainer.getStatus();
 			// 创建 ModelAndView 对象，并设置相关属性
 			ModelAndView mav = new ModelAndView(mavContainer.getViewName(), model, status);
+			// ???
 			mav.setViewName(mavContainer.getViewName());
 			if (!mavContainer.isViewReference()) {
 				mav.setView((View) mavContainer.getView());

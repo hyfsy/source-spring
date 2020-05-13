@@ -36,6 +36,9 @@ import org.springframework.lang.Nullable;
  */
 public class CustomValidatorBean extends SpringValidatorAdapter implements Validator, InitializingBean {
 
+	/**
+	 * 通过下面三个属性自定义一个校验器
+	 */
 	@Nullable
 	private ValidatorFactory validatorFactory;
 

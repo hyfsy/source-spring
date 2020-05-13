@@ -155,6 +155,7 @@ public class ServletRequestAttributes extends AbstractRequestAttributes {
 			if (session != null) {
 				try {
 					Object value = session.getAttribute(name);
+					// 获取属性值时存起来，标记为可能更新的session属性
 					if (value != null) {
 						this.sessionAttributesToUpdate.put(name, value);
 					}
@@ -179,6 +180,7 @@ public class ServletRequestAttributes extends AbstractRequestAttributes {
 		}
 		else {
 			HttpSession session = obtainSession();
+			// 重新设置了session，不需要标记了
 			this.sessionAttributesToUpdate.remove(name);
 			session.setAttribute(name, value);
 		}
@@ -278,9 +280,11 @@ public class ServletRequestAttributes extends AbstractRequestAttributes {
 				try {
 					for (Map.Entry<String, Object> entry : this.sessionAttributesToUpdate.entrySet()) {
 						String name = entry.getKey();
+						// 用户设置的覆盖的session值
 						Object newValue = entry.getValue();
+						// 引用相同，但可能值已经被更改了
 						Object oldValue = session.getAttribute(name);
-						// 旧值与新值相同？？？ & session属性值是可变的
+						// 修改session属性值，注意 == ，不是equals() & 不是基本类型等包装类
 						if (oldValue == newValue && !isImmutableSessionAttribute(name, newValue)) {
 							session.setAttribute(name, newValue);
 						}

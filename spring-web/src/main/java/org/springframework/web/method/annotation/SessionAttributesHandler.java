@@ -114,6 +114,7 @@ public class SessionAttributesHandler {
 	public void storeAttributes(WebRequest request, Map<String, ?> attributes) {
 		attributes.forEach((name, value) -> {
 			if (value != null && isHandlerSessionAttribute(name, value.getClass())) {
+				// 将参数放入请求中，指定作用范围为session
 				this.sessionAttributeStore.storeAttribute(request, name, value);
 			}
 		});

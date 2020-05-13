@@ -44,6 +44,9 @@ public class BeanValidationPostProcessor implements BeanPostProcessor, Initializ
 	@Nullable
 	private Validator validator;
 
+	/**
+	 * 指定校验 在bean对象 初始化前校验 还是 在初始化完毕后再校验
+	 */
 	private boolean afterInitialization = false;
 
 

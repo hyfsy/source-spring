@@ -148,6 +148,12 @@ public class DefaultMessageCodesResolver implements MessageCodesResolver, Serial
 	 */
 	@Override
 	public String[] resolveMessageCodes(String errorCode, String objectName, String field, @Nullable Class<?> fieldType) {
+
+		// 1. errorCode objectName field
+		// 2. errorCode field
+		// 3. errorCode class-full-path
+		// 4. errorCode
+
 		Set<String> codeList = new LinkedHashSet<>();
 		List<String> fieldList = new ArrayList<>();
 		buildFieldList(field, fieldList);

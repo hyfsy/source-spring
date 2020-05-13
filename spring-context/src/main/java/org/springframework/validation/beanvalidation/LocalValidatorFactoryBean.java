@@ -259,6 +259,7 @@ public class LocalValidatorFactoryBean extends SpringValidatorAdapter
 		// Try Hibernate Validator 5.2's externalClassLoader(ClassLoader) method
 		if (this.applicationContext != null) {
 			try {
+				// 该方法只有在 HibernateValidatorConfiguration 中存在
 				Method eclMethod = configuration.getClass().getMethod("externalClassLoader", ClassLoader.class);
 				ReflectionUtils.invokeMethod(eclMethod, configuration, this.applicationContext.getClassLoader());
 			}
@@ -310,6 +311,10 @@ public class LocalValidatorFactoryBean extends SpringValidatorAdapter
 		setTargetValidator(this.validatorFactory.getValidator());
 	}
 
+	/**
+	 * 使用 ParameterNameDiscoverer 获取构造函数或方法上的参数名称
+	 * 好像并没有用的样子
+	 */
 	private void configureParameterNameProvider(ParameterNameDiscoverer discoverer, Configuration<?> configuration) {
 		final ParameterNameProvider defaultProvider = configuration.getDefaultParameterNameProvider();
 		configuration.parameterNameProvider(new ParameterNameProvider() {

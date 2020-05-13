@@ -16,12 +16,24 @@ dependencies {
     optional(project(":spring-context"))
     optional(project(":spring-aop"))
     optional(project(":spring-jdbc"))
+    optional(project(":spring-test"))
     optional("org.aspectj:aspectjweaver:${aspectjVersion}")
     testCompile group: 'org.objenesis', name: 'objenesis', version: '2.6'
     compile group: 'cglib', name: 'cglib', version: '3.2.8'
-//    测试tx时使用
+
+    //测试tx时使用
     compile group: 'mysql', name: 'mysql-connector-java', version: '6.0.6'
     compile group: 'com.alibaba', name: 'druid', version: '1.1.10'
+
+    // 测试校验使用
+    compile group: 'javax.validation', name: 'validation-api', version: '2.0.1.Final'
+    // 5.4.2不支持 @NotEmpty 等注解
+    //optional("org.hibernate:hibernate-validator:5.4.2.Final")
+    optional("org.hibernate:hibernate-validator:6.0.16.Final")
+    // 非 tomcat 需要添加
+    optional("org.glassfish:javax.el:3.0.1-b08")
+    optional("javax.el:javax.el-api:3.0.1-b04")
+
 
 
 

@@ -93,6 +93,7 @@ public class MethodValidationInterceptor implements MethodInterceptor {
 		Method methodToValidate = invocation.getMethod();
 		Set<ConstraintViolation<Object>> result;
 
+		// 校验方法参数
 		try {
 			result = execVal.validateParameters(
 					invocation.getThis(), methodToValidate, invocation.getArguments(), groups);
@@ -109,8 +110,10 @@ public class MethodValidationInterceptor implements MethodInterceptor {
 			throw new ConstraintViolationException(result);
 		}
 
+		// 执行方法
 		Object returnValue = invocation.proceed();
 
+		// 校验返回值
 		result = execVal.validateReturnValue(invocation.getThis(), methodToValidate, returnValue, groups);
 		if (!result.isEmpty()) {
 			throw new ConstraintViolationException(result);
@@ -127,10 +130,13 @@ public class MethodValidationInterceptor implements MethodInterceptor {
 	 * @return the applicable validation groups as a Class array
 	 */
 	protected Class<?>[] determineValidationGroups(MethodInvocation invocation) {
+		// 获取调用的方法上的注解信息
 		Validated validatedAnn = AnnotationUtils.findAnnotation(invocation.getMethod(), Validated.class);
+		// 方法上没有，获取类上的注解信息
 		if (validatedAnn == null) {
 			validatedAnn = AnnotationUtils.findAnnotation(invocation.getThis().getClass(), Validated.class);
 		}
+		// 获取校验组信息
 		return (validatedAnn != null ? validatedAnn.value() : new Class<?>[0]);
 	}
 
