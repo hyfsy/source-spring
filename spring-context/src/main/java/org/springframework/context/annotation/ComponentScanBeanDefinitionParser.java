@@ -126,6 +126,7 @@ public class ComponentScanBeanDefinitionParser implements BeanDefinitionParser {
 			parserContext.getReaderContext().error(ex.getMessage(), parserContext.extractSource(element), ex.getCause());
 		}
 
+		// 配置自定义过滤规则
 		parseTypeFilters(element, scanner, parserContext);
 
 		return scanner;

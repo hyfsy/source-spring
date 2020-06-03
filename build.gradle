@@ -316,3 +316,9 @@ def qualifyVersionIfNecessary(version) {
 	}
 	return version
 }
+
+//idea {
+//	module {
+//		inheritOutputDirs = true
+//	}
+//}

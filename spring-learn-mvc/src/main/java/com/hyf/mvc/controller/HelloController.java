@@ -26,13 +26,13 @@ public class HelloController {
 	@RequestMapping("hello2/{aaa}/a")
 	public String hello2(@PathVariable String aaa,
 						 @MatrixVariable(pathVar = "aaa", name = "a") String a) {
+
 		System.out.println("variable: " + aaa);
 		System.out.println("matrix: " + a);
 
-		// path.charAt(i) > ' ' && path.charAt(i) != 127
-
 		return "success";
 	}
+
 
 	@RequestMapping("requestparam")
 	public String hello4(@RequestParam String str) {

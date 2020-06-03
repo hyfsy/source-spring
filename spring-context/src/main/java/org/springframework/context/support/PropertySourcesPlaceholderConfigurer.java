@@ -126,8 +126,10 @@ public class PropertySourcesPlaceholderConfigurer extends PlaceholderConfigurerS
 	 */
 	@Override
 	public void postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory) throws BeansException {
+		// 如果用户没有指定 propertySources，则默认从 环境 和 指定的配置文件路径 中获取所有属性
 		if (this.propertySources == null) {
 			this.propertySources = new MutablePropertySources();
+			// 环境中获取属性
 			if (this.environment != null) {
 				this.propertySources.addLast(
 					new PropertySource<Environment>(ENVIRONMENT_PROPERTIES_PROPERTY_SOURCE_NAME, this.environment) {
@@ -139,6 +141,7 @@ public class PropertySourcesPlaceholderConfigurer extends PlaceholderConfigurerS
 					}
 				);
 			}
+			// 合并指定的配置文件路径资源
 			try {
 				PropertySource<?> localPropertySource =
 						new PropertiesPropertySource(LOCAL_PROPERTIES_PROPERTY_SOURCE_NAME, mergeProperties());

@@ -35,6 +35,12 @@ dependencies {
     optional("javax.el:javax.el-api:3.0.1-b04")
 
 
+    // idea 2019.3 编译不打包资源文件
+    idea {
+        module {
+            inheritOutputDirs = true
+        }
+    }
 
 
 

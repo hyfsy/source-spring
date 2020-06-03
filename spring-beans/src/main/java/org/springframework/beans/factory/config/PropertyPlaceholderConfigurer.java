@@ -64,16 +64,24 @@ import org.springframework.util.StringValueResolver;
  */
 public class PropertyPlaceholderConfigurer extends PlaceholderConfigurerSupport {
 
-	/** Never check system properties. */
+	/**
+	 * 找不到属性值时，不尝试从系统属性中获取
+	 *
+	 * Never check system properties.
+	 */
 	public static final int SYSTEM_PROPERTIES_MODE_NEVER = 0;
 
 	/**
+	 * 找不到属性值 再尝试从系统属性中获取
+	 *
 	 * Check system properties if not resolvable in the specified properties.
 	 * This is the default.
 	 */
 	public static final int SYSTEM_PROPERTIES_MODE_FALLBACK = 1;
 
 	/**
+	 * 首先从系统属性中获取，再从自己配置的属性中获取
+	 *
 	 * Check system properties first, before trying the specified properties.
 	 * This allows system properties to override any other property source.
 	 */

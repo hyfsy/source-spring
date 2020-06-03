@@ -151,6 +151,7 @@ public abstract class PropertiesLoaderSupport {
 			loadProperties(result);
 		}
 
+		// 本地属性覆盖
 		if (this.localProperties != null) {
 			for (Properties localProp : this.localProperties) {
 				CollectionUtils.mergePropertiesIntoMap(localProp, result);

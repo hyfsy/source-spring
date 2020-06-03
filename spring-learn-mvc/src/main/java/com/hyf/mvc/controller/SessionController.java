@@ -13,17 +13,18 @@ import org.springframework.web.bind.support.SessionStatus;
  * @date 2020/05/12
  */
 @Controller
-@SessionAttributes({"name", "jsessionid", "JSESSIONID"})
+@SessionAttributes({"name", "JSESSIONID"})
 public class SessionController {
 
 	@RequestMapping("session")
-	public String testSessionAttribute(@ModelAttribute("JSESSIONID") String JSESSIONID, ModelMap model, SessionStatus status) {
+	public String testSessionAttribute(String jsessionid, @ModelAttribute("JSESSIONID") String JSESSIONID, ModelMap model, SessionStatus status) {
 		System.out.println("JSESSIONID: " + JSESSIONID);
-		if(JSESSIONID != null) {
-			model.remove("name");
-//			status.setComplete();
-			return "success";
-		}
+		System.out.println(jsessionid);
+//		if(JSESSIONID != null) {
+//			model.remove("name");
+////			status.setComplete();
+//			return "success";
+//		}
 		return "redirect:/session";
 	}
 
