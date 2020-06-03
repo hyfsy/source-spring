@@ -9,10 +9,10 @@
 		<param-name>contextConfigLocation</param-name>
 		<param-value>classpath:spring.xml</param-value>
 	</context-param>
-<!--	<context-param>-->
-<!--		<param-name>contextClass</param-name>-->
-<!--		<param-value>com.hyf.mvc_xml.pojo.Person</param-value>-->
-<!--	</context-param>-->
+	<!--	<context-param>-->
+	<!--		<param-name>contextClass</param-name>-->
+	<!--		<param-value>com.hyf.mvc_xml.pojo.Person</param-value>-->
+	<!--	</context-param>-->
 	<!--
 		contextClass
 		namespace   applicationContext【.xml】
@@ -42,16 +42,16 @@
 	</filter-mapping>
 
 	<listener>
-	<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
 
 	<servlet>
 		<servlet-name>dispatcherServlet</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 		<!-- 文件上传使用 -->
-		<multipart-config>
-			<location>E:\study\idea2\source-spring\spring-learn-mvc\src\main\webapp\file</location>
-		</multipart-config>
+		<!--		<multipart-config>-->
+		<!--			<location>E:\study\idea2\source-spring\spring-learn-mvc\src\main\webapp\file</location>-->
+		<!--		</multipart-config>-->
 		<init-param>
 			<param-name>contextConfigLocation</param-name>
 			<param-value>classpath:spring-mvc.xml</param-value>
@@ -64,7 +64,9 @@
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>dispatcherServlet</servlet-name>
-		<url-pattern>/</url-pattern>
+		<!-- 么得问题 -->
+		<!-- 上面在瞎说，查看三次请求寻找问题 -->
+		<url-pattern>/*</url-pattern>
 	</servlet-mapping>
 
 </web-app>
