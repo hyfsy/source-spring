@@ -34,6 +34,8 @@ import org.springframework.util.StringUtils;
 public abstract class AutoProxyUtils {
 
 	/**
+	 * 是否强制CGLIB代理目标类的bean定义属性key
+	 *
 	 * Bean definition attribute that may indicate whether a given bean is supposed
 	 * to be proxied with its target class (in case of it getting proxied in the first
 	 * place). The value is {@code Boolean.TRUE} or {@code Boolean.FALSE}.
@@ -46,6 +48,8 @@ public abstract class AutoProxyUtils {
 			Conventions.getQualifiedAttributeName(AutoProxyUtils.class, "preserveTargetClass");
 
 	/**
+	 * 源目标类类型在bean定义中的key
+	 *
 	 * Bean definition attribute that indicates the original target class of an
 	 * auto-proxied bean, e.g. to be used for the introspection of annotations
 	 * on the target class behind an interface-based proxy.

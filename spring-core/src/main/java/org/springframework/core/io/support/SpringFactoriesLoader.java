@@ -28,6 +28,8 @@ import java.net.URL;
 import java.util.*;
 
 /**
+ * spring内部用于获取自定义bean工厂的加载机制
+ *
  * General purpose factory loading mechanism for internal use within the framework.
  *
  * <p>{@code SpringFactoriesLoader} {@linkplain #loadFactories loads} and instantiates
