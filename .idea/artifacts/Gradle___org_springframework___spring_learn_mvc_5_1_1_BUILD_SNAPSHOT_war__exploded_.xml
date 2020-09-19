@@ -2,14 +2,9 @@
   <artifact type="exploded-war" name="Gradle : org.springframework : spring-learn-mvc-5.1.1.BUILD-SNAPSHOT.war (exploded)">
     <output-path>$PROJECT_DIR$/spring-learn-mvc/build/libs/exploded/spring-learn-mvc-5.1.1.BUILD-SNAPSHOT.war</output-path>
     <properties id="gradle-properties">
-      <options external-project-path="$PROJECT_DIR$">
-        <manifest>TWFuaWZlc3QtVmVyc2lvbjogMS4wDQoNCg==</manifest>
-      </options>
+      <options external-project-path="$PROJECT_DIR$" />
     </properties>
     <root id="root">
-      <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/spring-learn-mvc/build/libs/exploded/spring-learn-mvc-5.1.1.BUILD-SNAPSHOT.war/META-INF/MANIFEST.MF" />
-      </element>
       <element id="javaee-facet-resources" facet="spring.spring-learn-mvc.main/web/Web Gradle : spring-learn-mvc-5.1.1.BUILD-SNAPSHOT.war" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">

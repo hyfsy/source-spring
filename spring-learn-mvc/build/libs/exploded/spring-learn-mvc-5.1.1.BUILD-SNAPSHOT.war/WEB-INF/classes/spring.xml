@@ -7,7 +7,7 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context-4.0.xsd">
 
-    <context:component-scan base-package="com.hyf.mvc_xml.controller" />
+    <context:component-scan base-package="com.hyf.mvc.controller" />
 
-	<bean id="person" class="com.hyf.mvc_xml.pojo.Person" />
+	<bean id="person" class="com.hyf.mvc.pojo.Person" />
 </beans>

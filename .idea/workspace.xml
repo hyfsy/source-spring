@@ -5,60 +5,187 @@
       <artifact name="Gradle : org.springframework : spring-learn-mvc-5.1.1.BUILD-SNAPSHOT.war (exploded)" />
     </artifacts-to-build>
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3bedc73-1ba3-4144-ae89-53f3b8f957a3" name="Default Changelist" comment="文件上传代码解析">
-      <change afterPath="$PROJECT_DIR$/spring-learn-mvc/src/main/java/com/hyf/mvc/controller/SessionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-learn-mvc/src/test/java/com/hyf/test/LocaleTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-learn-mvc/src/test/java/com/hyf/test/Test6.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-learn/src/main/java/com/hyf/valid/ValidConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-learn/src/main/java/com/hyf/valid/ValidTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-learn/src/main/java/com/hyf/valid/other/groups/Group1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-learn/src/main/java/com/hyf/valid/other/groups/Group2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-learn/src/main/java/com/hyf/valid/other/pojo/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-learn/src/main/java/com/hyf/valid/other/pojo/Teacher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-learn/src/main/java/com/hyf/valid/other/service/TeacherServiceI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-learn/src/main/java/com/hyf/valid/other/service/impl/TeacherServiceImpl.java" afterDir="false" />
+    <list default="true" id="c3bedc73-1ba3-4144-ae89-53f3b8f957a3" name="Default Changelist" comment="数据校验解析及测试代码上传">
+      <change afterPath="$PROJECT_DIR$/buildSrc/src/main/resources/rebel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-aop/src/main/resources/rebel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-aspects/src/main/resources/rebel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-beans/src/main/resources/rebel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-context-indexer/src/main/resources/rebel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-context-support/src/main/resources/rebel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-context/src/main/resources/rebel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-core/src/main/resources/rebel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-expression/src/main/resources/rebel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-framework-bom/src/main/resources/rebel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-instrument/src/main/resources/rebel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-jcl/src/main/resources/rebel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-jdbc/src/main/resources/rebel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-jms/src/main/resources/rebel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-learn-mvc/src/main/resources/rebel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-learn/src/main/resources/rebel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-messaging/src/main/resources/rebel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-orm/src/main/resources/rebel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-oxm/src/main/resources/rebel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-test/src/main/resources/rebel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-tx/src/main/resources/rebel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-web/src/main/resources/rebel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-webflux/src/main/resources/rebel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-webmvc/src/main/resources/rebel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-websocket/src/main/resources/rebel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/rebel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileContent/annotation-processors.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileContent/annotation-processors.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/Gradle___org_springframework___spring_learn_mvc_5_1_1_BUILD_SNAPSHOT_war__exploded_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Gradle___org_springframework___spring_learn_mvc_5_1_1_BUILD_SNAPSHOT_war__exploded_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/81e5b409-6cae-4395-9c3f-bc39085b544d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/81e5b409-6cae-4395-9c3f-bc39085b544d.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_core_2_9_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_core_2_9_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_databind_2_9_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_databind_2_9_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_buffer_4_1_29_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_buffer_4_1_29_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_common_4_1_29_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_common_4_1_29_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_resolver_4_1_29_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_resolver_4_1_29_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_transport_4_1_29_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_transport_4_1_29_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/buildSrc/spring.spring-build-src.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/buildSrc/spring.spring-build-src.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/buildSrc/spring.spring-build-src.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/buildSrc/spring.spring-build-src.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/buildSrc/spring.spring-build-src.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/buildSrc/spring.spring-build-src.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-aop/spring.spring-aop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-aop/spring.spring-aop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-aop/spring.spring-aop.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-aop/spring.spring-aop.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-aop/spring.spring-aop.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-aop/spring.spring-aop.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-aspects/spring.spring-aspects.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-aspects/spring.spring-aspects.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-aspects/spring.spring-aspects.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-aspects/spring.spring-aspects.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-aspects/spring.spring-aspects.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-aspects/spring.spring-aspects.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-beans/spring.spring-beans.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-beans/spring.spring-beans.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-beans/spring.spring-beans.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-beans/spring.spring-beans.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-beans/spring.spring-beans.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-beans/spring.spring-beans.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-context-indexer/spring.spring-context-indexer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-context-indexer/spring.spring-context-indexer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-context-indexer/spring.spring-context-indexer.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-context-indexer/spring.spring-context-indexer.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-context-support/spring.spring-context-support.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-context-support/spring.spring-context-support.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-context-support/spring.spring-context-support.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-context-support/spring.spring-context-support.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-context-support/spring.spring-context-support.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-context-support/spring.spring-context-support.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-context/spring.spring-context.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-context/spring.spring-context.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-context/spring.spring-context.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-context/spring.spring-context.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-context/spring.spring-context.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-context/spring.spring-context.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-core/spring.spring-core.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-core/spring.spring-core.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-core/spring.spring-core.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-core/spring.spring-core.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-expression/spring.spring-expression.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-expression/spring.spring-expression.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-expression/spring.spring-expression.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-expression/spring.spring-expression.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-expression/spring.spring-expression.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-expression/spring.spring-expression.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-framework-bom/spring.spring-framework-bom.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-framework-bom/spring.spring-framework-bom.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-instrument/spring.spring-instrument.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-instrument/spring.spring-instrument.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-instrument/spring.spring-instrument.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-instrument/spring.spring-instrument.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-jcl/spring.spring-jcl.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-jcl/spring.spring-jcl.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-jdbc/spring.spring-jdbc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-jdbc/spring.spring-jdbc.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-jdbc/spring.spring-jdbc.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-jdbc/spring.spring-jdbc.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-jdbc/spring.spring-jdbc.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-jdbc/spring.spring-jdbc.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-jms/spring.spring-jms.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-jms/spring.spring-jms.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-jms/spring.spring-jms.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-jms/spring.spring-jms.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-jms/spring.spring-jms.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-jms/spring.spring-jms.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-learn-mvc/spring.spring-learn-mvc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-learn-mvc/spring.spring-learn-mvc.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/spring-learn-mvc/spring.spring-learn-mvc.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-learn-mvc/spring.spring-learn-mvc.main.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/spring-learn-mvc/spring.spring-learn-mvc.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-learn-mvc/spring.spring-learn-mvc.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-learn/spring.spring-learn.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-learn/spring.spring-learn.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/spring-learn/spring.spring-learn.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-learn/spring.spring-learn.main.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/spring-learn/spring.spring-learn.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-learn/spring.spring-learn.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-messaging/spring.spring-messaging.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-messaging/spring.spring-messaging.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-messaging/spring.spring-messaging.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-messaging/spring.spring-messaging.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-messaging/spring.spring-messaging.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-messaging/spring.spring-messaging.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-orm/spring.spring-orm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-orm/spring.spring-orm.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-orm/spring.spring-orm.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-orm/spring.spring-orm.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-orm/spring.spring-orm.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-orm/spring.spring-orm.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-oxm/spring.spring-oxm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-oxm/spring.spring-oxm.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-oxm/spring.spring-oxm.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-oxm/spring.spring-oxm.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-oxm/spring.spring-oxm.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-oxm/spring.spring-oxm.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-test/spring.spring-test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-test/spring.spring-test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-test/spring.spring-test.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-test/spring.spring-test.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-test/spring.spring-test.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-test/spring.spring-test.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-tx/spring.spring-tx.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-tx/spring.spring-tx.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-tx/spring.spring-tx.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-tx/spring.spring-tx.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-tx/spring.spring-tx.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-tx/spring.spring-tx.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-web/spring.spring-web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-web/spring.spring-web.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-web/spring.spring-web.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-web/spring.spring-web.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-web/spring.spring-web.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-web/spring.spring-web.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-webflux/spring.spring-webflux.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-webflux/spring.spring-webflux.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-webflux/spring.spring-webflux.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-webflux/spring.spring-webflux.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-webflux/spring.spring-webflux.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-webflux/spring.spring-webflux.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-webmvc/spring.spring-webmvc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-webmvc/spring.spring-webmvc.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-webmvc/spring.spring-webmvc.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-webmvc/spring.spring-webmvc.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-webmvc/spring.spring-webmvc.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-webmvc/spring.spring-webmvc.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-websocket/spring.spring-websocket.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-websocket/spring.spring-websocket.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-websocket/spring.spring-websocket.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-websocket/spring.spring-websocket.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring-websocket/spring.spring-websocket.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring-websocket/spring.spring-websocket.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spring.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spring.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/.gradle/4.10/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/.gradle/4.10/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/buildSrc/.gradle/4.10/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/.gradle/4.10/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/buildSrc/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-aop/out/production/classes/org/springframework/aop/framework/AbstractAdvisingBeanPostProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-aop/out/production/classes/org/springframework/aop/framework/AbstractAdvisingBeanPostProcessor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-aop/out/production/classes/org/springframework/aop/framework/autoproxy/AbstractBeanFactoryAwareAdvisingPostProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-aop/out/production/classes/org/springframework/aop/framework/autoproxy/AbstractBeanFactoryAwareAdvisingPostProcessor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-aop/src/main/java/org/springframework/aop/framework/AbstractAdvisingBeanPostProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-aop/src/main/java/org/springframework/aop/framework/AbstractAdvisingBeanPostProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-aop/src/main/java/org/springframework/aop/framework/autoproxy/AbstractBeanFactoryAwareAdvisingPostProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-aop/src/main/java/org/springframework/aop/framework/autoproxy/AbstractBeanFactoryAwareAdvisingPostProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-aop/src/main/java/org/springframework/aop/support/AopUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-aop/src/main/java/org/springframework/aop/support/AopUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-beans/out/production/classes/org/springframework/beans/factory/xml/DefaultNamespaceHandlerResolver.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-beans/out/production/classes/org/springframework/beans/factory/xml/DefaultNamespaceHandlerResolver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-beans/src/main/java/org/springframework/beans/factory/xml/DefaultNamespaceHandlerResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-beans/src/main/java/org/springframework/beans/factory/xml/DefaultNamespaceHandlerResolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-context/out/production/classes/org/springframework/context/support/ReloadableResourceBundleMessageSource$PropertiesHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-context/out/production/classes/org/springframework/context/support/ReloadableResourceBundleMessageSource$PropertiesHolder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-context/out/production/classes/org/springframework/context/support/ReloadableResourceBundleMessageSource.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-context/out/production/classes/org/springframework/context/support/ReloadableResourceBundleMessageSource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-context/out/production/classes/org/springframework/validation/DefaultMessageCodesResolver$Format$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-context/out/production/classes/org/springframework/validation/DefaultMessageCodesResolver$Format$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-context/out/production/classes/org/springframework/validation/DefaultMessageCodesResolver$Format$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-context/out/production/classes/org/springframework/validation/DefaultMessageCodesResolver$Format$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-context/out/production/classes/org/springframework/validation/DefaultMessageCodesResolver$Format.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-context/out/production/classes/org/springframework/validation/DefaultMessageCodesResolver$Format.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-context/out/production/classes/org/springframework/validation/DefaultMessageCodesResolver.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-context/out/production/classes/org/springframework/validation/DefaultMessageCodesResolver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-context/out/production/classes/org/springframework/validation/beanvalidation/BeanValidationPostProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-context/out/production/classes/org/springframework/validation/beanvalidation/BeanValidationPostProcessor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-context/out/production/classes/org/springframework/validation/beanvalidation/CustomValidatorBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-context/out/production/classes/org/springframework/validation/beanvalidation/CustomValidatorBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-context/out/production/classes/org/springframework/validation/beanvalidation/LocalValidatorFactoryBean$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-context/out/production/classes/org/springframework/validation/beanvalidation/LocalValidatorFactoryBean$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-context/out/production/classes/org/springframework/validation/beanvalidation/LocalValidatorFactoryBean$HibernateValidatorDelegate.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-context/out/production/classes/org/springframework/validation/beanvalidation/LocalValidatorFactoryBean$HibernateValidatorDelegate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-context/out/production/classes/org/springframework/validation/beanvalidation/LocalValidatorFactoryBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-context/out/production/classes/org/springframework/validation/beanvalidation/LocalValidatorFactoryBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-context/out/production/classes/org/springframework/validation/beanvalidation/MethodValidationInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-context/out/production/classes/org/springframework/validation/beanvalidation/MethodValidationInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-context/out/production/classes/org/springframework/validation/beanvalidation/SpringValidatorAdapter$ResolvableAttribute.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-context/out/production/classes/org/springframework/validation/beanvalidation/SpringValidatorAdapter$ResolvableAttribute.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-context/out/production/classes/org/springframework/validation/beanvalidation/SpringValidatorAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-context/out/production/classes/org/springframework/validation/beanvalidation/SpringValidatorAdapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-context/src/main/java/org/springframework/context/support/ReloadableResourceBundleMessageSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-context/src/main/java/org/springframework/context/support/ReloadableResourceBundleMessageSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-context/src/main/java/org/springframework/validation/DefaultMessageCodesResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-context/src/main/java/org/springframework/validation/DefaultMessageCodesResolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-context/src/main/java/org/springframework/validation/beanvalidation/BeanValidationPostProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-context/src/main/java/org/springframework/validation/beanvalidation/BeanValidationPostProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-context/src/main/java/org/springframework/validation/beanvalidation/CustomValidatorBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-context/src/main/java/org/springframework/validation/beanvalidation/CustomValidatorBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-context/src/main/java/org/springframework/validation/beanvalidation/LocalValidatorFactoryBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-context/src/main/java/org/springframework/validation/beanvalidation/LocalValidatorFactoryBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-context/src/main/java/org/springframework/validation/beanvalidation/MethodValidationInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-context/src/main/java/org/springframework/validation/beanvalidation/MethodValidationInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-context/src/main/java/org/springframework/validation/beanvalidation/SpringValidatorAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-context/src/main/java/org/springframework/validation/beanvalidation/SpringValidatorAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-learn-mvc/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/spring-learn-mvc/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-learn-mvc/build/libs/exploded/spring-learn-mvc-5.1.1.BUILD-SNAPSHOT.war/WEB-INF/classes/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-learn-mvc/build/libs/exploded/spring-learn-mvc-5.1.1.BUILD-SNAPSHOT.war/WEB-INF/classes/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/build/libs/buildSrc.jar" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/build/libs/buildSrc.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-aop/out/production/classes/org/springframework/aop/framework/autoproxy/AutoProxyUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-aop/out/production/classes/org/springframework/aop/framework/autoproxy/AutoProxyUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-beans/out/production/classes/org/springframework/beans/factory/config/PropertyPlaceholderConfigurer$PlaceholderResolvingStringValueResolver.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-beans/out/production/classes/org/springframework/beans/factory/config/PropertyPlaceholderConfigurer$PlaceholderResolvingStringValueResolver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-beans/out/production/classes/org/springframework/beans/factory/config/PropertyPlaceholderConfigurer$PropertyPlaceholderConfigurerResolver.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-beans/out/production/classes/org/springframework/beans/factory/config/PropertyPlaceholderConfigurer$PropertyPlaceholderConfigurerResolver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-beans/out/production/classes/org/springframework/beans/factory/config/PropertyPlaceholderConfigurer.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-beans/out/production/classes/org/springframework/beans/factory/config/PropertyPlaceholderConfigurer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-context/out/production/classes/org/springframework/context/annotation/ComponentScanBeanDefinitionParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-context/out/production/classes/org/springframework/context/annotation/ComponentScanBeanDefinitionParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-context/out/production/classes/org/springframework/context/annotation/ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-context/out/production/classes/org/springframework/context/annotation/ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-context/out/production/classes/org/springframework/context/annotation/ConfigurationClassPostProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-context/out/production/classes/org/springframework/context/annotation/ConfigurationClassPostProcessor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-context/out/production/classes/org/springframework/context/support/PropertySourcesPlaceholderConfigurer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-context/out/production/classes/org/springframework/context/support/PropertySourcesPlaceholderConfigurer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-context/out/production/classes/org/springframework/context/support/PropertySourcesPlaceholderConfigurer.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-context/out/production/classes/org/springframework/context/support/PropertySourcesPlaceholderConfigurer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-context/out/test/classes/META-INF/spring-context_main.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/build-history.bin" beforeDir="false" afterPath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/build-history.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab" beforeDir="false" afterPath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab" beforeDir="false" afterPath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab" beforeDir="false" afterPath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab.keystream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab.keystream.len" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab.len" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab.values.at" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab_i" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab_i.len" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab.keystream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab.keystream.len" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab.len" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab.values.at" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab_i" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab_i.len" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/spring-core/build/kotlin/compileKotlin/last-build.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-core/build/libs/spring-cglib-repack-3.2.8.jar" beforeDir="false" afterPath="$PROJECT_DIR$/spring-core/build/libs/spring-cglib-repack-3.2.8.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-core/build/libs/spring-objenesis-repack-2.6.jar" beforeDir="false" afterPath="$PROJECT_DIR$/spring-core/build/libs/spring-objenesis-repack-2.6.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-core/out/production/classes/org/springframework/core/io/support/PropertiesLoaderSupport.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-core/out/production/classes/org/springframework/core/io/support/PropertiesLoaderSupport.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-core/out/production/classes/org/springframework/core/io/support/SpringFactoriesLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-core/out/production/classes/org/springframework/core/io/support/SpringFactoriesLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-jcl/build/libs/spring-jcl-5.1.1.BUILD-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/spring-jcl/build/libs/spring-jcl-5.1.1.BUILD-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn-mvc/build/libs/exploded/spring-learn-mvc-5.1.1.BUILD-SNAPSHOT.war/WEB-INF/classes/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-learn-mvc/build/libs/exploded/spring-learn-mvc-5.1.1.BUILD-SNAPSHOT.war/WEB-INF/classes/spring.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-learn-mvc/build/libs/exploded/spring-learn-mvc-5.1.1.BUILD-SNAPSHOT.war/WEB-INF/lib/org.springframework-spring-aop-5.1.1.BUILD-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/spring-learn-mvc/build/libs/exploded/spring-learn-mvc-5.1.1.BUILD-SNAPSHOT.war/WEB-INF/lib/org.springframework-spring-aop-5.1.1.BUILD-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-learn-mvc/build/libs/exploded/spring-learn-mvc-5.1.1.BUILD-SNAPSHOT.war/WEB-INF/lib/org.springframework-spring-beans-5.1.1.BUILD-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/spring-learn-mvc/build/libs/exploded/spring-learn-mvc-5.1.1.BUILD-SNAPSHOT.war/WEB-INF/lib/org.springframework-spring-beans-5.1.1.BUILD-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-learn-mvc/build/libs/exploded/spring-learn-mvc-5.1.1.BUILD-SNAPSHOT.war/WEB-INF/lib/org.springframework-spring-context-5.1.1.BUILD-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/spring-learn-mvc/build/libs/exploded/spring-learn-mvc-5.1.1.BUILD-SNAPSHOT.war/WEB-INF/lib/org.springframework-spring-context-5.1.1.BUILD-SNAPSHOT.jar" afterDir="false" />
@@ -73,51 +200,130 @@
       <change beforePath="$PROJECT_DIR$/spring-learn-mvc/build/libs/exploded/spring-learn-mvc-5.1.1.BUILD-SNAPSHOT.war/WEB-INF/lib/org.springframework-spring-web-5.1.1.BUILD-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/spring-learn-mvc/build/libs/exploded/spring-learn-mvc-5.1.1.BUILD-SNAPSHOT.war/WEB-INF/lib/org.springframework-spring-web-5.1.1.BUILD-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-learn-mvc/build/libs/exploded/spring-learn-mvc-5.1.1.BUILD-SNAPSHOT.war/WEB-INF/lib/org.springframework-spring-webmvc-5.1.1.BUILD-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/spring-learn-mvc/build/libs/exploded/spring-learn-mvc-5.1.1.BUILD-SNAPSHOT.war/WEB-INF/lib/org.springframework-spring-webmvc-5.1.1.BUILD-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-learn-mvc/build/libs/exploded/spring-learn-mvc-5.1.1.BUILD-SNAPSHOT.war/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-learn-mvc/build/libs/exploded/spring-learn-mvc-5.1.1.BUILD-SNAPSHOT.war/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-learn-mvc/build/libs/exploded/spring-learn-mvc-5.1.1.BUILD-SNAPSHOT.war/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-learn-mvc/build/libs/exploded/spring-learn-mvc-5.1.1.BUILD-SNAPSHOT.war/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-learn-mvc/build/libs/exploded/spring-learn-mvc-5.1.1.BUILD-SNAPSHOT.war/pages/success.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-learn-mvc/build/libs/exploded/spring-learn-mvc-5.1.1.BUILD-SNAPSHOT.war/pages/success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-learn-mvc/out/production/resources/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-learn-mvc/out/production/resources/spring-mvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-learn-mvc/out/test/classes/com/hyf/test/DataBinderTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-learn-mvc/out/test/classes/com/hyf/test/DataBinderTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-learn-mvc/out/test/classes/com/hyf/test/Test1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-learn-mvc/out/test/classes/com/hyf/test/Test4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-learn-mvc/out/test/classes/com/hyf/test/Test5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-learn-mvc/src/main/java/com/hyf/mvc/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-learn-mvc/src/main/java/com/hyf/mvc/controller/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-learn-mvc/src/main/java/com/hyf/mvc/pojo/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-learn-mvc/src/main/java/com/hyf/mvc/pojo/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-learn-mvc/src/main/resources/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-learn-mvc/src/main/resources/spring-mvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-learn-mvc/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-learn-mvc/src/main/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-learn-mvc/src/test/java/com/hyf/test/DataBinderTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-learn-mvc/src/test/java/com/hyf/test/DataBinderTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-learn-mvc/src/test/java/com/hyf/test/Test1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-learn-mvc/src/test/java/com/hyf/test/Test4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-learn-mvc/src/test/java/com/hyf/test/Test5.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-learn/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/spring-learn/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web/out/production/classes/org/springframework/web/context/request/ServletRequestAttributes.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web/out/production/classes/org/springframework/web/context/request/ServletRequestAttributes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web/out/production/classes/org/springframework/web/method/annotation/SessionAttributesHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web/out/production/classes/org/springframework/web/method/annotation/SessionAttributesHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web/out/production/classes/org/springframework/web/multipart/commons/CommonsFileUploadSupport$MultipartParsingResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web/out/production/classes/org/springframework/web/multipart/commons/CommonsFileUploadSupport$MultipartParsingResult.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web/out/production/classes/org/springframework/web/multipart/commons/CommonsFileUploadSupport.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web/out/production/classes/org/springframework/web/multipart/commons/CommonsFileUploadSupport.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web/out/production/classes/org/springframework/web/multipart/commons/CommonsMultipartFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web/out/production/classes/org/springframework/web/multipart/commons/CommonsMultipartFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web/out/production/classes/org/springframework/web/multipart/commons/CommonsMultipartResolver$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web/out/production/classes/org/springframework/web/multipart/commons/CommonsMultipartResolver$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web/out/production/classes/org/springframework/web/multipart/commons/CommonsMultipartResolver.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web/out/production/classes/org/springframework/web/multipart/commons/CommonsMultipartResolver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web/out/production/classes/org/springframework/web/multipart/support/MultipartResolutionDelegate.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web/out/production/classes/org/springframework/web/multipart/support/MultipartResolutionDelegate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web/out/production/classes/org/springframework/web/multipart/support/StandardMultipartHttpServletRequest$MimeDelegate.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web/out/production/classes/org/springframework/web/multipart/support/StandardMultipartHttpServletRequest$MimeDelegate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web/out/production/classes/org/springframework/web/multipart/support/StandardMultipartHttpServletRequest$StandardMultipartFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web/out/production/classes/org/springframework/web/multipart/support/StandardMultipartHttpServletRequest$StandardMultipartFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web/out/production/classes/org/springframework/web/multipart/support/StandardMultipartHttpServletRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web/out/production/classes/org/springframework/web/multipart/support/StandardMultipartHttpServletRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web/out/production/classes/org/springframework/web/util/WebUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web/out/production/classes/org/springframework/web/util/WebUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web/src/main/java/org/springframework/web/context/request/ServletRequestAttributes.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web/src/main/java/org/springframework/web/context/request/ServletRequestAttributes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web/src/main/java/org/springframework/web/method/annotation/ErrorsMethodArgumentResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web/src/main/java/org/springframework/web/method/annotation/ErrorsMethodArgumentResolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web/src/main/java/org/springframework/web/method/annotation/ModelFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web/src/main/java/org/springframework/web/method/annotation/ModelFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-web/src/main/java/org/springframework/web/method/annotation/SessionAttributesHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web/src/main/java/org/springframework/web/method/annotation/SessionAttributesHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-webmvc/out/production/classes/org/springframework/web/servlet/DispatcherServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-webmvc/out/production/classes/org/springframework/web/servlet/DispatcherServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-webmvc/out/production/classes/org/springframework/web/servlet/mvc/method/annotation/ExceptionHandlerExceptionResolver.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-webmvc/out/production/classes/org/springframework/web/servlet/mvc/method/annotation/ExceptionHandlerExceptionResolver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-webmvc/out/production/classes/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-webmvc/out/production/classes/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-webmvc/out/production/classes/org/springframework/web/servlet/mvc/support/DefaultHandlerExceptionResolver.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-webmvc/out/production/classes/org/springframework/web/servlet/mvc/support/DefaultHandlerExceptionResolver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-webmvc/out/production/classes/org/springframework/web/servlet/support/WebContentGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-webmvc/out/production/classes/org/springframework/web/servlet/support/WebContentGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-webmvc/src/main/java/org/springframework/web/servlet/mvc/method/annotation/ExceptionHandlerExceptionResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-webmvc/src/main/java/org/springframework/web/servlet/mvc/method/annotation/ExceptionHandlerExceptionResolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-webmvc/src/main/java/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-webmvc/src/main/java/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn-mvc/out/production/classes/com/hyf/mvc_annotation/controller/HelloAnnoController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn-mvc/out/production/classes/com/hyf/mvc_java/config/MvcConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn-mvc/out/production/classes/com/hyf/mvc_java/controller/HelloJavaController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn-mvc/out/production/classes/com/hyf/mvc_xml/controller/HelloController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn-mvc/out/production/classes/com/hyf/mvc_xml/converter/StringToNumber.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn-mvc/out/production/classes/com/hyf/mvc_xml/pojo/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn-mvc/out/production/resources/log4j.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn-mvc/out/production/resources/spring-mvc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn-mvc/out/production/resources/spring.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn-mvc/out/test/classes/com/hyf/test/DataBinderTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn-mvc/out/test/classes/com/hyf/test/Test2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn-mvc/out/test/classes/com/hyf/test/Test3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/aop/AopConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/aop/AopTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/aop/other/log/AopDeclareParents.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/aop/other/log/AopLogger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/aop/other/service/ParentServiceI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/aop/other/service/TransferServiceI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/aop/other/service/impl/ParentServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/aop/other/service/impl/TransferServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/ioc/SpringConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/ioc/TestCompile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/ioc/other/autowire/AutowireAnnotation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/ioc/other/autowire/pojo/Computer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/ioc/other/autowire/pojo/IPhone.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/ioc/other/autowire/pojo/Mobile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/ioc/other/autowire/pojo/Mouse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/ioc/other/autowire/pojo/Screen.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/ioc/other/common/ResourceLazy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/ioc/other/config/AbstractSpringConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/ioc/other/config/EventConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/ioc/other/config/JdbcConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/ioc/other/config/SpringConfigI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/ioc/other/dependency/DepFirst.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/ioc/other/dependency/DepSecond.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/ioc/other/event/EventService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/ioc/other/event/MyDefaultListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/ioc/other/event/MyEvent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/ioc/other/event/MyListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/ioc/other/event/MyRefreshEvent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/ioc/other/factory/MyFactoryBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/ioc/other/factory/MyTeacher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/ioc/other/init/InitPerson.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/ioc/other/lifecycle/MyLifecycle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/ioc/other/lifecycle/MySmartLifecycle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/ioc/other/nest/CreateNest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/ioc/other/nest/NestClazz$Nest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/ioc/other/nest/NestClazz.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/ioc/other/nest/NestCollection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/ioc/other/nest/NestI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/ioc/other/nest/NestII.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/ioc/other/nest/NestIII.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/ioc/other/parent/MyChild$GrandSon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/ioc/other/parent/MyChild.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/ioc/other/parent/MyParent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/ioc/other/parent/ParentConfig$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/ioc/other/parent/ParentConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/tx/TxConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/tx/TxTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/tx/other/aspect/AopAspect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/tx/other/pojo/Money.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/tx/other/service/MoneyServiceI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/tx/other/service/PropagationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/tx/other/service/impl/MoneyServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/tx/other/util/ServiceNameGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/util/MyUtil$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/hyf/util/MyUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/spring/ioc/xml/di/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/spring/ioc/xml/hello/BeanFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/spring/ioc/xml/hello/dao/IAccountDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/spring/ioc/xml/hello/dao/impl/AccountDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/spring/ioc/xml/hello/service/IAccountService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/spring/ioc/xml/hello/service/impl/AccountServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/spring/ioc/xml/hello/test/AccountTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/spring/ioc/xml/ioc/Account.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/spring/ioc/xml/ioc/InstanceFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/spring/ioc/xml/ioc/StaticFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/classes/com/spring/ioc/xml/ioc/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/resources/jdbc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/resources/other/importresource.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/resources/spring-aop.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/resources/spring-ioc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-learn/out/production/resources/spring-tx.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-oxm/out/test/classes/org/springframework/oxm/AbstractMarshallerTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-oxm/out/test/classes/org/springframework/oxm/AbstractUnmarshallerTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-oxm/out/test/classes/org/springframework/oxm/castor/CastorMarshallerTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-oxm/out/test/classes/org/springframework/oxm/castor/CastorObject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-oxm/out/test/classes/org/springframework/oxm/castor/CastorUnmarshallerTests$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-oxm/out/test/classes/org/springframework/oxm/castor/CastorUnmarshallerTests$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-oxm/out/test/classes/org/springframework/oxm/castor/CastorUnmarshallerTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-oxm/out/test/classes/org/springframework/oxm/config/OxmNamespaceHandlerTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-oxm/out/test/classes/org/springframework/oxm/jaxb/Airplane.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-oxm/out/test/classes/org/springframework/oxm/jaxb/BinaryObject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-oxm/out/test/classes/org/springframework/oxm/jaxb/Jaxb2MarshallerTests$DummyRootElement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-oxm/out/test/classes/org/springframework/oxm/jaxb/Jaxb2MarshallerTests$DummyType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-oxm/out/test/classes/org/springframework/oxm/jaxb/Jaxb2MarshallerTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-oxm/out/test/classes/org/springframework/oxm/jaxb/Jaxb2UnmarshallerTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-oxm/out/test/classes/org/springframework/oxm/jaxb/Primitives.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-oxm/out/test/classes/org/springframework/oxm/jaxb/StandardClasses.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-oxm/out/test/classes/org/springframework/oxm/jaxb/XmlRegObjectFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-oxm/out/test/classes/org/springframework/oxm/jibx/FlightType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-oxm/out/test/classes/org/springframework/oxm/jibx/Flights.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-oxm/out/test/classes/org/springframework/oxm/jibx/JibxMarshallerTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-oxm/out/test/classes/org/springframework/oxm/jibx/JibxUnmarshallerTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-oxm/out/test/classes/org/springframework/oxm/xstream/Flight.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-oxm/out/test/classes/org/springframework/oxm/xstream/FlightSubclass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-oxm/out/test/classes/org/springframework/oxm/xstream/Flights.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-oxm/out/test/classes/org/springframework/oxm/xstream/XStreamMarshallerTests$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-oxm/out/test/classes/org/springframework/oxm/xstream/XStreamMarshallerTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-oxm/out/test/classes/org/springframework/oxm/xstream/XStreamUnmarshallerTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-test/out/production/classes/META-INF/spring-test_main.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web/out/production/classes/org/springframework/web/method/annotation/ErrorsMethodArgumentResolver.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-web/out/production/classes/org/springframework/web/method/annotation/ErrorsMethodArgumentResolver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-webflux/out/production/classes/META-INF/spring-webflux_main.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-webflux/out/test/classes/META-INF/spring-webflux_main.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-webmvc/out/test/classes/META-INF/spring-webmvc_main.kotlin_module" beforeDir="false" />
     </list>
     <list id="a9b00777-d26e-48bc-9a6b-17c85f3795d3" name="ignore" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/spring$TxTest_testMixtureTransaction.ic" NAME="TxTest.testMixtureTransaction Coverage Results" MODIFIED="1586611256249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -147,46 +353,18 @@
         <task path="$PROJECT_DIR$/spring-learn">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/spring-aspects">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/spring-web">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="spring" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="spring" type="f1a62948:ProjectNode" />
-                <item name="spring-learn" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="spring" type="f1a62948:ProjectNode" />
-                <item name="spring-learn" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="spring" type="f1a62948:ProjectNode" />
-                <item name="spring-learn" type="2d1252cf:ModuleNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="spring" type="f1a62948:ProjectNode" />
-                <item name="spring-learn-mvc" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="spring" type="f1a62948:ProjectNode" />
-                <item name="spring-learn-mvc" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="spring" type="f1a62948:ProjectNode" />
-                <item name="spring-learn-mvc" type="2d1252cf:ModuleNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
               </path>
             </expand>
             <select />
@@ -211,6 +389,9 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/spring-webmvc/src/main/java/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerMapping.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="JRebelWorkspace">
+    <option name="jrebelEnabledAutocompile" value="true" />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -248,6 +429,9 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="false" />
     <property name="SearchEverywhereHistoryKey" value="Hashmap&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar!/java/util/HashMap.class&#10;AspectJExpression&#9;PSI&#9;JAVA://org.springframework.aop.aspectj.AspectJExpressionPointcut&#10;@EnableT&#9;PSI&#9;JAVA://org.springframework.transaction.annotation.EnableTransactionManagement&#10;MyLis&#9;PSI&#9;JAVA://com.hyf.other.event.MyListener&#10;Converter&#9;PSI&#9;JAVA://org.springframework.core.convert.converter.Converter&#10;@Autowi&#9;PSI&#9;JAVA://org.springframework.beans.factory.annotation.Autowired&#10;@Bean&#9;PSI&#9;JAVA://org.springframework.context.annotation.Bean&#10;ImportAware&#9;PSI&#9;JAVA://org.springframework.context.annotation.ImportAware&#10;Compone&#9;PSI&#9;JAVA://org.springframework.stereotype.Component&#10;ConfigurationAnnotationProcessor&#9;PSI&#9;JAVA://org.springframework.context.annotation.AnnotationConfigUtils#CONFIGURATION_ANNOTATION_PROCESSOR_BEAN_NAME&#10;ConfigurationClass&#9;FILE&#9;file://E:/study/idea2/source-spring/spring-context/src/main/java/org/springframework/context/annotation/ConfigurationClassPostProcessor.java&#10;AbstractApplica&#9;PSI&#9;JAVA://org.springframework.context.support.AbstractApplicationContext&#10;ClassPathXml&#9;PSI&#9;JAVA://org.springframework.context.support.ClassPathXmlApplicationContext" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -255,13 +439,16 @@
     <property name="database.console.LAST_STATE" value="false" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../idea3/learn-springboot/source-boot/spring-boot-build" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15437393" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
   </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
@@ -288,87 +475,96 @@
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.mvc">
-    <configuration name="DataBinderTests.testDataBinder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring.spring-learn-mvc.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hyf.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.hyf.test" />
-      <option name="MAIN_CLASS_NAME" value="com.hyf.test.DataBinderTests" />
-      <option name="METHOD_NAME" value="testDataBinder" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="source-spring [idea]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="idea" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
     </configuration>
-    <configuration name="ValidTest.testNested" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="source-spring:spring-web [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/spring-web" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="source-spring:spring-web [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/spring-web" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="AopTest.testAopXmlHello" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring.spring-learn.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.hyf.valid.*" />
+          <option name="PATTERN" value="com.hyf.aop.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.hyf.valid" />
-      <option name="MAIN_CLASS_NAME" value="com.hyf.valid.ValidTest" />
-      <option name="METHOD_NAME" value="testNested" />
+      <option name="PACKAGE_NAME" value="com.hyf.aop" />
+      <option name="MAIN_CLASS_NAME" value="com.hyf.aop.AopTest" />
+      <option name="METHOD_NAME" value="testAopXmlHello" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ValidTest.testPojo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestCompile.testAnnotationHello" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring.spring-learn.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.hyf.valid.*" />
+          <option name="PATTERN" value="com.hyf.ioc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.hyf.valid" />
-      <option name="MAIN_CLASS_NAME" value="com.hyf.valid.ValidTest" />
-      <option name="METHOD_NAME" value="testPojo" />
+      <option name="PACKAGE_NAME" value="com.hyf.ioc" />
+      <option name="MAIN_CLASS_NAME" value="com.hyf.ioc.TestCompile" />
+      <option name="METHOD_NAME" value="testAnnotationHello" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ValidTest.testValidField" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring.spring-learn.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hyf.valid.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.hyf.valid" />
-      <option name="MAIN_CLASS_NAME" value="com.hyf.valid.ValidTest" />
-      <option name="METHOD_NAME" value="testValidField" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ValidTest.testValidatorValid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring.spring-learn.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hyf.valid.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.hyf.valid" />
-      <option name="MAIN_CLASS_NAME" value="com.hyf.valid.ValidTest" />
-      <option name="METHOD_NAME" value="testValidatorValid" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="mvc" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.8" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="mvc" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.32" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="Gradle : org.springframework : spring-learn-mvc-5.1.1.BUILD-SNAPSHOT.war (exploded)">
@@ -510,23 +706,24 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ValidTest.testNested" />
-      <item itemvalue="JUnit.ValidTest.testValidField" />
-      <item itemvalue="JUnit.ValidTest.testPojo" />
-      <item itemvalue="JUnit.ValidTest.testValidatorValid" />
+      <item itemvalue="Gradle.source-spring [idea]" />
+      <item itemvalue="Gradle.source-spring:spring-web [clean]" />
+      <item itemvalue="Gradle.source-spring:spring-web [build]" />
+      <item itemvalue="JUnit.AopTest.testAopXmlHello" />
+      <item itemvalue="JUnit.TestCompile.testAnnotationHello" />
       <item itemvalue="Tomcat Server.mvc" />
-      <item itemvalue="JUnit.DataBinderTests.testDataBinder" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DataBinderTests.testDataBinder" />
-        <item itemvalue="JUnit.ValidTest.testValidatorValid" />
-        <item itemvalue="JUnit.ValidTest.testPojo" />
-        <item itemvalue="JUnit.ValidTest.testValidField" />
-        <item itemvalue="JUnit.ValidTest.testNested" />
+        <item itemvalue="Gradle.source-spring:spring-web [build]" />
+        <item itemvalue="Gradle.source-spring:spring-web [clean]" />
+        <item itemvalue="JUnit.AopTest.testAopXmlHello" />
+        <item itemvalue="Gradle.source-spring [idea]" />
+        <item itemvalue="JUnit.TestCompile.testAnnotationHello" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -721,7 +918,65 @@
       <workItem from="1589281463083" duration="13386000" />
       <workItem from="1589296782957" duration="852000" />
       <workItem from="1589327697724" duration="2238000" />
-      <workItem from="1589341662696" duration="1787000" />
+      <workItem from="1589341662696" duration="1985000" />
+      <workItem from="1589347226276" duration="628000" />
+      <workItem from="1589373986593" duration="1329000" />
+      <workItem from="1589376496619" duration="1628000" />
+      <workItem from="1589414296699" duration="1117000" />
+      <workItem from="1589462394514" duration="768000" />
+      <workItem from="1589558063971" duration="275000" />
+      <workItem from="1589640751009" duration="418000" />
+      <workItem from="1589641752583" duration="82000" />
+      <workItem from="1589641857075" duration="54000" />
+      <workItem from="1589643808440" duration="932000" />
+      <workItem from="1589678311111" duration="58000" />
+      <workItem from="1589682824338" duration="3634000" />
+      <workItem from="1589693740687" duration="781000" />
+      <workItem from="1589707313901" duration="6372000" />
+      <workItem from="1589721971966" duration="1196000" />
+      <workItem from="1589759743895" duration="231000" />
+      <workItem from="1589774077882" duration="4213000" />
+      <workItem from="1589778682956" duration="506000" />
+      <workItem from="1589806521901" duration="2830000" />
+      <workItem from="1589846058986" duration="687000" />
+      <workItem from="1589893013787" duration="1749000" />
+      <workItem from="1589898729183" duration="737000" />
+      <workItem from="1589931947918" duration="327000" />
+      <workItem from="1589969833503" duration="140000" />
+      <workItem from="1590019031564" duration="24000" />
+      <workItem from="1590457033607" duration="613000" />
+      <workItem from="1590538014626" duration="3106000" />
+      <workItem from="1590551550067" duration="4177000" />
+      <workItem from="1590636058963" duration="3467000" />
+      <workItem from="1591089524053" duration="6413000" />
+      <workItem from="1591143074655" duration="373000" />
+      <workItem from="1591181168191" duration="2773000" />
+      <workItem from="1592202722110" duration="642000" />
+      <workItem from="1592491177057" duration="512000" />
+      <workItem from="1592525362235" duration="536000" />
+      <workItem from="1592710082439" duration="2192000" />
+      <workItem from="1592741635997" duration="1711000" />
+      <workItem from="1594183572483" duration="117000" />
+      <workItem from="1594195940983" duration="269000" />
+      <workItem from="1594442278328" duration="702000" />
+      <workItem from="1594468195417" duration="3011000" />
+      <workItem from="1594521198874" duration="2720000" />
+      <workItem from="1594730487582" duration="813000" />
+      <workItem from="1594733439292" duration="727000" />
+      <workItem from="1595083355971" duration="1341000" />
+      <workItem from="1595342540911" duration="285000" />
+      <workItem from="1595396638134" duration="1250000" />
+      <workItem from="1595406869956" duration="73000" />
+      <workItem from="1595410777917" duration="777000" />
+      <workItem from="1595425801367" duration="243000" />
+      <workItem from="1595465631651" duration="10844000" />
+      <workItem from="1595550082982" duration="73000" />
+      <workItem from="1595561312541" duration="2132000" />
+      <workItem from="1596537365675" duration="1239000" />
+      <workItem from="1597070398934" duration="1978000" />
+      <workItem from="1597073121613" duration="144000" />
+      <workItem from="1600486503098" duration="4472000" />
+      <workItem from="1600493335651" duration="60000" />
     </task>
     <task id="LOCAL-00001" summary="文件上传代码解析">
       <created>1589120881601</created>
@@ -730,7 +985,35 @@
       <option name="project" value="LOCAL" />
       <updated>1589120881601</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="数据校验解析及测试代码上传">
+      <created>1589343788945</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1589343788945</updated>
+    </task>
+    <task id="LOCAL-00003" summary="dispatcherService /* 文件">
+      <created>1591183231616</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1591183231638</updated>
+    </task>
+    <task id="LOCAL-00004" summary="导入properties加载解析及dispatcherService /* 文件测试">
+      <created>1591184114141</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1591184114141</updated>
+    </task>
+    <task id="LOCAL-00005" summary="factoriesLoader、AopUtils学习">
+      <created>1595565201668</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1595565201668</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -743,251 +1026,129 @@
     </todo-panel>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="文件上传代码解析" />
-    <option name="LAST_COMMIT_MESSAGE" value="文件上传代码解析" />
+    <MESSAGE value="数据校验解析及测试代码上传" />
+    <MESSAGE value="dispatcherService /* 文件" />
+    <MESSAGE value="导入properties加载解析及dispatcherService /* 文件测试" />
+    <MESSAGE value="factoriesLoader、AopUtils学习" />
+    <option name="LAST_COMMIT_MESSAGE" value="factoriesLoader、AopUtils学习" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1368" y="161" key="#Plugins" timestamp="1588654728233">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state x="96" y="35" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600487092134">
+      <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state x="-1368" y="161" key="#Plugins/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588654728233" />
-    <state x="121" y="0" key="#Project_Structure" timestamp="1589093243800">
+    <state x="96" y="35" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.760@0.0.1280.760" timestamp="1600487092134" />
+    <state x="365" y="19" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1600487091374">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="365" y="19" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.1280.760@0.0.1280.760" timestamp="1600487091374" />
+    <state x="115" y="0" key="CommitChangelistDialog2" timestamp="1595565195341">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="121" y="0" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1589093243800" />
-    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589287912707">
+    <state x="115" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1595565195341" />
+    <state width="576" height="308" key="DebuggerActiveHint" timestamp="1600492409287">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="576" height="308" key="DebuggerActiveHint/0.0.1280.760@0.0.1280.760" timestamp="1600492409287" />
+    <state x="421" y="135" key="FileChooserDialogImpl" timestamp="1600488302636">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="421" y="135" key="FileChooserDialogImpl/0.0.1280.760@0.0.1280.760" timestamp="1600488302636" />
+    <state width="1238" height="282" key="GridCell.Tab.0.bottom" timestamp="1600493310130">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1238" height="282" key="GridCell.Tab.0.bottom/0.0.1280.760@0.0.1280.760" timestamp="1600493310130" />
+    <state width="1238" height="282" key="GridCell.Tab.0.center" timestamp="1600493310130">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1238" height="282" key="GridCell.Tab.0.center/0.0.1280.760@0.0.1280.760" timestamp="1600493310130" />
+    <state width="1238" height="282" key="GridCell.Tab.0.left" timestamp="1600493310130">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1238" height="282" key="GridCell.Tab.0.left/0.0.1280.760@0.0.1280.760" timestamp="1600493310130" />
+    <state width="1238" height="282" key="GridCell.Tab.0.right" timestamp="1600493310130">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1238" height="282" key="GridCell.Tab.0.right/0.0.1280.760@0.0.1280.760" timestamp="1600493310130" />
+    <state width="1238" height="282" key="GridCell.Tab.1.bottom" timestamp="1600493310131">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1238" height="282" key="GridCell.Tab.1.bottom/0.0.1280.760@0.0.1280.760" timestamp="1600493310131" />
+    <state width="1238" height="282" key="GridCell.Tab.1.center" timestamp="1600493310131">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1238" height="282" key="GridCell.Tab.1.center/0.0.1280.760@0.0.1280.760" timestamp="1600493310131" />
+    <state width="1238" height="282" key="GridCell.Tab.1.left" timestamp="1600493310130">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1238" height="282" key="GridCell.Tab.1.left/0.0.1280.760@0.0.1280.760" timestamp="1600493310130" />
+    <state width="1238" height="282" key="GridCell.Tab.1.right" timestamp="1600493310131">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1238" height="282" key="GridCell.Tab.1.right/0.0.1280.760@0.0.1280.760" timestamp="1600493310131" />
+    <state width="1190" height="218" key="GridCell.Tab.2.bottom" timestamp="1600493310124">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1190" height="218" key="GridCell.Tab.2.bottom/0.0.1280.760@0.0.1280.760" timestamp="1600493310124" />
+    <state width="1190" height="218" key="GridCell.Tab.2.center" timestamp="1600493310124">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1190" height="218" key="GridCell.Tab.2.center/0.0.1280.760@0.0.1280.760" timestamp="1600493310124" />
+    <state width="1190" height="218" key="GridCell.Tab.2.left" timestamp="1600493310124">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1190" height="218" key="GridCell.Tab.2.left/0.0.1280.760@0.0.1280.760" timestamp="1600493310124" />
+    <state width="1190" height="218" key="GridCell.Tab.2.right" timestamp="1600493310124">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1190" height="218" key="GridCell.Tab.2.right/0.0.1280.760@0.0.1280.760" timestamp="1600493310124" />
+    <state width="1190" height="218" key="GridCell.Tab.3.bottom" timestamp="1600493310125">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1190" height="218" key="GridCell.Tab.3.bottom/0.0.1280.760@0.0.1280.760" timestamp="1600493310125" />
+    <state width="1190" height="218" key="GridCell.Tab.3.center" timestamp="1600493310124">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1190" height="218" key="GridCell.Tab.3.center/0.0.1280.760@0.0.1280.760" timestamp="1600493310124" />
+    <state width="1190" height="218" key="GridCell.Tab.3.left" timestamp="1600493310124">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1190" height="218" key="GridCell.Tab.3.left/0.0.1280.760@0.0.1280.760" timestamp="1600493310124" />
+    <state width="1190" height="218" key="GridCell.Tab.3.right" timestamp="1600493310125">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1190" height="218" key="GridCell.Tab.3.right/0.0.1280.760@0.0.1280.760" timestamp="1600493310125" />
+    <state x="142" y="25" key="SettingsEditor" timestamp="1600493308373">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="142" y="25" key="SettingsEditor/0.0.1280.760@0.0.1280.760" timestamp="1600493308373" />
+    <state x="362" y="82" width="558" height="524" key="StructurePopup" timestamp="1594731246380">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1589287912707" />
-    <state x="367" y="141" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589093548092">
+    <state x="362" y="82" width="558" height="524" key="StructurePopup/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1594731246380" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1595565206575">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="367" y="141" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1589093548092" />
-    <state x="446" y="46" key="#com.intellij.ide.util.MemberChooser" timestamp="1589289623015">
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1595565206575" />
+    <state x="189" y="91" width="920" height="573" key="find.popup" timestamp="1592203337158">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="446" y="46" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1589284069230" />
-    <state x="446" y="46" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1589289623015" />
-    <state x="477" y="85" key="#xdebugger.evaluate" timestamp="1589297561987">
+    <state x="189" y="91" width="920" height="573" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1592203337158" />
+    <state width="878" height="302" key="javadoc.popup.new" timestamp="1595475575663">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="-1205" y="222" key="#xdebugger.evaluate/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588911604003" />
-    <state x="477" y="85" key="#xdebugger.evaluate/0.0.1280.680@0.0.1280.680" timestamp="1589297561987" />
-    <state x="152" y="0" key="CommitChangelistDialog2" timestamp="1589174019579">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="878" height="302" key="javadoc.popup.new/0.0.1280.680@0.0.1280.680" timestamp="1595475575663" />
+    <state x="326" y="103" width="672" height="497" key="search.everywhere.popup" timestamp="1600493218247">
+      <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state x="152" y="0" key="CommitChangelistDialog2/0.0.1280.680/-1920.0.1920.1040/1920.0.1280.760@0.0.1280.680" timestamp="1589174019579" />
-    <state x="152" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1589120862917" />
-    <state width="809" height="438" key="DebuggerActiveHint" timestamp="1589343056759">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="810" height="439" key="DebuggerActiveHint/0.0.1280.680/-1920.0.1920.1040/1920.0.1280.760@0.0.1280.680" timestamp="1588999963156" />
-    <state width="1214" height="670" key="DebuggerActiveHint/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588912767279" />
-    <state width="809" height="438" key="DebuggerActiveHint/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1589343056759" />
-    <state width="809" height="438" key="DebuggerActiveHint/0.0.1280.680@0.0.1280.680" timestamp="1589297445031" />
-    <state x="385" y="81" key="FileChooserDialogImpl" timestamp="1589091342923">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="-1342" y="124" key="FileChooserDialogImpl/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588654573410" />
-    <state x="385" y="81" key="FileChooserDialogImpl/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1588641454483" />
-    <state x="385" y="81" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1589091342923" />
-    <state width="1189" height="208" key="GridCell.Tab.0.bottom" timestamp="1589343618308">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="193" key="GridCell.Tab.0.bottom/0.0.1280.680/-1920.0.1920.1040/1920.0.1280.760@0.0.1280.680" timestamp="1589175420219" />
-    <state width="1829" height="313" key="GridCell.Tab.0.bottom/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588915514751" />
-    <state width="1189" height="208" key="GridCell.Tab.0.bottom/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1589343618308" />
-    <state width="1189" height="240" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1589297642091" />
-    <state width="1189" height="208" key="GridCell.Tab.0.center" timestamp="1589343618306">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="193" key="GridCell.Tab.0.center/0.0.1280.680/-1920.0.1920.1040/1920.0.1280.760@0.0.1280.680" timestamp="1589175420219" />
-    <state width="1829" height="313" key="GridCell.Tab.0.center/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588915514751" />
-    <state width="1189" height="208" key="GridCell.Tab.0.center/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1589343618306" />
-    <state width="1189" height="240" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1589297642090" />
-    <state width="1189" height="208" key="GridCell.Tab.0.left" timestamp="1589343618303">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="193" key="GridCell.Tab.0.left/0.0.1280.680/-1920.0.1920.1040/1920.0.1280.760@0.0.1280.680" timestamp="1589175420219" />
-    <state width="1829" height="313" key="GridCell.Tab.0.left/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588915514751" />
-    <state width="1189" height="208" key="GridCell.Tab.0.left/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1589343618302" />
-    <state width="1189" height="240" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1589297642090" />
-    <state width="1189" height="208" key="GridCell.Tab.0.right" timestamp="1589343618307">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="193" key="GridCell.Tab.0.right/0.0.1280.680/-1920.0.1920.1040/1920.0.1280.760@0.0.1280.680" timestamp="1589175420219" />
-    <state width="1829" height="313" key="GridCell.Tab.0.right/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588915514751" />
-    <state width="1189" height="208" key="GridCell.Tab.0.right/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1589343618307" />
-    <state width="1189" height="240" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1589297642090" />
-    <state width="1189" height="208" key="GridCell.Tab.1.bottom" timestamp="1589343618309">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1189" height="106" key="GridCell.Tab.1.bottom/0.0.1280.680/-1920.0.1920.1040/1920.0.1280.760@0.0.1280.680" timestamp="1589002919598" />
-    <state width="1829" height="313" key="GridCell.Tab.1.bottom/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588915514752" />
-    <state width="1189" height="208" key="GridCell.Tab.1.bottom/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1589343618309" />
-    <state width="1189" height="240" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1589297642092" />
-    <state width="1189" height="208" key="GridCell.Tab.1.center" timestamp="1589343618309">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1189" height="106" key="GridCell.Tab.1.center/0.0.1280.680/-1920.0.1920.1040/1920.0.1280.760@0.0.1280.680" timestamp="1589002919598" />
-    <state width="1829" height="313" key="GridCell.Tab.1.center/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588915514752" />
-    <state width="1189" height="208" key="GridCell.Tab.1.center/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1589343618309" />
-    <state width="1189" height="240" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1589297642091" />
-    <state width="1189" height="208" key="GridCell.Tab.1.left" timestamp="1589343618308">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1189" height="106" key="GridCell.Tab.1.left/0.0.1280.680/-1920.0.1920.1040/1920.0.1280.760@0.0.1280.680" timestamp="1589002919598" />
-    <state width="1829" height="313" key="GridCell.Tab.1.left/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588915514752" />
-    <state width="1189" height="208" key="GridCell.Tab.1.left/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1589343618308" />
-    <state width="1189" height="240" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1589297642091" />
-    <state width="1189" height="208" key="GridCell.Tab.1.right" timestamp="1589343618309">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1189" height="106" key="GridCell.Tab.1.right/0.0.1280.680/-1920.0.1920.1040/1920.0.1280.760@0.0.1280.680" timestamp="1589002919598" />
-    <state width="1829" height="313" key="GridCell.Tab.1.right/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588915514752" />
-    <state width="1189" height="208" key="GridCell.Tab.1.right/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1589343618309" />
-    <state width="1189" height="240" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1589297642092" />
-    <state width="1189" height="208" key="GridCell.Tab.2.bottom" timestamp="1589343618310">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1189" height="106" key="GridCell.Tab.2.bottom/0.0.1280.680/-1920.0.1920.1040/1920.0.1280.760@0.0.1280.680" timestamp="1589002919598" />
-    <state width="1829" height="313" key="GridCell.Tab.2.bottom/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588915514752" />
-    <state width="1189" height="208" key="GridCell.Tab.2.bottom/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1589343618310" />
-    <state width="1189" height="240" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1589297642092" />
-    <state width="1189" height="208" key="GridCell.Tab.2.center" timestamp="1589343618309">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1189" height="106" key="GridCell.Tab.2.center/0.0.1280.680/-1920.0.1920.1040/1920.0.1280.760@0.0.1280.680" timestamp="1589002919598" />
-    <state width="1829" height="313" key="GridCell.Tab.2.center/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588915514752" />
-    <state width="1189" height="208" key="GridCell.Tab.2.center/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1589343618309" />
-    <state width="1189" height="240" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1589297642092" />
-    <state width="1189" height="208" key="GridCell.Tab.2.left" timestamp="1589343618309">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1189" height="106" key="GridCell.Tab.2.left/0.0.1280.680/-1920.0.1920.1040/1920.0.1280.760@0.0.1280.680" timestamp="1589002919598" />
-    <state width="1829" height="313" key="GridCell.Tab.2.left/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588915514752" />
-    <state width="1189" height="208" key="GridCell.Tab.2.left/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1589343618309" />
-    <state width="1189" height="240" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1589297642092" />
-    <state width="1189" height="208" key="GridCell.Tab.2.right" timestamp="1589343618309">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1189" height="106" key="GridCell.Tab.2.right/0.0.1280.680/-1920.0.1920.1040/1920.0.1280.760@0.0.1280.680" timestamp="1589002919598" />
-    <state width="1829" height="313" key="GridCell.Tab.2.right/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588915514752" />
-    <state width="1189" height="208" key="GridCell.Tab.2.right/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1589343618309" />
-    <state width="1189" height="240" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1589297642092" />
-    <state width="1189" height="208" key="GridCell.Tab.3.bottom" timestamp="1589343618310">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1189" height="106" key="GridCell.Tab.3.bottom/0.0.1280.680/-1920.0.1920.1040/1920.0.1280.760@0.0.1280.680" timestamp="1589002919599" />
-    <state width="1829" height="313" key="GridCell.Tab.3.bottom/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588915514752" />
-    <state width="1189" height="208" key="GridCell.Tab.3.bottom/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1589343618310" />
-    <state width="1189" height="240" key="GridCell.Tab.3.bottom/0.0.1280.680@0.0.1280.680" timestamp="1589297642093" />
-    <state width="1189" height="208" key="GridCell.Tab.3.center" timestamp="1589343618310">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1189" height="106" key="GridCell.Tab.3.center/0.0.1280.680/-1920.0.1920.1040/1920.0.1280.760@0.0.1280.680" timestamp="1589002919598" />
-    <state width="1829" height="313" key="GridCell.Tab.3.center/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588915514752" />
-    <state width="1189" height="208" key="GridCell.Tab.3.center/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1589343618310" />
-    <state width="1189" height="240" key="GridCell.Tab.3.center/0.0.1280.680@0.0.1280.680" timestamp="1589297642093" />
-    <state width="1189" height="208" key="GridCell.Tab.3.left" timestamp="1589343618310">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1189" height="106" key="GridCell.Tab.3.left/0.0.1280.680/-1920.0.1920.1040/1920.0.1280.760@0.0.1280.680" timestamp="1589002919598" />
-    <state width="1829" height="313" key="GridCell.Tab.3.left/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588915514752" />
-    <state width="1189" height="208" key="GridCell.Tab.3.left/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1589343618310" />
-    <state width="1189" height="240" key="GridCell.Tab.3.left/0.0.1280.680@0.0.1280.680" timestamp="1589297642093" />
-    <state width="1189" height="208" key="GridCell.Tab.3.right" timestamp="1589343618310">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1189" height="106" key="GridCell.Tab.3.right/0.0.1280.680/-1920.0.1920.1040/1920.0.1280.760@0.0.1280.680" timestamp="1589002919599" />
-    <state width="1829" height="313" key="GridCell.Tab.3.right/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588915514752" />
-    <state width="1189" height="208" key="GridCell.Tab.3.right/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1589343618310" />
-    <state width="1189" height="240" key="GridCell.Tab.3.right/0.0.1280.680@0.0.1280.680" timestamp="1589297642093" />
-    <state width="1189" height="336" key="GridCell.Tab.4.bottom" timestamp="1588680542213">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1189" height="336" key="GridCell.Tab.4.bottom/0.0.1280.680@0.0.1280.680" timestamp="1588680542213" />
-    <state width="1189" height="336" key="GridCell.Tab.4.center" timestamp="1588680542210">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1189" height="336" key="GridCell.Tab.4.center/0.0.1280.680@0.0.1280.680" timestamp="1588680542210" />
-    <state width="1189" height="336" key="GridCell.Tab.4.left" timestamp="1588680542210">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1189" height="336" key="GridCell.Tab.4.left/0.0.1280.680@0.0.1280.680" timestamp="1588680542210" />
-    <state width="1189" height="336" key="GridCell.Tab.4.right" timestamp="1588680542212">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1189" height="336" key="GridCell.Tab.4.right/0.0.1280.680@0.0.1280.680" timestamp="1588680542212" />
-    <state x="106" y="114" width="838" height="539" key="IDE.errors.dialog" timestamp="1588642016366">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="106" y="114" width="838" height="539" key="IDE.errors.dialog/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1588642016366" />
-    <state x="299" y="42" key="RollbackChangesDialog" timestamp="1589090287991">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="299" y="42" key="RollbackChangesDialog/0.0.1280.680@0.0.1280.680" timestamp="1589090287991" />
-    <state x="106" y="0" key="SettingsEditor" timestamp="1589259049605">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="-1366" y="172" key="SettingsEditor/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588655380547" />
-    <state x="106" y="0" key="SettingsEditor/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1589259049605" />
-    <state x="101" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1588684644141" />
-    <state x="362" y="82" width="558" height="524" key="StructurePopup" timestamp="1589030435511">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="-1377" y="125" width="837" height="802" key="StructurePopup/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588912355603" />
-    <state x="362" y="82" width="558" height="524" key="StructurePopup/0.0.1280.680@0.0.1280.680" timestamp="1589030435511" />
-    <state width="512" height="603" key="SwitcherDM" timestamp="1589256712769">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="768" height="777" key="SwitcherDM/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588742510767" />
-    <state width="512" height="603" key="SwitcherDM/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1589256712769" />
-    <state width="512" height="603" key="SwitcherDM/0.0.1280.680@0.0.1280.680" timestamp="1589211670324" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1589174094901">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1920.0.1920.1040/1920.0.1280.760@0.0.1280.680" timestamp="1589174094901" />
-    <state width="666" height="348" key="XDebugger.FullValuePopup" timestamp="1588863873265">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="666" height="348" key="XDebugger.FullValuePopup/0.0.1280.680@0.0.1280.680" timestamp="1588863873264" />
-    <state x="401" y="123" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1589255679933">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="401" y="123" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1589255679933" />
-    <state x="0" y="55" width="1280" height="597" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1589343448592">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="0" y="55" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1589343448592" />
-    <state x="0" y="55" width="1280" height="597" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1280.680@0.0.1280.680" timestamp="1589296091275" />
-    <state x="189" y="91" width="920" height="573" key="find.popup" timestamp="1589292980641">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="-1000" y="281" width="608" height="532" key="find.popup/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588912804693" />
-    <state x="189" y="91" width="920" height="573" key="find.popup/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1589258742988" />
-    <state x="189" y="91" width="920" height="573" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1589292980641" />
-    <state width="878" height="303" key="javadoc.popup.new" timestamp="1589283073984">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="878" height="303" key="javadoc.popup.new/0.0.1280.680/-1920.0.1920.1040/1920.0.1280.760@0.0.1280.680" timestamp="1589174215683" />
-    <state width="1317" height="462" key="javadoc.popup.new/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588983054898" />
-    <state width="878" height="303" key="javadoc.popup.new/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1589283073984" />
-    <state width="878" height="302" key="javadoc.popup.new/0.0.1280.680@0.0.1280.680" timestamp="1589211961643" />
-    <state x="297" y="151" key="run.anything.popup" timestamp="1589115864812">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1589115864812" />
-    <state x="415" y="147" width="672" height="444" key="search.everywhere.popup" timestamp="1589329774590">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="415" y="147" width="672" height="444" key="search.everywhere.popup/0.0.1280.680/-1920.0.1920.1040/1920.0.1280.760@0.0.1280.680" timestamp="1589174079918" />
-    <state x="-1297" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588915374355" />
-    <state x="415" y="147" width="672" height="444" key="search.everywhere.popup/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1589329774590" />
-    <state x="415" y="147" width="672" height="444" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1589293060338" />
+    <state x="415" y="147" width="672" height="444" key="search.everywhere.popup/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1596540687214" />
+    <state x="322" y="89" width="672" height="444" key="search.everywhere.popup/0.0.1280.680/1920.0.1280.760/-1920.0.1920.1040@0.0.1280.680" timestamp="1594183678426" />
+    <state x="322" y="89" width="672" height="444" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1597073253357" />
+    <state x="326" y="103" width="672" height="497" key="search.everywhere.popup/0.0.1280.760@0.0.1280.760" timestamp="1600493218247" />
+    <state x="623" y="225" width="1008" height="680" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1595084937792" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
