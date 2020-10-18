@@ -1,0 +1,34 @@
+plugins {
+    id 'java'
+}
+
+group 'org.springframework'
+version '5.1.1.BUILD-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'javax.mail', name: 'mail', version: '1.4.7'
+
+    optional(project(":spring-context"))
+    optional(project(":spring-context-support"))
+
+
+
+
+
+    optional(project(":spring-aop"))
+    optional(project(":spring-jdbc"))
+    optional(project(":spring-test"))
+    optional("org.aspectj:aspectjweaver:${aspectjVersion}")
+    testCompile group: 'org.objenesis', name: 'objenesis', version: '2.6'
+    compile group: 'cglib', name: 'cglib', version: '3.2.8'
+
+    //测试tx时使用
+    compile group: 'mysql', name: 'mysql-connector-java', version: '6.0.6'
+    compile group: 'com.alibaba', name: 'druid', version: '1.1.10'
+
+}
