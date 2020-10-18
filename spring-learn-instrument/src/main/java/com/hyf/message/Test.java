@@ -16,7 +16,9 @@ public class Test {
 
 		OrderManager bean = context.getBean(OrderManager.class);
 		System.out.println(bean);
-		bean.placeOrder(null);
+		// bean.placeOrder(null);
+		// bean.placeOrder2(null);
+		bean.placeOrder3(null);
 
 	}
 }

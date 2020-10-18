@@ -10,4 +10,8 @@ public interface IOrderManager {
 
 	void placeOrder(Map<String, Object> order);
 
+	void placeOrder2(Map<String, Object> order);
+
+	void placeOrder3(Map<String, Object> order);
+
 }

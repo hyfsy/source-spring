@@ -3,9 +3,7 @@ plugins {
 }
 
 group 'org.springframework'
-version '4.10.BUILD-SNAPSHOT'
-
-sourceCompatibility = 1.8
+version '5.1.1.BUILD-SNAPSHOT'
 
 repositories {
     mavenCentral()

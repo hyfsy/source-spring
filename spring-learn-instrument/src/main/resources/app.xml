@@ -3,12 +3,4 @@
 	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
-		<property name="host" value="www.fengsong.com" />
-	</bean>
-
-	<bean id="simpleMailMessage" class="org.springframework.mail.SimpleMailMessage">
-		<property name="from" value="1577985140@qq.com" />
-		<property name="subject" value="order info" />
-	</bean>
 </beans>
