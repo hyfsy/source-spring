@@ -15,6 +15,9 @@ import java.util.Properties;
 @Configuration
 public class MessageConfiguration {
 
+	public static final String username = "xxx@qq.com";
+	public static final String password = "xxx";
+
 	@Bean
 	public MailSender mailSender() {
 		JavaMailSenderImpl javaMailSender = new JavaMailSenderImpl(); // 这边只有实现类有set方法
@@ -22,8 +25,8 @@ public class MessageConfiguration {
 		javaMailSender.setHost("smtp.qq.com"); // qq邮箱SMTP服务器地址
 		javaMailSender.setPort(465); // qq邮箱SMTP服务器端口
 
-		javaMailSender.setUsername("1577975140@qq.com");
-		javaMailSender.setPassword("hsfdpduwhzcnfjfe");
+		javaMailSender.setUsername(username);
+		javaMailSender.setPassword(password);
 
 		// 以下几个属性最好设置一下，因为 465端口实现了stmps协议
 		Properties prop = new Properties();
@@ -43,7 +46,7 @@ public class MessageConfiguration {
 	@Bean
 	public SimpleMailMessage simpleMailMessage() {
 		SimpleMailMessage simpleMailMessage = new SimpleMailMessage();
-		simpleMailMessage.setFrom("1577975140@qq.com");
+		simpleMailMessage.setFrom(username);
 
 		return simpleMailMessage;
 	}

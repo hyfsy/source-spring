@@ -30,11 +30,14 @@ public class OrderManager implements IOrderManager {
 	@Autowired
 	private JavaMailSender javaMailSender;
 
+	public static final String username = "xxx@qq.com";
+	public static final String recipient = "xxx@qq.com";
+
 	@Override
 	public void placeOrder(Map<String, Object> order) {
 		SimpleMailMessage simpleMailMessage = new SimpleMailMessage(this.simpleMailMessage);
 
-		simpleMailMessage.setTo("2072264584@qq.com");
+		simpleMailMessage.setTo(recipient);
 		simpleMailMessage.setText("hello");
 		simpleMailMessage.setSubject("主题内容：测试");
 
@@ -57,9 +60,9 @@ public class OrderManager implements IOrderManager {
 		MimeMessagePreparator mimeMessagePreparator = new MimeMessagePreparator() {
 			@Override
 			public void prepare(MimeMessage mimeMessage) throws Exception {
-				mimeMessage.setFrom(new InternetAddress("1577975140@qq.com"));
+				mimeMessage.setFrom(new InternetAddress(username));
 				mimeMessage.setRecipient(Message.RecipientType.TO, // 接受者
-						new InternetAddress("2072264584@qq.com"));
+						new InternetAddress(recipient));
 				mimeMessage.setText("hello2");
 				mimeMessage.setSubject("主题内容：测试");
 			}
@@ -82,8 +85,8 @@ public class OrderManager implements IOrderManager {
 
 				MimeMessageHelper mimeMessageHelper = new MimeMessageHelper(mimeMessage);
 
-				mimeMessageHelper.setFrom("1577975140@qq.com");
-				mimeMessageHelper.setTo("2072264584@qq.com");
+				mimeMessageHelper.setFrom(username);
+				mimeMessageHelper.setTo(recipient);
 				mimeMessageHelper.setText("hello3");
 				mimeMessageHelper.setSubject("主题内容：测试3");
 			}
