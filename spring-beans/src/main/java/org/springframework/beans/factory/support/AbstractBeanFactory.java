@@ -214,7 +214,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 		// Initialization: 初始化 -> 设置初始值 -> 后
 
         // 返回 bean 名称，剥离工厂引用前缀。
-        // 如果 name 是 alias ，则获取对应映射的 beanName 。
+        // 如果 name 是 alias ，则获取对应映射的 beanName。
 		final String beanName = transformedBeanName(name);
 		Object bean;
 

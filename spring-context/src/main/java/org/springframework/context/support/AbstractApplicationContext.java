@@ -495,8 +495,7 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 			ConfigurableListableBeanFactory beanFactory = obtainFreshBeanFactory();
 
 			// Prepare the bean factory for use in this context.
-            // 对 BeanFactory 进行各种功能填充。
-            // 包括对一些 Aware 接口的属性注入支持
+            // 对 BeanFactory 进行各种功能填充，包括对一些 Aware 接口的属性注入支持
 			prepareBeanFactory(beanFactory);
 
 			try {
@@ -591,8 +590,8 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 
 		// Allow for the collection of early ApplicationEvents,
 		// to be published once the multicaster is available...
-        // 初始化早起的 ApplicationEvent 集合。
-        // 因为此事，ApplicationMulticaster 还没创建好。
+        // 初始化早期的 ApplicationEvent 集合。
+        // 因为此时 ApplicationMulticaster 还没创建好。
 		this.earlyApplicationEvents = new LinkedHashSet<>();
 	}
 
@@ -631,7 +630,7 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 		// 设置 BeanFactory 的表达式语言表达式，Spring3 增加了表达式语言的支持
         // 默认可以使用 #{bean.xxx} 的形式来调用相关属性
 		beanFactory.setBeanExpressionResolver(new StandardBeanExpressionResolver(beanFactory.getBeanClassLoader()));
-		// 添加 BeanFactory 的属性编辑器 ResourceEditorRegistrar 对象
+		// 添加 BeanFactory 的属性编辑器 ResourceEditorRegistrar 对象，会注册一些默认的属性编辑器实现
 		beanFactory.addPropertyEditorRegistrar(new ResourceEditorRegistrar(this, getEnvironment()));
 
 		// Configure the bean factory with context callbacks.
@@ -929,6 +928,7 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 
 		// Participate in LiveBeansView MBean, if active.
         // 后续看 MBean 相关。
+		// 将容器所有中的所有bean获取出来，并变成一个json字符串，通过jmx发布
 		LiveBeansView.registerApplicationContext(this);
 	}
 

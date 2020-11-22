@@ -634,6 +634,8 @@ public class DispatcherServlet extends FrameworkServlet {
 	private void initHandlerAdapters(ApplicationContext context) {
 		this.handlerAdapters = null;
 
+		// 控制是否默认查找容器中所有bean还是仅查找指定名称的HandlerAdapter
+		// @see org.springframework.boot.actuate.autoconfigure.web.servlet.CompositeHandlerAdapter
 		if (this.detectAllHandlerAdapters) {
 			// Find all HandlerAdapters in the ApplicationContext, including ancestor contexts.
 			Map<String, HandlerAdapter> matchingBeans =

@@ -44,27 +44,51 @@ import org.springframework.util.StringUtils;
 @SuppressWarnings("serial")
 public class SimpleMailMessage implements MailMessage, Serializable {
 
+	/**
+	 * 邮件发送人
+	 */
 	@Nullable
 	private String from;
 
+	/**
+	 * 邮件回复人
+	 */
 	@Nullable
 	private String replyTo;
 
+	/**
+	 * 邮件接收人
+	 */
 	@Nullable
 	private String[] to;
 
+	/**
+	 * 邮件抄送人
+	 */
 	@Nullable
 	private String[] cc;
 
+	/**
+	 * 邮件密送人
+	 */
 	@Nullable
 	private String[] bcc;
 
+	/**
+	 * 发送时间
+	 */
 	@Nullable
 	private Date sentDate;
 
+	/**
+	 * 邮件标题
+	 */
 	@Nullable
 	private String subject;
 
+	/**
+	 * 邮件内容
+	 */
 	@Nullable
 	private String text;
 
