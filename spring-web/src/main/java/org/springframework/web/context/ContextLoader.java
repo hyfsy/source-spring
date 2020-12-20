@@ -308,6 +308,9 @@ public class ContextLoader {
 			if (ccl == ContextLoader.class.getClassLoader()) {
 				currentContext = this.context;
 			} else if (ccl != null) {
+				// 放入当前类加载器和上下文的映射关系
+				// spring考虑到在比如tomcat的环境中，spring相关jar被放到CommonClassLoader等类加载器中，
+				// 可以访问到WebappClassLoader加载的类
 				currentContextPerThread.put(ccl, this.context);
 			}
 
