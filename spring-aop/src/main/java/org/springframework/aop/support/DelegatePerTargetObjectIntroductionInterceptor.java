@@ -78,6 +78,7 @@ public class DelegatePerTargetObjectIntroductionInterceptor extends Introduction
 		// 反射通过无参构造函数创建 defaultImplType 的实例对象
 		Object delegate = createNewDelegate();
 		// 缓存该默认实现对象的所有实现接口（包括父类）
+		// 最终这些接口都会放入到代理对象的实现接口中
 		implementInterfacesOnObject(delegate);
 		suppressInterface(IntroductionInterceptor.class);
 		suppressInterface(DynamicIntroductionAdvice.class);
@@ -92,6 +93,7 @@ public class DelegatePerTargetObjectIntroductionInterceptor extends Introduction
 	@Override
 	@Nullable
 	public Object invoke(MethodInvocation mi) throws Throwable {
+		// 方法是增强的内部接口调用的
 		if (isMethodOnIntroducedInterface(mi)) {
 			// 获取该 目标对象 对应的 委托默认实现对象
 			Object delegate = getIntroductionDelegateFor(mi.getThis());
@@ -111,6 +113,7 @@ public class DelegatePerTargetObjectIntroductionInterceptor extends Introduction
 			return retVal;
 		}
 
+		// 因为不匹配，当前拦截器跳过执行
 		return doProceed(mi);
 	}
 

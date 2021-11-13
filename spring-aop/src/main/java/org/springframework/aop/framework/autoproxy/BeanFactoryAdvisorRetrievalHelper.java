@@ -59,6 +59,8 @@ public class BeanFactoryAdvisorRetrievalHelper {
 
 
 	/**
+	 * 处理容器内的 Advisor对象，一般只有xml形式的才会存在，否则走外层的AspectJ的注解形式的创建
+	 *
 	 * Find all eligible Advisor beans in the current bean factory,
 	 * ignoring FactoryBeans and excluding beans that are currently in creation.
 	 * @return the list of {@link org.springframework.aop.Advisor} beans
@@ -93,7 +95,7 @@ public class BeanFactoryAdvisorRetrievalHelper {
 				else {
 					try {
 						/**
-						 * 级联创建依赖对象
+						 * xml级联创建依赖对象
 						 * start -> AspectJPointcutAdvisor							: getBean()		单例（添加到单例池中）
 						 * 		 -> AspectJ...Advice（MethodBefore/After[Returning/Throwing]/Around） : createBean() 不加到单例池中
 						 * 		 -> MethodLocatingFactoryBean 						: createBean() 不加到单例池中

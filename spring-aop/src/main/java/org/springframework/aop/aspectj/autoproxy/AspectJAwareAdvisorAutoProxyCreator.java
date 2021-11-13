@@ -33,6 +33,9 @@ import java.util.Comparator;
 import java.util.List;
 
 /**
+ * 1、处理AspectJ的排序规则
+ * 2、暴露方法调用对象
+ *
  * {@link org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator}
  * subclass that exposes AspectJ's invocation context and understands AspectJ's rules
  * for advice precedence when multiple pieces of advice come from the same aspect.
@@ -71,9 +74,7 @@ public class AspectJAwareAdvisorAutoProxyCreator extends AbstractAdvisorAutoProx
 			partiallyComparableAdvisors.add(
 					new PartiallyComparableAdvisorHolder(element, DEFAULT_PRECEDENCE_COMPARATOR));
 		}
-		// AspectJ 的默认排序有点迷：
-		// xml配置：other/After/AfterThrowing/AfterReturning/MethodBefore/Around
-		// 注解配置：other/After/AfterThrowing/AfterReturning/Around/MethodBefore
+		// 再进行 AspectJ 的默认排序
 		List<PartiallyComparableAdvisorHolder> sorted = PartialOrder.sort(partiallyComparableAdvisors);
 		if (sorted != null) {
 			List<Advisor> result = new ArrayList<>(advisors.size());

@@ -41,6 +41,9 @@ import java.util.Comparator;
 import java.util.List;
 
 /**
+ * 创建出所有的Advisor，包括切入点表达式和引介两种
+ * 控制不同切面模式的切面实例创建 - 就单例和原型，没啥其他特殊的，不要想太多
+ *
  * Factory that can create Spring AOP Advisors given AspectJ classes from
  * classes honoring the AspectJ 5 annotation syntax, using reflection to
  * invoke the corresponding advice methods.
@@ -67,6 +70,7 @@ public class ReflectiveAspectJAdvisorFactory extends AbstractAspectJAdvisorFacto
 				(Converter<Method, Annotation>) method -> {
 					AspectJAnnotation<?> annotation =
 						AbstractAspectJAdvisorFactory.findAspectJAnnotationOnMethod(method);
+					// 过滤没注解的方法
 					return (annotation != null ? annotation.getAnnotation() : null);
 				});
 		Comparator<Method> methodNameComparator = new ConvertingComparator<>(Method::getName);
@@ -102,7 +106,7 @@ public class ReflectiveAspectJAdvisorFactory extends AbstractAspectJAdvisorFacto
 
 	@Override
 	public List<Advisor> getAdvisors(MetadataAwareAspectInstanceFactory aspectInstanceFactory) {
-	    // 获得类和名字
+	    // 获得类和bean名称
 		Class<?> aspectClass = aspectInstanceFactory.getAspectMetadata().getAspectClass();
 		String aspectName = aspectInstanceFactory.getAspectMetadata().getAspectName();
 		// 验证
@@ -110,7 +114,7 @@ public class ReflectiveAspectJAdvisorFactory extends AbstractAspectJAdvisorFacto
 
 		// We need to wrap the MetadataAwareAspectInstanceFactory with a decorator
 		// so that it will only instantiate once.
-		// 装饰实例工厂为懒加载工厂，仅实例化一次，用于处理原型模型的切面
+		// 装饰实例工厂为懒加载工厂，仅实例化切面一次，用于处理原型模型的切面
 		MetadataAwareAspectInstanceFactory lazySingletonAspectInstanceFactory =
 				new LazySingletonAspectInstanceFactoryDecorator(aspectInstanceFactory);
 
@@ -156,7 +160,7 @@ public class ReflectiveAspectJAdvisorFactory extends AbstractAspectJAdvisorFacto
 			}
 		});
 		// 方法注解排序：Around -> Before -> After -> AfterReturning -> AfterThrowing
-		// 方法名称排序
+		// 方法名称排序，排序内过滤掉没有相关注解的方法
 		methods.sort(METHOD_COMPARATOR);
 		return methods;
 	}
@@ -303,12 +307,13 @@ public class ReflectiveAspectJAdvisorFactory extends AbstractAspectJAdvisorFacto
 		// Now to configure the advice...
         // 设置创建的 Advice 对象的属性
 		springAdvice.setAspectName(aspectName); // 切面名
-		springAdvice.setDeclarationOrder(declarationOrder); // 切面顺序
+		springAdvice.setDeclarationOrder(declarationOrder); // 切面顺序 - 方法顺序
+		// 切入点表达式上的参数名称
 		String[] argNames = this.parameterNameDiscoverer.getParameterNames(candidateAdviceMethod); // 参数集合
 		if (argNames != null) {
 			springAdvice.setArgumentNamesFromStringArray(argNames);
 		}
-		springAdvice.calculateArgumentBindings(); // 参数绑定
+		springAdvice.calculateArgumentBindings(); // 参数和类型的顺序绑定
 
 		return springAdvice;
 	}
@@ -323,8 +328,17 @@ public class ReflectiveAspectJAdvisorFactory extends AbstractAspectJAdvisorFacto
 	protected static class SyntheticInstantiationAdvisor extends DefaultPointcutAdvisor {
 
 		public SyntheticInstantiationAdvisor(final MetadataAwareAspectInstanceFactory aif) {
-			super(aif.getAspectMetadata().getPerClausePointcut(), (MethodBeforeAdvice) // 实现 MethodBeforeAdvice 的 before 方法
-					(method, args, target) -> aif.getAspectInstance()); // 获得 Aspect 对象
+			// super(aif.getAspectMetadata().getPerClausePointcut(), (MethodBeforeAdvice) // 实现 MethodBeforeAdvice 的 before 方法
+			// 		(method, args, target) -> aif.getAspectInstance()); // 获得 Aspect 对象
+
+			// ???
+			super(aif.getAspectMetadata().getPerClausePointcut(), new MethodBeforeAdvice() {
+				@Override
+				public void before(Method method, Object[] args, Object target) throws Throwable {
+					// 专门用来触发切面对象的实例化操作
+					aif.getAspectInstance();
+				}
+			});
 		}
 
 	}

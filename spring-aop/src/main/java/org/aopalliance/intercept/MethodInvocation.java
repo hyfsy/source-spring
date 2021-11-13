@@ -27,6 +27,7 @@ import java.lang.reflect.Method;
  *
  * @author Rod Johnson
  * @see MethodInterceptor
+ * @see org.springframework.aop.aspectj.AbstractAspectJAdvice#currentJoinPoint
  */
 public interface MethodInvocation extends Invocation {
 

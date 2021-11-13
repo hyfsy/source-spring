@@ -31,6 +31,8 @@ import org.springframework.aop.IntroductionInfo;
 import org.springframework.util.ClassUtils;
 
 /**
+ * 维护引介的接口
+ *
  * Support for implementations of {@link org.springframework.aop.IntroductionInfo}.
  *
  * <p>Allows subclasses to conveniently add all interfaces from a given object,
@@ -83,6 +85,7 @@ public class IntroductionInfoSupport implements IntroductionInfo, Serializable {
 	 * @param delegate the delegate object
 	 */
 	protected void implementInterfacesOnObject(Object delegate) {
+		// 添加对象的所有接口
 		this.publishedInterfaces.addAll(ClassUtils.getAllInterfacesAsSet(delegate));
 	}
 
@@ -98,7 +101,7 @@ public class IntroductionInfoSupport implements IntroductionInfo, Serializable {
 		}
 		else {
 			// Work it out and cache it.
-			// 判断该方法所在类是否为该引介支持的类
+			// 判断调用的方法是否在接口上，并且该引介也支持拦截该接口
 			boolean result = implementsInterface(mi.getMethod().getDeclaringClass());
 			this.rememberedMethods.put(mi.getMethod(), result);
 			return result;

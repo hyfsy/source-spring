@@ -25,6 +25,11 @@ import org.springframework.core.annotation.AnnotationAwareOrderComparator;
 import org.springframework.util.Assert;
 
 /**
+ * 1、按照Order排序
+ * 2、存在相同切面的情况
+ * 2.1、如果存在后置通知，则顺序按照方法声明顺序从后往前
+ * 2.2、如果不存在后置通知，则顺序按照方法声明顺序从前往后
+ *
  * Orders AspectJ advice/advisors by precedence (<i>not</i> invocation order).
  *
  * <p>Given two pieces of advice, {@code a} and {@code b}:

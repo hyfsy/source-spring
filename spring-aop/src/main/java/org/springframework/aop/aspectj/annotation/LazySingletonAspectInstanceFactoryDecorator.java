@@ -22,6 +22,8 @@ import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
 
 /**
+ * 用于当切面对象在容器中为原型，保证每个切入点的切面只会创建一次
+ *
  * Decorator to cause a {@link MetadataAwareAspectInstanceFactory} to instantiate only once.
  *
  * @author Rod Johnson

@@ -52,9 +52,11 @@ public class AnnotationAwareAspectJAutoProxyCreator extends AspectJAwareAdvisorA
 	@Nullable
 	private List<Pattern> includePatterns;
 
+	/** Advisor工厂，通过@Aspect切面类能获取顾问对象，及其他的判断功能 */
 	@Nullable
 	private AspectJAdvisorFactory aspectJAdvisorFactory;
 
+	/** 专门用来获取Advisor列表，内部包含工厂对象 */
 	@Nullable
 	private BeanFactoryAspectJAdvisorsBuilder aspectJAdvisorsBuilder;
 

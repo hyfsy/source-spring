@@ -28,6 +28,8 @@ import org.springframework.util.Assert;
 import java.util.List;
 
 /**
+ * 基于给定的规则获取Advisor列表，并排好序
+ *
  * Generic auto proxy creator that builds AOP proxies for specific beans
  * based on detected Advisors for each bean.
  *
@@ -99,7 +101,10 @@ public abstract class AbstractAdvisorAutoProxyCreator extends AbstractAutoProxyC
 		extendAdvisors(eligibleAdvisors);
 		// 排序匹配的 Advisor 增强器，【降序】排序，为最终拦截器链的执行顺序
 		if (!eligibleAdvisors.isEmpty()) {
-			// 这个排序规则有点迷，为AspectJ内部排序规则，不好探其究竟
+			// 这个排序规则有点迷，为AspectJ内部排序规则
+			// 1、先对方法进行排序, see ReflectiveAspectJAdvisorFactory -> Around, Before, After, AfterReturning, AfterThrowing
+			// 2、再对方法名称进行排序
+			// 3、最后综合起来再 see AspectJPrecedenceComparator
 			eligibleAdvisors = sortAdvisors(eligibleAdvisors);
 		}
 		return eligibleAdvisors;

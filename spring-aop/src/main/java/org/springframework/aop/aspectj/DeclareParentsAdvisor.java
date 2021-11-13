@@ -50,6 +50,7 @@ public class DeclareParentsAdvisor implements IntroductionAdvisor {
 	 */
 	public DeclareParentsAdvisor(Class<?> interfaceType, String typePattern, Class<?> defaultImpl) {
 		this(interfaceType, typePattern,
+				// 类的情况，内部手动init<>()出来
 				new DelegatePerTargetObjectIntroductionInterceptor(defaultImpl, interfaceType));
 	}
 
@@ -60,6 +61,7 @@ public class DeclareParentsAdvisor implements IntroductionAdvisor {
 	 * @param delegateRef the delegate implementation object
 	 */
 	public DeclareParentsAdvisor(Class<?> interfaceType, String typePattern, Object delegateRef) {
+		// 给定对象，则直接使用
 		this(interfaceType, typePattern, new DelegatingIntroductionInterceptor(delegateRef));
 	}
 

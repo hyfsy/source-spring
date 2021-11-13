@@ -185,6 +185,7 @@ public class AspectMetadata implements Serializable {
 	 * Return whether the aspect needs to be lazily instantiated.
 	 */
 	public boolean isLazilyInstantiated() {
+		// 懒实例化
 		return (isPerThisOrPerTarget() || isPerTypeWithin());
 	}
 

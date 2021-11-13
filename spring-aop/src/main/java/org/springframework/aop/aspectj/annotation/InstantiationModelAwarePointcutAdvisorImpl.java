@@ -67,25 +67,25 @@ final class InstantiationModelAwarePointcutAdvisorImpl
      */
 	private transient Method aspectJAdviceMethod;
     /**
-     * ReflectiveAspectJAdvisorFactory 实例
+     * ReflectiveAspectJAdvisorFactory 实例 - 获取顾问或通知对象
      */
 	private final AspectJAdvisorFactory aspectJAdvisorFactory;
     /**
-     * MetadataAwareAspectInstanceFactory 实例
+     * MetadataAwareAspectInstanceFactory 实例 - 获取切面元数据
      */
 	private final MetadataAwareAspectInstanceFactory aspectInstanceFactory;
     /**
-     * 切面的顺序
+     * 切面的顺序 - 类中定义的方法顺序
      */
 	private final int declarationOrder;
     /**
-     * 切面的 Bean 的名字。
+     * 切面的 Bean 的名称
      *
      * 这样，在后续的 Advice 的执行时，可以获取到对应的 Bean 对象。
      */
 	private final String aspectName;
     /**
-     * 切点对象
+     * 切点对象 - 最终使用的，因为可能声明的切入点可能需要和@Aspect注解上的切入点合并
      */
 	private final Pointcut pointcut;
 
@@ -103,12 +103,12 @@ final class InstantiationModelAwarePointcutAdvisorImpl
 	private Advice instantiatedAdvice;
 
     /**
-     * 是否前置切面
+     * 是否前置通知
      */
 	@Nullable
 	private Boolean isBeforeAdvice;
     /**
-     * 是否后置切面
+     * 是否后置通知
      */
 	@Nullable
 	private Boolean isAfterAdvice;
@@ -119,6 +119,7 @@ final class InstantiationModelAwarePointcutAdvisorImpl
 
 		// 这个类可以理解为 AspectJPointcutAdvisor （xml配置生成的顾问对象）
 
+		// 方法的切入点表达式
 		this.declaredPointcut = declaredPointcut;
 		this.declaringClass = aspectJAdviceMethod.getDeclaringClass();
 		this.methodName = aspectJAdviceMethod.getName();
@@ -136,6 +137,7 @@ final class InstantiationModelAwarePointcutAdvisorImpl
 		if (aspectInstanceFactory.getAspectMetadata().isLazilyInstantiated()) {
 			// Static part of the pointcut is a lazy type.
 			Pointcut preInstantiationPointcut = Pointcuts.union(
+					// 和类上的表达式做并集，一个匹配就算匹配
 					aspectInstanceFactory.getAspectMetadata().getPerClausePointcut(), this.declaredPointcut);
 
 			// Make it dynamic: must mutate from pre-instantiation to post-instantiation state.
