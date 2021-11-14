@@ -315,6 +315,7 @@ final class InstantiationModelAwarePointcutAdvisorImpl
 
 		private final AspectJExpressionPointcut declaredPointcut;
 
+		// 每个切面实例的切入点，包含方法上和类注解上的切入点表达式组合
 		private final Pointcut preInstantiationPointcut;
 
 		@Nullable

@@ -103,7 +103,7 @@ public abstract class AbstractAdvisorAutoProxyCreator extends AbstractAutoProxyC
 		if (!eligibleAdvisors.isEmpty()) {
 			// 这个排序规则有点迷，为AspectJ内部排序规则
 			// 1、先对方法进行排序, see ReflectiveAspectJAdvisorFactory -> Around, Before, After, AfterReturning, AfterThrowing
-			// 2、再对方法名称进行排序
+			// 2、相同注解的再对方法名称进行排序，相同则 getDeclaredMethods
 			// 3、最后综合起来再 see AspectJPrecedenceComparator
 			eligibleAdvisors = sortAdvisors(eligibleAdvisors);
 		}

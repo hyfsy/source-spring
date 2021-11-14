@@ -286,9 +286,12 @@ public abstract class AopUtils {
 
 		// 进行切入点的匹配，此处 引介匹配也是切入点表达式，类匹配
 
+		// 引介只要匹配类型
 		if (advisor instanceof IntroductionAdvisor) { // IntroductionAdvisor 增强器
 			return ((IntroductionAdvisor) advisor).getClassFilter().matches(targetClass);
-		} else if (advisor instanceof PointcutAdvisor) { // PointcutAdvisor 增强器
+		}
+		// 切入点格式的要匹配类型和内部所有的方法（一个匹配即可）
+		else if (advisor instanceof PointcutAdvisor) { // PointcutAdvisor 增强器
 			PointcutAdvisor pca = (PointcutAdvisor) advisor;
 			return canApply(pca.getPointcut(), targetClass, hasIntroductions);
 		} else { // 其他，默认可以
@@ -309,6 +312,9 @@ public abstract class AopUtils {
 		if (candidateAdvisors.isEmpty()) {
 			return candidateAdvisors;
 		}
+
+		// 匹配类中所有方法，缩小范围，每个方法的匹配再第一次调用方法时进行匹配并缓存拦截链
+
 		List<Advisor> eligibleAdvisors = new ArrayList<>(); // eligible 翻译为符合条件的
 		// 首先，处理 IntroductionAdvisor 增强器
 		for (Advisor candidate : candidateAdvisors) {

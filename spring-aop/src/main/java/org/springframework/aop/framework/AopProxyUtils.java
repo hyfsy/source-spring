@@ -218,6 +218,8 @@ public abstract class AopProxyUtils {
 
 
 	/**
+	 * 将可变参数位置上的数组类型对象，如果有必要，解包装为原始类型，或者方法签名为接口类型，数组为实现类型
+	 *
 	 * Adapt the given arguments to the target signature in the given method,
 	 * if necessary: in particular, if a given vararg argument array does not
 	 * match the array type of the declared vararg parameter in the method.
@@ -233,17 +235,25 @@ public abstract class AopProxyUtils {
 		// 方法存在可变参数
 		if (method.isVarArgs()) {
 			Class<?>[] paramTypes = method.getParameterTypes();
+			// 参数相同，说明可变参数传入的是个数组
 			if (paramTypes.length == arguments.length) {
 				int varargIndex = paramTypes.length - 1;
 				Class<?> varargType = paramTypes[varargIndex];
+				// 可变参数的位置是个数组类型，而不是简单类型
 				if (varargType.isArray()) {
+					// 获取数组对象
 					Object varargArray = arguments[varargIndex];
+					// 处理非基本类型 & 数组参数与方法声明的类型不一样
 					if (varargArray instanceof Object[] && !varargType.isInstance(varargArray)) {
+						// 接包装操作
 						Object[] newArguments = new Object[arguments.length];
 						System.arraycopy(arguments, 0, newArguments, 0, varargIndex);
+						// 获取参数数组指定的类型
 						Class<?> targetElementType = varargType.getComponentType();
 						int varargLength = Array.getLength(varargArray);
+						// 创建新的参数数组
 						Object newVarargArray = Array.newInstance(targetElementType, varargLength);
+						// 将包装类型的数组拷贝到新的基本类型数组中
 						System.arraycopy(varargArray, 0, newVarargArray, 0, varargLength);
 						newArguments[varargIndex] = newVarargArray;
 						return newArguments;

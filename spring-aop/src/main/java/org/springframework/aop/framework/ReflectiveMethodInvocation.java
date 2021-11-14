@@ -182,8 +182,9 @@ public class ReflectiveMethodInvocation implements ProxyMethodInvocation, Clonea
 	@Nullable
 	public Object proceed() throws Throwable {
 		//	We start with an index of -1 and increment early.
-        // 执行完所有拦截器后，执行切面方法
+        // 执行完所有拦截器后，执行target对象的方法
 		if (this.currentInterceptorIndex == this.interceptorsAndDynamicMethodMatchers.size() - 1) {
+			// 普通的反射调用
 			return invokeJoinpoint();
 		}
 
@@ -191,6 +192,7 @@ public class ReflectiveMethodInvocation implements ProxyMethodInvocation, Clonea
 		Object interceptorOrInterceptionAdvice =
 				this.interceptorsAndDynamicMethodMatchers.get(++this.currentInterceptorIndex);
 		// 切入点为动态的情况，比如存在指定参数，会包装为此 拦截器和方法匹配
+		// 一般的，AspectJ的都是动态方法匹配
 		if (interceptorOrInterceptionAdvice instanceof InterceptorAndDynamicMethodMatcher) {
 			// Evaluate dynamic method matcher here: static part will already have
 			// been evaluated and found to match.
@@ -201,7 +203,9 @@ public class ReflectiveMethodInvocation implements ProxyMethodInvocation, Clonea
 			if (dm.methodMatcher.matches(this.method, targetClass, this.arguments)) { // 匹配，则执行拦截器
 				// 调用内部拦截器
 				return dm.interceptor.invoke(this);
-			} else { // 不匹配，跳到下一个，递归执行
+			}
+			// 不匹配，跳到下一个，递归执行
+			else {
 				// Dynamic matching failed.
 				// Skip this interceptor and invoke the next in the chain.
 				return proceed();
@@ -210,7 +214,7 @@ public class ReflectiveMethodInvocation implements ProxyMethodInvocation, Clonea
 			// It's an interceptor, so we just invoke it: The pointcut will have
 			// been evaluated statically before this object was constructed.
             // 将 this 作为参数传递，以保证当前实例中调用链的执行
-            // MethodInterceptor 基于不同的切面类型，有不同的实现。
+            // MethodInterceptor 基于不同的切面类型，有不同的实现。Spring自己的版本
             // 		例如 @Before 			对应 MethodBeforeAdviceInterceptor
             // 		例如 @AfterReturning    对应 AfterReturningAdviceInterceptor
 			return ((MethodInterceptor) interceptorOrInterceptionAdvice).invoke(this);

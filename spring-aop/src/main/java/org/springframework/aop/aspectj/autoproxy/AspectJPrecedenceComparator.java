@@ -25,10 +25,11 @@ import org.springframework.core.annotation.AnnotationAwareOrderComparator;
 import org.springframework.util.Assert;
 
 /**
- * 1、按照Order排序
+ * 1、按照对象的Order排序
  * 2、存在相同切面的情况
- * 2.1、如果存在后置通知，则顺序按照方法声明顺序从后往前
- * 2.2、如果不存在后置通知，则顺序按照方法声明顺序从前往后
+ * 2.1、如果存在后置通知，则通知方法在类中 后声明的优先级高
+ * 2.2、如果不存在后置通知，则通知方法在类中 先声明的优先级高
+ * 3、如果不同切面Order相同，则 see AspectJAwareAdvisorAutoProxyCreator#sortAdvisors - 看不懂
  *
  * Orders AspectJ advice/advisors by precedence (<i>not</i> invocation order).
  *
@@ -83,18 +84,24 @@ class AspectJPrecedenceComparator implements Comparator<Advisor> {
 
 	@Override
 	public int compare(Advisor o1, Advisor o2) {
+		// 先bean 的 Order排序
 		int advisorPrecedence = this.advisorComparator.compare(o1, o2);
+		// 相同且在同一个切面中
 		if (advisorPrecedence == SAME_PRECEDENCE && declaredInSameAspect(o1, o2)) {
+			// 特殊排序规则
 			advisorPrecedence = comparePrecedenceWithinAspect(o1, o2);
 		}
 		return advisorPrecedence;
 	}
 
 	private int comparePrecedenceWithinAspect(Advisor advisor1, Advisor advisor2) {
+		// 有后置通知
 		boolean oneOrOtherIsAfterAdvice =
 				(AspectJAopUtils.isAfterAdvice(advisor1) || AspectJAopUtils.isAfterAdvice(advisor2));
+		// 通知方法声明的顺序比较
 		int adviceDeclarationOrderDelta = getAspectDeclarationOrder(advisor1) - getAspectDeclarationOrder(advisor2);
 
+		// 有后置通知的就后声明的优先级高，正常顺序
 		if (oneOrOtherIsAfterAdvice) {
 			// the advice declared last has higher precedence
 			if (adviceDeclarationOrderDelta < 0) {
@@ -109,6 +116,7 @@ class AspectJPrecedenceComparator implements Comparator<Advisor> {
 				return HIGHER_PRECEDENCE;
 			}
 		}
+		// 没有后置通知，就先声明的优先级高
 		else {
 			// the advice declared first has higher precedence
 			if (adviceDeclarationOrderDelta < 0) {

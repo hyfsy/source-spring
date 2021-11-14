@@ -34,7 +34,7 @@ import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * 添加Advisor或Advise
+ * 添加代理接口、Advisor或 Advise，通过 AdvisorChainFactory创建出一个拦截链
  *
  * Base class for AOP proxy configuration managers.
  * These are not themselves AOP proxies, but subclasses of this class are
@@ -478,6 +478,7 @@ public class AdvisedSupport extends ProxyConfig implements Advised {
 		List<Object> cached = this.methodCache.get(cacheKey);
 		// 获取不到，则进行构建
 		if (cached == null) {
+			// 匹配类和方法两种，就是完全匹配
 			cached = this.advisorChainFactory.getInterceptorsAndDynamicInterceptionAdvice(
 					this, method, targetClass);
 			this.methodCache.put(cacheKey, cached);

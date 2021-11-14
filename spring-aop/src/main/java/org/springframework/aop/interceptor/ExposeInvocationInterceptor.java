@@ -103,6 +103,7 @@ public final class ExposeInvocationInterceptor implements MethodInterceptor, Pri
 	@Override
 	public Object invoke(MethodInvocation mi) throws Throwable {
 	    // 获得老的 MethodInvocation 对象
+		// 用于AOP拦截的方法里调用AOP方法的情况
 		MethodInvocation oldInvocation = invocation.get();
 		// 设置当前为 MethodInvocation 对象
 		invocation.set(mi);
