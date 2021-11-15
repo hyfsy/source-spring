@@ -61,7 +61,7 @@ public abstract class ScopedProxyUtils {
 		proxyDefinition.setDecoratedDefinition(new BeanDefinitionHolder(targetDefinition, targetBeanName));
 		proxyDefinition.setOriginatingBeanDefinition(targetDefinition);
 		proxyDefinition.setSource(definition.getSource());
-		proxyDefinition.setRole(targetDefinition.getRole());
+		proxyDefinition.setRole(targetDefinition.getRole()); //
 
 		proxyDefinition.getPropertyValues().add("targetBeanName", targetBeanName);
 		// bean定义属性中设置使用的代理方式
