@@ -22,6 +22,9 @@ import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.util.Assert;
 
 /**
+ * 特殊的scope对象会实现 ScopedObject接口，实现类就是这个默认的实现类，see DelegatingIntroductionInterceptor
+ * 接口方法通过引介的方式来调用
+ *
  * Default implementation of the {@link ScopedObject} interface.
  *
  * <p>Simply delegates the calls to the underlying

@@ -33,6 +33,8 @@ import org.springframework.util.Assert;
 import org.springframework.util.ClassUtils;
 
 /**
+ * 用于创建出特殊的scope对象
+ *
  * Convenient proxy factory bean for scoped objects.
  *
  * <p>Proxies created using this factory bean are thread-safe singletons
@@ -106,6 +108,7 @@ public class ScopedProxyFactoryBean extends ProxyConfig
 			pf.setInterfaces(ClassUtils.getAllInterfacesForClass(beanType, cbf.getBeanClassLoader()));
 		}
 
+		// 添加引介拦截
 		// Add an introduction that implements only the methods on ScopedObject.
 		ScopedObject scopedObject = new DefaultScopedObject(cbf, this.scopedTargetSource.getTargetBeanName());
 		pf.addAdvice(new DelegatingIntroductionInterceptor(scopedObject));
