@@ -105,6 +105,9 @@ public abstract class AbstractAdvisorAutoProxyCreator extends AbstractAutoProxyC
 			// 1、先对方法进行排序, see ReflectiveAspectJAdvisorFactory -> Around, Before, After, AfterReturning, AfterThrowing
 			// 2、相同注解的再对方法名称进行排序，相同则 getDeclaredMethods
 			// 3、最后综合起来再 see AspectJPrecedenceComparator
+			//
+			// 注意：
+			// ExposeInvocationInterceptor 总是在最前，引介顾问总是在之后，最后的才是切入点顾问
 			eligibleAdvisors = sortAdvisors(eligibleAdvisors);
 		}
 		return eligibleAdvisors;

@@ -316,7 +316,7 @@ public abstract class AopUtils {
 		// 匹配类中所有方法，缩小范围，每个方法的匹配再第一次调用方法时进行匹配并缓存拦截链
 
 		List<Advisor> eligibleAdvisors = new ArrayList<>(); // eligible 翻译为符合条件的
-		// 首先，处理 IntroductionAdvisor 增强器
+		// 首先，处理 IntroductionAdvisor 增强器，放在拦截器链表的头头，优先处理，后面的排序竟然没改变？
 		for (Advisor candidate : candidateAdvisors) {
 			if (candidate instanceof IntroductionAdvisor // 匹配 IntroductionAdvisor 增强器
                     && canApply(candidate, clazz)) { // 判断，是否可以匹配
