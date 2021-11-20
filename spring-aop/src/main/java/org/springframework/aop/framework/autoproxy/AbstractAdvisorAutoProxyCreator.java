@@ -101,6 +101,10 @@ public abstract class AbstractAdvisorAutoProxyCreator extends AbstractAutoProxyC
 		extendAdvisors(eligibleAdvisors);
 		// 排序匹配的 Advisor 增强器，【降序】排序，为最终拦截器链的执行顺序
 		if (!eligibleAdvisors.isEmpty()) {
+			//  topo-sort 拓扑排序
+			//		2
+			// 1 -> 	-> 3
+			//		2
 			// 这个排序规则有点迷，为AspectJ内部排序规则
 			// 1、先对方法进行排序, see ReflectiveAspectJAdvisorFactory -> Around, Before, After, AfterReturning, AfterThrowing
 			// 2、相同注解的再对方法名称进行排序，相同则 getDeclaredMethods
