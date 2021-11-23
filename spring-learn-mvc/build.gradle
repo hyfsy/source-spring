@@ -29,6 +29,8 @@ dependencies {
     testCompile group: 'org.objenesis', name: 'objenesis', version: '2.6'
     compile group: 'cglib', name: 'cglib', version: '3.2.8'
 
+    provided("javax.servlet:javax.servlet-api") // Servlet 4 for mapping type
+
     // 测试文件上传使用
     compile group: 'commons-fileupload', name: 'commons-fileupload', version: '1.3.1'
 
