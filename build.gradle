@@ -11,7 +11,7 @@ buildscript {
 // 3rd party plugin repositories can be configured in settings.gradle
 plugins {
 	id "io.spring.dependency-management" version "1.0.5.RELEASE" apply false
-	id "org.jetbrains.kotlin.jvm" version "1.2.70" apply false
+	id "org.jetbrains.kotlin.jvm" version "1.4.10" apply false
 	id "org.jetbrains.dokka" version "0.9.17"
 	id "org.asciidoctor.convert" version "1.5.7"
 }
@@ -104,6 +104,7 @@ configure(allprojects) { project ->
 		sourceCompatibility = 1.8  // can be switched to 10 for testing
 		targetCompatibility = 1.8
 		options.encoding = "UTF-8"
+        options.compilerArgs << "-Xlint:none"
 	}
 
 	compileTestJava {
@@ -116,9 +117,8 @@ configure(allprojects) { project ->
 	compileKotlin {
 		kotlinOptions {
 			jvmTarget = "1.8"
-			freeCompilerArgs = ["-Xjsr305=strict"]
-			apiVersion = "1.1"
-			languageVersion = "1.1"
+			freeCompilerArgs = ["-Xjsr305=strict", "-Xsuppress-version-warnings"]
+//            allWarningsAsErrors = true
 		}
 	}
 
@@ -130,6 +130,8 @@ configure(allprojects) { project ->
 	}
 
 	test {
+        // 关闭测试
+        enabled = false
 		systemProperty("java.awt.headless", "true")
 		systemProperty("testGroups", project.properties.get("testGroups"))
 		scanForTestClasses = false
@@ -141,6 +143,7 @@ configure(allprojects) { project ->
 		reports.junitXml.setDestination(file("$buildDir/test-results"))
 	}
 
+    // xml注释关闭检查
 	checkstyle {
 		toolVersion = "8.10.1"
 		configDir = rootProject.file("src/checkstyle")
@@ -172,24 +175,46 @@ configure(allprojects) { project ->
 		checkstyle("io.spring.javaformat:spring-javaformat-checkstyle:0.0.5")
 	}
 
-	ext.javadocLinks = [
-		"http://docs.oracle.com/javase/8/docs/api/",
-		"http://docs.oracle.com/javaee/7/api/",
-		"http://docs.oracle.com/cd/E13222_01/wls/docs90/javadocs/",  // CommonJ
-		"http://pic.dhe.ibm.com/infocenter/wasinfo/v7r0/topic/com.ibm.websphere.javadoc.doc/web/apidocs/",
-		"http://glassfish.java.net/nonav/docs/v3/api/",
-		"http://docs.jboss.org/jbossas/javadoc/4.0.5/connector/",
-		"http://docs.jboss.org/jbossas/javadoc/7.1.2.Final/",
-		"http://tiles.apache.org/tiles-request/apidocs/",
-		"http://tiles.apache.org/framework/apidocs/",
-		"http://www.eclipse.org/aspectj/doc/released/aspectj5rt-api/",
-		"http://ehcache.org/apidocs/2.10.4",
-		"http://quartz-scheduler.org/api/2.2.1/",
-		"http://fasterxml.github.io/jackson-core/javadoc/2.8/",
-		"http://fasterxml.github.io/jackson-databind/javadoc/2.8/",
-		"http://fasterxml.github.io/jackson-dataformat-xml/javadoc/2.8/",
-		"http://hc.apache.org/httpcomponents-client-ga/httpclient/apidocs/"
-	] as String[]
+    javadoc {
+        failOnError = false
+        options.addStringOption('Xdoclint:none', '-quiet')
+//        options.addStringOption('encoding', 'GBK')
+        options.addStringOption('encoding', 'UTF-8')
+        options.addStringOption('charset', 'UTF-8')
+    }
+
+    ext.javadocLinks = [
+            "https://docs.oracle.com/en/java/javase/17/docs/api/",
+            "https://jakarta.ee/specifications/platform/9/apidocs/",
+            "https://docs.oracle.com/cd/E13222_01/wls/docs90/javadocs/",  // CommonJ
+            "https://www.ibm.com/docs/api/v1/content/SSEQTP_8.5.5/com.ibm.websphere.javadoc.doc/web/apidocs/",
+            "https://docs.jboss.org/jbossas/javadoc/4.0.5/connector/",
+            "https://docs.jboss.org/jbossas/javadoc/7.1.2.Final/",
+            "https://www.eclipse.org/aspectj/doc/released/aspectj5rt-api/",
+            "https://www.quartz-scheduler.org/api/2.3.0/",
+            "https://fasterxml.github.io/jackson-core/javadoc/2.10/",
+            "https://fasterxml.github.io/jackson-databind/javadoc/2.10/",
+            "https://fasterxml.github.io/jackson-dataformat-xml/javadoc/2.10/",
+            // TODO Uncomment once httpclient5 API docs are again online.
+            // "https://hc.apache.org/httpcomponents-client-5.1.x/current/httpclient5/apidocs/",
+            "https://projectreactor.io/docs/test/release/api/",
+            "https://junit.org/junit4/javadoc/4.13.2/",
+            // TODO Uncomment link to JUnit 5 docs once we have sorted out
+            // the following warning in the build.
+            //
+            // warning: The code being documented uses packages in the unnamed module, but the packages defined in https://junit.org/junit5/docs/5.8.1/api/ are in named modules.
+            //
+            // "https://junit.org/junit5/docs/5.8.2/api/",
+            "https://www.reactive-streams.org/reactive-streams-1.0.3-javadoc/",
+            "https://javadoc.io/static/io.rsocket/rsocket-core/1.1.1/",
+            "https://r2dbc.io/spec/1.0.0.RELEASE/api/",
+            // The external Javadoc link for JSR 305 must come last to ensure that types from
+            // JSR 250 (such as @PostConstruct) are still supported. This is due to the fact
+            // that JSR 250 and JSR 305 both define types in javax.annotation, which results
+            // in a split package, and the javadoc tool does not support split packages
+            // across multiple external Javadoc sites.
+            "https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/"
+    ] as String[]
 }
 
 configure(subprojects - project(":spring-build-src")) { subproject ->
@@ -218,7 +243,6 @@ configure(subprojects - project(":spring-build-src")) { subproject ->
 		options.header = project.name
 		options.use = true
 		options.links(project.ext.javadocLinks)
-		options.addStringOption("Xdoclint:none", "-quiet")
 
 		// Suppress warnings due to cross-module @see and @link references.
 		// Note that global 'api' task does display all warnings.

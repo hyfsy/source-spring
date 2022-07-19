@@ -1,7 +1,6 @@
 package com.hyf.mvc.aop.filter;
 
-import org.apache.tools.ant.types.FilterChain;
-
+import javax.servlet.*;
 import java.io.IOException;
 
 public class BeforeFilter implements Filter {

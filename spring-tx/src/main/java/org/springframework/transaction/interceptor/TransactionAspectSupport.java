@@ -330,7 +330,8 @@ public abstract class TransactionAspectSupport implements BeanFactoryAware, Init
 			// 返回结果值
 			return retVal;
         // 方式二：几乎不会走到，比较特殊
-		} else {
+		}
+		else {
 			final ThrowableHolder throwableHolder = new ThrowableHolder();
 
 			// It's a CallbackPreferringPlatformTransactionManager: pass a TransactionCallback in.

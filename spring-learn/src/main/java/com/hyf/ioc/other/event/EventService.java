@@ -1,6 +1,5 @@
 package com.hyf.ioc.other.event;
 
-import com.sun.istack.internal.NotNull;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.context.ApplicationEventPublisherAware;
 import org.springframework.context.event.SimpleApplicationEventMulticaster;
@@ -17,7 +16,7 @@ public class EventService implements ApplicationEventPublisherAware
     private ApplicationEventPublisher publisher;
 
     @Override
-    public void setApplicationEventPublisher(@NotNull ApplicationEventPublisher applicationEventPublisher) {
+    public void setApplicationEventPublisher(ApplicationEventPublisher applicationEventPublisher) {
 
 		// 测试异步执行事件发布
     	if(applicationEventPublisher instanceof SimpleApplicationEventMulticaster) {
