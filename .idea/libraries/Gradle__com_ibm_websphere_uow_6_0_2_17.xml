@@ -2,6 +2,7 @@
   <library name="Gradle: com.ibm.websphere:uow:6.0.2.17">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/../../.gradle2/caches/modules-2/files-2.1/com.ibm.websphere/uow/6.0.2.17/df754f8fe0c9c6f837d00ddcc12632fef16ec239/uow-6.0.2.17.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../.gradle2/caches/modules-2/files-2.1/com.ibm.websphere/uow/6.0.2.17/df754f8fe0c9c6f837d00ddcc12632fef16ec239/uow-6.0.2.17.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

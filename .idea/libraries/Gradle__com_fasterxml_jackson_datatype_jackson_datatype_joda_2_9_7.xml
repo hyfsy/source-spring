@@ -2,10 +2,12 @@
   <library name="Gradle: com.fasterxml.jackson.datatype:jackson-datatype-joda:2.9.7">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/../../.gradle2/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-joda/2.9.7/d9feae99faf03d5a9989be2225da3baa73ba43d4/jackson-datatype-joda-2.9.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../.gradle2/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-joda/2.9.7/d9feae99faf03d5a9989be2225da3baa73ba43d4/jackson-datatype-joda-2.9.7.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$PROJECT_DIR$/../../.gradle2/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-joda/2.9.7/7036b4f216cbc0915d6d21e3e8448d9e21cc8930/jackson-datatype-joda-2.9.7-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../.gradle2/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-joda/2.9.7/7036b4f216cbc0915d6d21e3e8448d9e21cc8930/jackson-datatype-joda-2.9.7-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

@@ -1,82 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module external.linked.project.id=":spring-context-support:main" external.linked.project.path="$MODULE_DIR$/../../../spring-context-support" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="org.springframework" external.system.module.type="sourceSet" external.system.module.version="5.1.1.BUILD-SNAPSHOT" type="JAVA_MODULE" version="4">
-  <component name="FacetManager">
-    <facet type="kotlin-language" name="Kotlin">
-      <configuration version="3" platform="JVM 1.8" allPlatforms="JVM [1.8]" useProjectSettings="false">
-        <compilerSettings>
-          <option name="additionalArguments" value="-Xjsr305=strict" />
-        </compilerSettings>
-        <compilerArguments>
-          <option name="destination" value="$MODULE_DIR$/../../../spring-context-support/build/classes/kotlin/main" />
-          <option name="classpath" value="$MODULE_DIR$/../../../spring-context/build/libs/spring-context-5.1.1.BUILD-SNAPSHOT.jar;E:/study/idea2/source-spring/spring-aop/build/libs/spring-aop-5.1.1.BUILD-SNAPSHOT.jar;E:/study/idea2/source-spring/spring-beans/build/libs/spring-beans-5.1.1.BUILD-SNAPSHOT.jar;E:/study/idea2/source-spring/spring-expression/build/libs/spring-expression-5.1.1.BUILD-SNAPSHOT.jar;E:/study/idea2/source-spring/spring-core/build/libs/spring-core-5.1.1.BUILD-SNAPSHOT.jar;E:/study/idea2/source-spring/spring-core/build/libs/spring-cglib-repack-3.2.8.jar;E:/study/idea2/source-spring/spring-core/build/libs/spring-objenesis-repack-2.6.jar;E:/study/.gradle2/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar;E:/study/idea2/source-spring/spring-jcl/build/libs/spring-jcl-5.1.1.BUILD-SNAPSHOT.jar;E:/study/.gradle2/caches/modules-2/files-2.1/javax.activation/javax.activation-api/1.2.0/85262acf3ca9816f9537ca47d5adeabaead7cb16/javax.activation-api-1.2.0.jar;E:/study/.gradle2/caches/modules-2/files-2.1/javax.mail/javax.mail-api/1.6.2/17a8151bab44f9c94f34c10db70d95ba3c830eda/javax.mail-api-1.6.2.jar;E:/study/.gradle2/caches/modules-2/files-2.1/javax.cache/cache-api/1.1.0/77bdcff7814076dfa61611b0db88487c515150b6/cache-api-1.1.0.jar;E:/study/.gradle2/caches/modules-2/files-2.1/com.github.ben-manes.caffeine/caffeine/2.6.2/c8fd8817f9d2b2ced82f8968e0dd943aab557de0/caffeine-2.6.2.jar;E:/study/.gradle2/caches/modules-2/files-2.1/net.sf.ehcache/ehcache/2.10.4/9022b1eedfafa11039597b1c1918c1abe414df93/ehcache-2.10.4.jar;E:/study/.gradle2/caches/modules-2/files-2.1/org.quartz-scheduler/quartz/2.3.0/a090397102a12f6241177c5d501835334bb7662a/quartz-2.3.0.jar;E:/study/.gradle2/caches/modules-2/files-2.1/org.codehaus.fabric3.api/commonj/1.1.0/11e7a4fbf6c257e221df0aadf9851d8992fe60ff/commonj-1.1.0.jar;E:/study/.gradle2/caches/modules-2/files-2.1/org.freemarker/freemarker/2.3.28/7200064467a935052f99d114c2c05c3d189bc6d6/freemarker-2.3.28.jar;E:/study/.gradle2/caches/modules-2/files-2.1/com.zaxxer/HikariCP-java6/2.3.13/376d13a7b2dc57379c550619fe02ecfe51e62465/HikariCP-java6-2.3.13.jar;E:/study/.gradle2/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.25/da76ca59f6a57ee3102f8f9bd9cee742973efa8a/slf4j-api-1.7.25.jar;E:/study/.gradle2/caches/modules-2/files-2.1/com.mchange/c3p0/0.9.5.2/5f86cb6130bc6e8475615ed82d5b5e6fb226a86a/c3p0-0.9.5.2.jar;E:/study/.gradle2/caches/modules-2/files-2.1/com.mchange/mchange-commons-java/0.2.11/2a6a6c1fe25f28f5a073171956ce6250813467ef/mchange-commons-java-0.2.11.jar" />
-          <option name="noStdlib" value="true" />
-          <option name="noReflect" value="true" />
-          <option name="moduleName" value="spring-context-support" />
-          <option name="jvmTarget" value="1.8" />
-          <option name="languageVersion" value="1.1" />
-          <option name="apiVersion" value="1.1" />
-          <option name="pluginOptions">
-            <array />
-          </option>
-          <option name="pluginClasspaths">
-            <array />
-          </option>
-          <option name="coroutinesState" value="warn" />
-          <option name="errors">
-            <ArgumentParseErrors />
-          </option>
-        </compilerArguments>
-      </configuration>
-    </facet>
-  </component>
-  <component name="NewModuleRootManager">
-    <output url="file://$MODULE_DIR$/../../../spring-context-support/out/production/classes" />
-    <exclude-output />
-    <content url="file://$MODULE_DIR$/../../../spring-context-support/src/main">
-      <sourceFolder url="file://$MODULE_DIR$/../../../spring-context-support/src/main/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../../spring-context-support/src/main/kotlin" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../../spring-context-support/src/main/resources" type="java-resource" />
-    </content>
-    <orderEntry type="inheritedJdk" />
-    <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../spring-core/build/libs/spring-cglib-repack-3.2.8.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../spring-core/build/libs/spring-objenesis-repack-2.6.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module" module-name="spring.spring-context.main" />
-    <orderEntry type="module" module-name="spring.spring-beans.main" />
-    <orderEntry type="module" module-name="spring.spring-core.main" />
-    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.google.code.findbugs:jsr305:3.0.2" level="project" />
-    <orderEntry type="module" module-name="spring.spring-aop.main" />
-    <orderEntry type="module" module-name="spring.spring-expression.main" />
-    <orderEntry type="module" module-name="spring.spring-jcl.main" />
-    <orderEntry type="module" module-name="spring.spring-jdbc.main" />
-    <orderEntry type="module" module-name="spring.spring-tx.main" />
-    <orderEntry type="library" name="Gradle: javax.activation:javax.activation-api:1.2.0" level="project" />
-    <orderEntry type="library" name="Gradle: javax.mail:javax.mail-api:1.6.2" level="project" />
-    <orderEntry type="library" name="Gradle: javax.cache:cache-api:1.1.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.github.ben-manes.caffeine:caffeine:2.6.2" level="project" />
-    <orderEntry type="library" name="Gradle: net.sf.ehcache:ehcache:2.10.4" level="project" />
-    <orderEntry type="library" name="Gradle: org.quartz-scheduler:quartz:2.3.0" level="project" />
-    <orderEntry type="library" name="Gradle: org.codehaus.fabric3.api:commonj:1.1.0" level="project" />
-    <orderEntry type="library" name="Gradle: org.freemarker:freemarker:2.3.28" level="project" />
-    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.25" level="project" />
-    <orderEntry type="library" name="Gradle: com.zaxxer:HikariCP-java6:2.3.13" level="project" />
-    <orderEntry type="library" name="Gradle: com.mchange:c3p0:0.9.5.2" level="project" />
-    <orderEntry type="library" name="Gradle: com.mchange:mchange-commons-java:0.2.11" level="project" />
+<module version="4">
+  <component name="CheckStyle-IDEA-Module">
+    <option name="configuration">
+      <map />
+    </option>
   </component>
 </module>
