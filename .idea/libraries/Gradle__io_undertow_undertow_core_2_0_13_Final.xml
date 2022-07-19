@@ -2,10 +2,12 @@
   <library name="Gradle: io.undertow:undertow-core:2.0.13.Final">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/../../.gradle2/caches/modules-2/files-2.1/io.undertow/undertow-core/2.0.13.Final/78cd1da0625d9929d6fa778223db1c5059c40848/undertow-core-2.0.13.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../.gradle2/caches/modules-2/files-2.1/io.undertow/undertow-core/2.0.13.Final/78cd1da0625d9929d6fa778223db1c5059c40848/undertow-core-2.0.13.Final.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$PROJECT_DIR$/../../.gradle2/caches/modules-2/files-2.1/io.undertow/undertow-core/2.0.13.Final/cdd3193ef7d965f1616f8e6404444312d2278ee2/undertow-core-2.0.13.Final-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../.gradle2/caches/modules-2/files-2.1/io.undertow/undertow-core/2.0.13.Final/cdd3193ef7d965f1616f8e6404444312d2278ee2/undertow-core-2.0.13.Final-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

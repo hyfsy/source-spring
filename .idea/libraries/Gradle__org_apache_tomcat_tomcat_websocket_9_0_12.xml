@@ -2,10 +2,12 @@
   <library name="Gradle: org.apache.tomcat:tomcat-websocket:9.0.12">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/../../.gradle2/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-websocket/9.0.12/6167cd25a11f5c0f6af3d31c430485fefae81d8f/tomcat-websocket-9.0.12.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../.gradle2/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-websocket/9.0.12/6167cd25a11f5c0f6af3d31c430485fefae81d8f/tomcat-websocket-9.0.12.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$PROJECT_DIR$/../../.gradle2/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-websocket/9.0.12/ae177277d228d6b259d545b50537c2df620c532/tomcat-websocket-9.0.12-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../.gradle2/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-websocket/9.0.12/ae177277d228d6b259d545b50537c2df620c532/tomcat-websocket-9.0.12-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

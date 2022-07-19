@@ -1,70 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module external.linked.project.id=":spring-aop:main" external.linked.project.path="$MODULE_DIR$/../../../spring-aop" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="org.springframework" external.system.module.type="sourceSet" external.system.module.version="5.1.1.BUILD-SNAPSHOT" type="JAVA_MODULE" version="4">
-  <component name="FacetManager">
-    <facet type="kotlin-language" name="Kotlin">
-      <configuration version="3" platform="JVM 1.8" allPlatforms="JVM [1.8]" useProjectSettings="false">
-        <compilerSettings>
-          <option name="additionalArguments" value="-Xjsr305=strict" />
-        </compilerSettings>
-        <compilerArguments>
-          <option name="destination" value="$MODULE_DIR$/../../../spring-aop/build/classes/kotlin/main" />
-          <option name="classpath" value="$MODULE_DIR$/../../../spring-beans/build/libs/spring-beans-5.1.1.BUILD-SNAPSHOT.jar;E:/study/idea2/source-spring/spring-core/build/libs/spring-core-5.1.1.BUILD-SNAPSHOT.jar;E:/study/idea2/source-spring/spring-core/build/libs/spring-cglib-repack-3.2.8.jar;E:/study/idea2/source-spring/spring-core/build/libs/spring-objenesis-repack-2.6.jar;E:/study/.gradle2/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar;E:/study/idea2/source-spring/spring-jcl/build/libs/spring-jcl-5.1.1.BUILD-SNAPSHOT.jar;E:/study/.gradle2/caches/modules-2/files-2.1/org.aspectj/aspectjweaver/1.9.1/286d98dc6bed3021f76a241d593fd713515777dd/aspectjweaver-1.9.1.jar;E:/study/.gradle2/caches/modules-2/files-2.1/org.apache.commons/commons-pool2/2.6.0/df5f4f61183daa8c4c1a9361c7b3ce2b67218eb2/commons-pool2-2.6.0.jar;E:/study/.gradle2/caches/modules-2/files-2.1/com.jamonapi/jamon/2.81/e81ca9fe23ff737e00645b4387a262b2e7a1d9c2/jamon-2.81.jar;E:/study/.gradle2/caches/modules-2/files-2.1/com.hazelcast/hazelcast-all/3.2.5/db26813386b8d8b2d0909d9b4e6fbe6f6247f6c7/hazelcast-all-3.2.5.jar;E:/study/.gradle2/caches/modules-2/files-2.1/net.sourceforge.findbugs/annotations/1.3.2/d77bc83e0408680034a29481a89de0dba9802a97/annotations-1.3.2.jar" />
-          <option name="noStdlib" value="true" />
-          <option name="noReflect" value="true" />
-          <option name="moduleName" value="spring-aop" />
-          <option name="jvmTarget" value="1.8" />
-          <option name="languageVersion" value="1.1" />
-          <option name="apiVersion" value="1.1" />
-          <option name="pluginOptions">
-            <array />
-          </option>
-          <option name="pluginClasspaths">
-            <array />
-          </option>
-          <option name="coroutinesState" value="warn" />
-          <option name="errors">
-            <ArgumentParseErrors />
-          </option>
-        </compilerArguments>
-      </configuration>
-    </facet>
-  </component>
-  <component name="NewModuleRootManager">
-    <output url="file://$MODULE_DIR$/../../../spring-aop/out/production/classes" />
-    <exclude-output />
-    <content url="file://$MODULE_DIR$/../../../spring-aop/src/main">
-      <sourceFolder url="file://$MODULE_DIR$/../../../spring-aop/src/main/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../../spring-aop/src/main/kotlin" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../../spring-aop/src/main/resources" type="java-resource" />
-    </content>
-    <orderEntry type="inheritedJdk" />
-    <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../spring-core/build/libs/spring-cglib-repack-3.2.8.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../spring-core/build/libs/spring-objenesis-repack-2.6.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module" module-name="spring.spring-beans.main" />
-    <orderEntry type="module" module-name="spring.spring-core.main" />
-    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.google.code.findbugs:jsr305:3.0.2" level="project" />
-    <orderEntry type="module" module-name="spring.spring-jcl.main" />
-    <orderEntry type="library" name="Gradle: org.aspectj:aspectjweaver:1.9.1" level="project" />
-    <orderEntry type="library" name="Gradle: org.apache.commons:commons-pool2:2.6.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.jamonapi:jamon:2.81" level="project" />
-    <orderEntry type="library" name="Gradle: com.hazelcast:hazelcast-all:3.2.5" level="project" />
-    <orderEntry type="library" name="Gradle: net.sourceforge.findbugs:annotations:1.3.2" level="project" />
+<module version="4">
+  <component name="CheckStyle-IDEA-Module">
+    <option name="configuration">
+      <map />
+    </option>
   </component>
 </module>

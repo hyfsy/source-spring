@@ -8,7 +8,7 @@
         <option name="testRunner" value="PLATFORM" />
         <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleHome" value="$PROJECT_DIR$/../../env/gradle-4.10" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../../../env/gradle/gradle-6.8.3" />
         <option name="gradleJvm" value="1.8" />
         <option name="modules">
           <set>
@@ -28,6 +28,7 @@
             <option value="$PROJECT_DIR$/spring-jdbc" />
             <option value="$PROJECT_DIR$/spring-jms" />
             <option value="$PROJECT_DIR$/spring-learn" />
+            <option value="$PROJECT_DIR$/spring-learn-instrument" />
             <option value="$PROJECT_DIR$/spring-learn-mvc" />
             <option value="$PROJECT_DIR$/spring-messaging" />
             <option value="$PROJECT_DIR$/spring-orm" />
@@ -40,7 +41,6 @@
             <option value="$PROJECT_DIR$/spring-websocket" />
           </set>
         </option>
-        <option name="useQualifiedModuleNames" value="true" />
       </GradleProjectSettings>
     </option>
   </component>

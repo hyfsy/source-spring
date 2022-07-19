@@ -2,10 +2,12 @@
   <library name="Gradle: org.eclipse.persistence:org.eclipse.persistence.jpa:2.7.3">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/../../.gradle2/caches/modules-2/files-2.1/org.eclipse.persistence/org.eclipse.persistence.jpa/2.7.3/8880b6a624fe3997c7500ec870e364fea0d8c6b4/org.eclipse.persistence.jpa-2.7.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../.gradle2/caches/modules-2/files-2.1/org.eclipse.persistence/org.eclipse.persistence.jpa/2.7.3/8880b6a624fe3997c7500ec870e364fea0d8c6b4/org.eclipse.persistence.jpa-2.7.3.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$PROJECT_DIR$/../../.gradle2/caches/modules-2/files-2.1/org.eclipse.persistence/org.eclipse.persistence.jpa/2.7.3/77d80fd8af78e55e63cef968ee7b7c7105aaef4f/org.eclipse.persistence.jpa-2.7.3-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../.gradle2/caches/modules-2/files-2.1/org.eclipse.persistence/org.eclipse.persistence.jpa/2.7.3/77d80fd8af78e55e63cef968ee7b7c7105aaef4f/org.eclipse.persistence.jpa-2.7.3-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
