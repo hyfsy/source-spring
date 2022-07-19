@@ -1,5 +1,19 @@
 编译项目：
 
+# 20220719
+
+1、导入idea时指定根路径下的build.gradle导入
+2、run和build指定为idea的
+3、idea的gradle配置为外部gradle，版本：6.8.3
+
+> 注意无法打包，但能正常编译
+
+
+---
+---
+
+
+
 - 如果**spring-core模块**编译失败，用当前路径下的**spring-core.rar**替换
 - bojenesis和cglib两个jar编译当时有点问题，如果编译失败，可以尝试在自己的模块下引用看看
 
